@@ -1,14 +1,16 @@
 <template>
   <div>
-    <IndSectors />
+    <IndSectors/>
+    <OurAccomplishments/>
   </div>
 </template>
 
 <script>
 import IndSectors from "@/views/MainPage/components/IndSectors.vue";
+import OurAccomplishments from "@/views/MainPage/components/OurAccomplishments.vue";
 
 export default {
   name: "MainPage",
-  components: {IndSectors},
+  components: {OurAccomplishments, IndSectors},
 }
 </script>
