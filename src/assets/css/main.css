@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    background: #f3f3f4;
-}
-
-html.dark {
-    background: #131313;
-}
-
 .spinner {
     border-top-color: #4299e1;
     border-left-color: #4299e1;
@@ -49,18 +41,11 @@ html.dark {
 
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Gilroy", sans-serif;
     font-size: 0.875rem;
-    color: #373737;
-    background: #f3f3f4;
-}
-
-body.dark {
-    background: #131313;
-}
-
-a {
-    text-decoration: underline;
+    color: #000;
+    background: #fff;
+    font-style: normal;
 }
 
 .header a {
@@ -87,9 +72,4 @@ a:hover {
     .container {
         max-width: 1300px;
     }
-}
-
-.nav a:hover,
-.nav a.router-link-exact-active {
-    color: #D62D2D;
 }
