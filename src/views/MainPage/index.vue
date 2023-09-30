@@ -1,14 +1,16 @@
 <template>
   <div>
+    <HeroBlock />
     <IndSectors />
   </div>
 </template>
 
 <script>
 import IndSectors from "@/views/MainPage/components/IndSectors.vue";
+import HeroBlock from "@/views/MainPage/components/HeroBlock.vue";
 
 export default {
   name: "MainPage",
-  components: {IndSectors},
+  components: {HeroBlock, IndSectors},
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen py-24 flex items-center justify-center relative">
-    <img class="absolute w-full h-full top-0 left-0 -z-10" src="@/assets/img/indSectors/bg.png" alt="">
+    <img class="absolute w-full h-full top-0 left-0 -z-10" src="@/assets/img/bg.png" alt="">
     <div class="container mx-auto px-4 lg:px-0">
       <div class="flex flex-wrap justify-between">
         <div class="w-half p-10 text-secondaryColor bg-mainColor rounded-tl-xl mb-2">
