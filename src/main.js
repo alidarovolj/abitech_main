@@ -2,10 +2,7 @@ import {createApp} from "vue";
 import {createMetaManager} from "vue-meta";
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import {library} from "@fortawesome/fontawesome-svg-core";
-import {fab} from "@fortawesome/free-brands-svg-icons";
-import {
-    faPhone,
-} from "@fortawesome/free-solid-svg-icons";
+import {faPhone,} from "@fortawesome/free-solid-svg-icons";
 
 import {notify} from "@/utils/toasts.js";
 
