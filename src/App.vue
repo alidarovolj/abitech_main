@@ -15,17 +15,17 @@
 <script>
 import DefaultLayout from "@/layouts/default.vue";
 import "vue3-toastify/dist/index.css";
-import {useMeta} from "vue-meta";
+import { useMeta } from "vue-meta";
 
 export default {
   name: "App",
   components: {
-    DefaultLayout
+    DefaultLayout,
   },
   setup() {
     useMeta({
       title: "Abitech",
-      htmlAttrs: {lang: "en", amp: true},
+      htmlAttrs: { lang: "en", amp: true },
     });
   },
   beforeCreate() {
@@ -40,10 +40,5 @@ export default {
       document.documentElement.classList.remove("dark");
     }
   },
-  methods: {
-    scrollTop() {
-      document.getElementById('app').scrollIntoView();
-    },
-  }
 };
 </script>
