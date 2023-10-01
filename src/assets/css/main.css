@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+}
+
 .spinner {
     border-top-color: #4299e1;
     border-left-color: #4299e1;
