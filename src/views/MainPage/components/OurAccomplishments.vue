@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen py-24 flex items-center justify-center relative">
+  <div class="h-screen py-24 flex items-center justify-center relative w-full">
     <img alt="" class="absolute w-full h-full top-0 left-0 -z-10" src="@/assets/img/bg.png">
     <div class="container mx-auto px-4 lg:px-0">
       <div>
