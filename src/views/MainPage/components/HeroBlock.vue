@@ -1,6 +1,6 @@
 <template>
   <div
-    class="h-screen bg-mainColor relative flex items-center justify-center w-full"
+    class="h-screen bg-mainColor relative flex items-center justify-center w-full background-element"
   >
     <img
       class="absolute w-full h-full top-0 left-0 z-10"
@@ -11,8 +11,8 @@
     <div
       class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-40 w-full"
     >
-      <div class="w-full">
-        <div class="flex items-center justify-center">
+      <div class="w-full flex items-center justify-center">
+        <div class="flex items-start justify-center transition-all w-max">
           <img src="@/assets/img/logo.png" alt="" />
           <div :class="{ 'ml-7': isExpanded === true }">
             <h1
@@ -22,7 +22,7 @@
               EFFECTIVE MANAGEMENT OF <br />
               PROCESSES AND ASSETS
             </h1>
-            <div class="flex justify-end">
+            <div class=" mt-3">
               <p
                 class="text-xl w-0 text-white h-0 overflow-hidden second_text"
                 :class="{ expanded_second: isExpandedSecond === true }"
@@ -31,6 +31,10 @@
                 <br />
                 own developments in various industries
               </p>
+              <div class="flex mt-3 w-0 h-0 second_text"
+                   :class="{ expanded_second: isExpandedSecond === true }">
+                <a class="py-3 rounded px-14 bg-secondaryColor text-mainColor text-sm font-bold w-max" href="#">Order a call</a>
+              </div>
             </div>
           </div>
         </div>
@@ -38,11 +42,11 @@
     </div>
     <div>
       <div class="absolute left-1/2 bottom-9 -translate-x-1/2 flex">
-        <img class="px-3" src="@/assets/img/heroBlock/icons/1.png" alt="" />
-        <img class="px-3" src="@/assets/img/heroBlock/icons/2.png" alt="" />
-        <img class="px-3" src="@/assets/img/heroBlock/icons/3.png" alt="" />
-        <img class="px-3" src="@/assets/img/heroBlock/icons/4.png" alt="" />
-        <img class="px-3" src="@/assets/img/heroBlock/icons/5.png" alt="" />
+        <img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/1.png" alt="" />
+        <img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/2.png" alt="" />
+        <img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/3.png" alt="" />
+        <img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/4.png" alt="" />
+        <img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/5.png" alt="" />
       </div>
     </div>
   </div>
