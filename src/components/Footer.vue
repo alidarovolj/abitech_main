@@ -1,36 +1,49 @@
 <template>
-  <div class="bg-white dark:bg-darkBg dark:border-t dark:border-gray-700 py-10 mt-10 dark:text-whiteColor">
+  <div class="py-24 flex items-center justify-center bg-[#F6F6F6]">
     <div class="container mx-auto px-4 lg:px-0">
-      <div class="flex mb-5">
-        <div class="mr-10">
-          <img alt="" class="w-40 block dark:hidden" src="@/assets/img/logo_hor.png">
-          <img alt="" class="w-40 hidden dark:block" src="@/assets/img/logo_hor_white.png">
+      <div class="flex mb-7">
+        <div class="w-1/3">
+          <h3 class="text-base font-medium mb-5">About the company</h3>
+          <div class="text-[#757575]">
+            <router-link v-for="(link,index) of links" :key="index" :class="{'mb-4': links.length !== index + 1}"
+                         :to="link.to" class="block">{{ link.name }}
+            </router-link>
+          </div>
         </div>
-        <div class="mr-10">
-          <p class="text-lg font-semibold mb-2">Call Center</p>
-          <a class="block" href="tel:77472367503">+7 (747) 236-75-03</a>
-          <a class="block" href="mailto:support@tq.kz">support@tq.kz</a>
+        <div class="w-1/3">
+          <div class="mb-7">
+            <h3 class="text-base font-medium mb-5">Safety</h3>
+            <router-link class="text-[#757575] block mb-4" to="/">Privacy policy</router-link>
+            <router-link class="text-[#757575] block" to="/">Cookie Policy</router-link>
+          </div>
+          <div>
+            <h3 class="text-base font-medium mb-5">Social network</h3>
+            <div class="flex gap-6">
+              <router-link class="block" to=""><img alt="" src="@/assets/img/footer/phone-call.svg"></router-link>
+              <router-link class="block" to=""><img alt="" src="@/assets/img/footer/brand-instagram.svg"></router-link>
+              <router-link class="block" to=""><img alt="" src="@/assets/img/footer/brand-facebook.svg"></router-link>
+              <router-link class="block" to=""><img alt="" src="@/assets/img/footer/brand-linkedin.svg"></router-link>
+              <router-link class="block" to=""><img alt="" src="@/assets/img/footer/map-pin.svg"></router-link>
+            </div>
+          </div>
         </div>
-        <div>
-          <p class="text-lg font-semibold mb-4">Навигация</p>
-          <router-link :to="{ name: 'MainPage' }" class="block mb-3 hover:text-mainColor transition-all">
-            {{ $t('header.main') }}
-          </router-link>
-          <router-link :to="{ name: 'AboutPage' }" class="block mb-3 hover:text-mainColor transition-all">
-            {{ $t('header.about') }}
-          </router-link>
-          <router-link :to="{ name: 'NewsPage' }" class="block mb-3 hover:text-mainColor transition-all">
-            {{ $t('header.news') }}
-          </router-link>
-          <router-link :to="{ name: 'ContactsPage' }" class="block mb-3 hover:text-mainColor transition-all">
-            {{ $t('header.contacts') }}
-          </router-link>
+        <div class="w-1/3">
+          <h3 class="text-base font-medium mb-2.5">I want to keep up to date with the news</h3>
+          <p class="text-[#757575] mb-7">Be the first to know about our latest innovations.
+            Never miss out on interesting offers and promotions.
+            Get advice from experts.</p>
+          <form class="flex items-end justify-between" @submit.prevent="sendForm">
+            <div>
+              <p class="text-[#757575] mb-2.5">Email</p>
+              <input class="py-3 pl-4 pr-10 border border-solid rounded-lg" name="" placeholder="Your email address"
+                     type="text">
+            </div>
+            <button class="py-3 px-8 bg-mainColor text-white rounded-lg" type="submit">Subscribe</button>
+          </form>
         </div>
       </div>
-      <div class="text-xs">
-        <p class="mb-2">{{ $t('footer.first') }}</p>
-        <p class="mb-2">{{ $t('footer.second') }}</p>
-        <p>{{ $t('footer.third') }}</p>
+      <div>
+        <h3 class="text-[#757575]">© Abitech, 2018-2023</h3>
       </div>
     </div>
   </div>
@@ -42,6 +55,33 @@ export default {
   data() {
     return {
       currentTheme: localStorage.getItem("theme"),
+      links: [
+        {
+          id: 1,
+          name: "About us",
+          to: "/",
+        },
+        {
+          id: 2,
+          name: "Locations",
+          to: "/",
+        },
+        {
+          id: 3,
+          name: "Industry sectors",
+          to: "/",
+        },
+        {
+          id: 4,
+          name: "Our accomplishments",
+          to: "/",
+        },
+        {
+          id: 5,
+          name: "Products",
+          to: "/",
+        }
+      ]
     };
   },
 }

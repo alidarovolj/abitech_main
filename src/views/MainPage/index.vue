@@ -6,6 +6,8 @@
     <OurAccomplishments/>
     <Insights/>
     <Partners />
+    <FormBlock/>
+    <FooterBlock/>
   </div>
 </template>
 
@@ -16,9 +18,11 @@ import Locations from "@/views/MainPage/components/Locations.vue";
 import HeroBlock from "@/views/MainPage/components/HeroBlock.vue";
 import Insights from "@/views/MainPage/components/Insights.vue";
 import Partners from "@/views/MainPage/components/Partners.vue";
+import FooterBlock from "@/components/Footer.vue";
+import FormBlock from "@/views/MainPage/components/Form.vue";
 
 export default {
   name: "MainPage",
-  components: {Insights, HeroBlock, OurAccomplishments, IndSectors, Locations, Partners},
+  components: {FormBlock, FooterBlock, Insights, HeroBlock, OurAccomplishments, IndSectors, Locations, Partners},
 }
 </script>
