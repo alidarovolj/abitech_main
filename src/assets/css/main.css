@@ -69,12 +69,12 @@ a:hover {
 
 @media (min-width: 1160px) and (max-width: 1300px) {
     .container {
-        max-width: 930px;
+        max-width: 1182px;
     }
 }
 
 @media (min-width: 1300px) {
     .container {
-        max-width: 930px;
+        max-width: 1182px;
     }
 }
