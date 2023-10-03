@@ -27,7 +27,7 @@
             </div>
           </div>
         </div>
-        <div class="w-[419px]">
+        <div class="w-full lg:w-[419px]">
           <div v-for="(block, index) of blocks" :key="index" :class="{'!mb-0': blocks.length === index + 1}"
                class="relative flex z-30 items-center mb-7 bg-white rounded-lg cursor-pointer"
                @mouseleave="activeBlock = null"

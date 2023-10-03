@@ -1,14 +1,14 @@
 <template>
   <div
-      class="h-screen bg-mainColor relative flex items-center justify-center w-full background-element"
+      class="h-full lg:h-screen bg-mainColor relative flex items-center justify-center w-full background-element py-10 lg:py-0"
   >
     <img
         class="absolute w-full h-full top-0 left-0 z-10"
         src="@/assets/img/bg_gold.png"
         alt=""
     />
-    <div class="flex relative">
-      <div class="absolute left-0 top-0 p-3 bg-white rounded-2xl w-72 z-30">
+    <div class="block lg:flex relative">
+      <div class="relative mx-auto lg:mx-0 lg:absolute left-0 top-0 p-3 bg-white rounded-2xl w-72 z-30 mb-10 lg:mb-0">
         <p class="rounded-t-2xl bg-mainColor py-3 font-bold text-base text-center text-white">Locations</p>
         <div :class="{ 'expanded' : isExpanded }" class="text-mainColor mt-3 px-3 text-base overflow-y-hidden first_state">
           <p class="border-y border-mainColor py-1 font-bold">
@@ -51,18 +51,22 @@
       <img class="" src="@/assets/img/locations/map.png" alt="">
       <img
           :class="{ 'opacity-100' : first === true }"
-          class="w-8 h-8 absolute top-[36%] right-[36%] transition-all opacity-0" src="@/assets/img/locations/point.png" alt="">
+          class="w-8 h-8 absolute top-[76%] right-[36%] transition-all opacity-0" src="@/assets/img/locations/point.png" alt="">
       <img
-          :class="{ 'opacity-100' : second === true }" class="w-8 h-8 absolute top-[34%] right-[20%] transition-all opacity-0"
+          :class="{ 'opacity-100' : second === true }"
+          class="w-8 h-8 absolute top-[74%] right-[20%] transition-all opacity-0"
           src="@/assets/img/locations/point.png" alt="">
       <img
-          :class="{ 'opacity-100' : third === true }" class="w-8 h-8 absolute top-[38%] right-[25%] transition-all opacity-0"
+          :class="{ 'opacity-100' : third === true }"
+          class="w-8 h-8 absolute top-[78%] right-[25%] transition-all opacity-0"
           src="@/assets/img/locations/point.png" alt="">
       <img
-          :class="{ 'opacity-100' : fourth === true }" class="w-8 h-8 absolute top-[39%] right-[30%] transition-all opacity-0"
+          :class="{ 'opacity-100' : fourth === true }"
+          class="w-8 h-8 absolute top-[79%] right-[30%] transition-all opacity-0"
           src="@/assets/img/locations/point.png" alt="">
       <img
-          :class="{ 'opacity-100' : fifth === true }" class="w-8 h-8 absolute top-[46%] right-[28%] transition-all opacity-0"
+          :class="{ 'opacity-100' : fifth === true }"
+          class="w-8 h-8 absolute top-[86%] right-[28%] transition-all opacity-0"
           src="@/assets/img/locations/point.png" alt="">
     </div>
   </div>

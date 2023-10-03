@@ -1,12 +1,18 @@
 <template>
   <div>
-    <Carousel :autoplay="10000">
-      <Slide v-for="slide in slides" :key="slide">
-        <div class="carousel__item">
-          <component :is="slide.component"/>
-        </div>
-      </Slide>
-    </Carousel>
+<!--    <Carousel :itemsToScroll="1" :wrapAround="true" :autoplay="10000">-->
+<!--      <Slide v-for="slide in slides" :key="slide">-->
+<!--        <div class="carousel__item">-->
+<!--          <component :is="slide.component"/>-->
+<!--        </div>-->
+<!--      </Slide>-->
+<!--    </Carousel>-->
+    <HeroBlock/>
+    <IndSectors />
+    <Locations />
+    <OurAccomplishments />
+    <Insights />
+    <Partners />
   </div>
 </template>
 

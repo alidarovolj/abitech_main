@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen py-24 flex items-center justify-center relative w-full">
+  <div class="h-full lg:h-screen py-24 flex items-center justify-center relative w-full">
     <img alt="" class="absolute w-full h-full top-0 left-0 -z-10" src="@/assets/img/bg.png">
     <div class="container mx-auto px-4 lg:px-0">
       <div>
@@ -7,7 +7,7 @@
              class="flex" @mouseleave="activeBlock = null"
              @mouseover="activeBlock = index">
           <div :class="[{'flex-row-reverse': index === 1}, {'!opacity-100': activeBlock === index}]"
-               class="flex items-center text-white pl-12 p-8 relative bg-mainColor opacity-90 transition-all">
+               class="block lg:flex items-center text-white pl-6 lg:pl-12 p-4 lg:p-8 relative bg-mainColor opacity-90 transition-all">
             <img :src="item.bg" alt="" class="absolute w-full h-full top-0 left-0 -z-10">
             <img :class="{'ml-7 !mr-0': index === 1}" :src="item.img" alt="" class="mr-7">
             <div>
@@ -15,8 +15,8 @@
               <p class="text-base">{{ item.description }}</p>
             </div>
           </div>
-          <div class="bg-secondaryColor p-7 flex items-center">
-            <img alt="" src="@/assets/img/ourAccomplishments/chevronRight.svg">
+          <div class="bg-secondaryColor p-4 lg:p-7 flex items-center">
+            <img class="w-4 min-w-[16px]" alt="" src="@/assets/img/ourAccomplishments/chevronRight.svg">
           </div>
         </div>
       </div>
