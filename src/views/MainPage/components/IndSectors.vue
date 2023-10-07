@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen py-24 flex items-center justify-center relative">
+  <div class="h-full lg:h-screen py-24 flex items-center justify-center relative w-full">
     <img class="absolute w-full h-full top-0 left-0 -z-10" src="@/assets/img/bg.png" alt="">
     <div class="container mx-auto px-4 lg:px-0">
-      <div class="flex flex-wrap justify-between">
-        <div class="w-half p-10 text-secondaryColor bg-mainColor rounded-tl-xl mb-2">
+      <div class="block lg:flex flex-wrap justify-between">
+        <div class="w-full lg:w-half p-10 text-secondaryColor bg-mainColor rounded-tl-xl mb-2">
           <div v-if="activeBlock === null">
             <h3 class="mb-2 text-2xl font-bold">Industry sectors</h3>
             <p>250 professionals in 21 countries advise major international and local firms, funds, banks, insurance
@@ -16,11 +16,11 @@
           </div>
         </div>
         <div @mouseover="activeBlock = index" @mouseleave="activeBlock = null"
-             class="w-half relative mb-2 cursor-pointer grayscale transition-all"
+             class="w-full lg:w-half relative mb-2 cursor-pointer grayscale transition-all"
              :class="{ '!grayscale-0' : activeBlock === index }"
              v-for="(item, index) of blocks" :key="index">
           <img class="w-full" :src="item.img" alt="">
-          <p v-if="activeBlock === index" class="absolute left-8 bottom-7 z-20 text-2xl text-white font-bold">{{ item.title }}</p>
+          <p v-if="activeBlock === index" class="absolute left-8 bottom-7 z-20 text-lg lg:text-2xl text-white font-bold">{{ item.title }}</p>
           <div style="background: linear-gradient(0deg, #1E3D37 0%, rgba(30, 61, 55, 0.00) 94.27%);" class="absolute bottom-0 w-full h-36 left-0"></div>
         </div>
       </div>

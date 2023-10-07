@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="hidden lg:flex">
     <div class="w-max fixed z-50 top-1/2 -translate-y-1/2 left-5 text-element">
       <router-link v-for="(link, index) of links" :key="index" class="block text-base w-max cursor-pointer"
                    :class="[{ 'mb-[30px]' : links.length !== index + 1 }, { 'text-mainColor font-semibold' : active === index }]"

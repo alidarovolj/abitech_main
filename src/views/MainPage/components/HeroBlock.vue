@@ -9,14 +9,14 @@
     />
     <InfiniteScroll />
     <div
-      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-40 w-full"
+      class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-40 w-full px-4 lg:px-0"
     >
       <div class="w-full flex items-center justify-center">
-        <div class="flex items-start justify-center transition-all w-max">
+        <div class="block lg:flex items-start justify-center transition-all w-full lg:w-max">
           <img src="@/assets/img/logo.png" alt="" />
-          <div :class="{ 'ml-7': isExpanded === true }">
+          <div class="w-full lg:w-max" :class="{ 'ml-0 lg:ml-7': isExpanded === true }">
             <h1
-              class="text-4xl font-bold text-white w-0 overflow-hidden first_text"
+              class="text-lg lg:text-4xl font-bold text-white w-0 overflow-hidden first_text"
               :class="{ expanded: isExpanded === true }"
             >
               EFFECTIVE MANAGEMENT OF <br />
