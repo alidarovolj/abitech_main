@@ -4,6 +4,11 @@ import img1AccBg from '@/assets/img/ourAccomplishments/first-bg.png';
 import img1Acc from '@/assets/img/ourAccomplishments/first.png'
 import img3 from "@/assets/img/indSectors/3.png";
 import img2 from "@/assets/img/indSectors/2.png";
+import img4 from "@/assets/img/products/fourth.png";
+import imgProd1 from '@/assets/img/products/first.png'
+import imgProd2 from '@/assets/img/products/second.png'
+import imgProd3 from '@/assets/img/products/third.png'
+import imgProd4 from '@/assets/img/products/fourth.png'
 
 export default createStore({
     modules: {}, actions: {}, mutations: {}, state: {
@@ -24,7 +29,7 @@ export default createStore({
             description: "ABiTech is ranked 4th in the Top 10 Innovative Companies Ranking of Kazakhstan 2018… by the National Agency for\nTechnological Development, together with the MOST Business Incubator, with the support of the Ministry for Investment and Development of the Republic of Kazakhstan, the “Ranking of Innovative Companies of Kazakhstan 2018” was held. Any Kazakh company could take part. The TOP 10 Winning Companies were selected based on the results of an assessment by independent experts and a technological assessment by NATR JSC. The success of ABiTech in introducing innovations in various industries was awarded with a Diploma and was awarded the 4th place in the rating of innovative companies in the Republic of Kazakhstan.",
             acc_pdf: null,
             certificate: null
-        },{
+        }, {
             id: 2,
             title: "Asia-Pacific, Asialaw Profiles 2021",
             img: img1Acc,
@@ -33,7 +38,7 @@ export default createStore({
             description: "ABiTech is ranked 4th in the Top 10 Innovative Companies Ranking of Kazakhstan 2018… by the National Agency for\nTechnological Development, together with the MOST Business Incubator, with the support of the Ministry for Investment and Development of the Republic of Kazakhstan, the “Ranking of Innovative Companies of Kazakhstan 2018” was held. Any Kazakh company could take part. The TOP 10 Winning Companies were selected based on the results of an assessment by independent experts and a technological assessment by NATR JSC. The success of ABiTech in introducing innovations in various industries was awarded with a Diploma and was awarded the 4th place in the rating of innovative companies in the Republic of Kazakhstan.",
             acc_pdf: null,
             certificate: null
-        },{
+        }, {
             id: 3,
             title: "Asia-Pacific, Asialaw Profiles 2021",
             img: img1Acc,
@@ -159,11 +164,34 @@ export default createStore({
                     }
                 ]
             },
+        ],
+        products: [
+            {
+                title: "АСКОУ – ИНВЕНТАРИЗАЦИЯ",
+                description: "Обеспечивает инвентаризацию товарно-материальных ценностей, основных средств и прочих активов на Предприятии. Разработка данного решения была вызвана необходимостью учёта и контроля за объектами как в административном офисе, производственном предприятии, так и в любой иной организации, где необходимо вести учет активов. «АСКОУ – Инвентаризация» дает полную картину того, какими активами и в каком количестве располагает организация и её подразделения, хранит историю «жизни» объектов от момента поступления до списания и физического выбытия из организации. Функциональность системы помимо стандартной инвентаризации может включать в себя элементы контроля физического перемещения учитываемых активов с возможностью задать ограничение на их вынос за пределы назначенной территории (из кабинета, из офиса организации), осуществляет учет вноса-выноса контролируемых активов. Также в системе «АСКОУ – Инвентаризация» есть возможность привязки активов к локациям.",
+                img: imgProd1,
+            },
+            {
+                title: "АСКОУ – СКЛАД",
+                description: "«АСКОУ – Склад» – учет, инвентаризация и отслеживание местоположения объектов ТМЦ на складе. Любая крупная производственная компания имеет много складов, на которых хранится несколько тысяч, а то и десятков тысяч номенклатурных позиций, по каждой из которых может быть много и очень много объектов товарно-материальных ценностей, ТМЦ. Обычно инвентаризация такого огромного количества ТМЦ занимает продолжительное время, исчисляемое месяцами. И в большинстве случаях проводится вручную. Чтобы сократить время инвентаризации практически до одного дня, а сам процесс сделать прозрачным и автоматизированным, был создан комплекс «АСКОУ – Склад». «АСКОУ – Склад» позволяет инвентаризировать, оприходовать и выдавать ТМЦ со Склада на базе RFID технологий, с возможностью интеграции с действующими учетно-финансовыми системами предприятия.",
+                img: imgProd2,
+            },
+            {
+                title: "АСКОУ – ОХРАНА ТРУДА И ТЕХНИКА БЕЗОПАСНОСТИ",
+                description: "Модуль предназначен для регистрации проведения инструктажей. Модуль предназначен для создания, ведения и регистрации проведения различных инструктажей по ОТТБ (Охраны Труда и Техники Безопасности). При этом на мобильном устройстве регистрируются подпись инструктора и инструктируемого, а также фотография инструктируемого в момент проведения инструктажа. Данная функциональность может, также, использоваться для медицинского освидетельствования и регистрации сотрудника на рабочем месте.",
+                img: imgProd3,
+            },
+            {
+                title: "АСКОУ – ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ И РЕМОНТ",
+                description: "Автоматизированное планирование технического обслуживания оборудования инфраструктуры, контроля исполнения и оперативный учет работ. Крупные и территориально распределенные компании имеют много оборудования и инфраструктурных объектов, которое надо обслуживать согласно техническим регламентам. Правильное и подконтрольное обслуживание обеспечивает гарантию правильной работы оборудования. В особенности это важно и критично, если оборудование должно обеспечить безопасность движения поездов, самолетов и др. Система позволяет контролировать выполнение запланированных работ вне зависимости от отраслевой специфики предприятия и в режиме реального времени. Сбор данных по отклонениям в работе позволяет анализировать и планировать дальнейшие специальные работы по сокращению сбоев и отказов оборудования.",
+                img: imgProd4,
+            },
         ]
     }, getters: {
         getNews: (state) => state.news,
         getAccomplishments: (state) => state.accomplishments,
         getIndSectors: (state) => state.indSectors,
-        getLocations: (state) => state.locations
+        getLocations: (state) => state.locations,
+        getProducts: (state) => state.products
     },
 });

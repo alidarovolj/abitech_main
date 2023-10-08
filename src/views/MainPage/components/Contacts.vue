@@ -1,5 +1,5 @@
 <template>
-  <div class="py-24 bg-[#F6F6F6]">
+  <div class="py-24">
     <iframe
         frameborder="0"
         height="388"

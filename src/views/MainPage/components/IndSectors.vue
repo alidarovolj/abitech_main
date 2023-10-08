@@ -19,7 +19,7 @@
             to="/"
             @mouseover="activeBlock = index"
             @mouseleave="activeBlock = null"
-            class="w-full lg:w-half relative mb-2 cursor-pointer grayscale transition-all"
+            class="w-full lg:w-half relative block !mb-2 cursor-pointer grayscale transition-all"
             :class="[{ '!grayscale-0' : activeBlock === index }, { 'rounded-tr-xl' : index === 0 }, { 'rounded-bl-xl' : index === 1 }, { 'rounded-br-xl' : index === 2 }]"
             v-for="(item, index) of getIndSectors" :key="index">
           <img class="w-full" :class="[{ 'rounded-tr-xl' : index === 0 }]" :src="item.img" alt="">

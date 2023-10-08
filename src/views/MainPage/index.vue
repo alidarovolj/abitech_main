@@ -1,23 +1,19 @@
 <template>
   <div>
-<!--    <Carousel :itemsToScroll="1" :wrapAround="true" :autoplay="10000">-->
-<!--      <Slide v-for="slide in slides" :key="slide">-->
-<!--        <div class="carousel__item">-->
-<!--          <component :is="slide.component"/>-->
-<!--        </div>-->
-<!--      </Slide>-->
-<!--    </Carousel>-->
+    <!--    <Carousel :itemsToScroll="1" :wrapAround="true" :autoplay="10000">-->
+    <!--      <Slide v-for="slide in slides" :key="slide">-->
+    <!--        <div class="carousel__item">-->
+    <!--          <component :is="slide.component"/>-->
+    <!--        </div>-->
+    <!--      </Slide>-->
+    <!--    </Carousel>-->
     <HeroBlock/>
     <IndSectors/>
+    <Locations/>
     <OurAccomplishments/>
     <ProductsBlock/>
+    <Partners/>
     <Insights/>
-    <IndSectors />
-    <Locations />
-    <OurAccomplishments />
-    <ProductsBlock/>
-    <Insights />
-    <Partners />
     <ContactsBlock/>
     <FormBlock/>
     <FooterBlock/>
@@ -25,10 +21,10 @@
 </template>
 
 <script>
-import {Carousel, Navigation, Pagination, Slide} from 'vue3-carousel'
+import {Carousel, Navigation, Pagination, Slide} from 'vue3-carousel';
 import {useMeta} from "vue-meta";
 
-import 'vue3-carousel/dist/carousel.css'
+import 'vue3-carousel/dist/carousel.css';
 import IndSectors from "@/views/MainPage/components/IndSectors.vue";
 import OurAccomplishments from "@/views/MainPage/components/OurAccomplishments.vue";
 import Locations from "@/views/MainPage/components/Locations.vue";
@@ -43,11 +39,21 @@ import ContactsBlock from "@/views/MainPage/components/Contacts.vue";
 export default {
   name: "MainPage",
   components: {
-    ContactsBlock, FormBlock, FooterBlock, Insights, HeroBlock, OurAccomplishments, IndSectors, Locations, Partners, ProductsBlock
+    ContactsBlock,
+    FormBlock,
+    FooterBlock,
+    Insights,
+    HeroBlock,
+    OurAccomplishments,
+    IndSectors,
+    Locations,
+    Partners,
+    ProductsBlock,
     Carousel,
     Slide,
     Pagination,
-    Navigation,},
+    Navigation,
+  },
   setup() {
     useMeta({title: "Главная"});
   },
@@ -69,6 +75,7 @@ export default {
 .carousel {
   text-align: left;
 }
+
 .carousel__item {
   min-height: 200px;
   width: 100%;

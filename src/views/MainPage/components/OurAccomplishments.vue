@@ -11,8 +11,8 @@
             <img :src="item.img_bg" alt="" class="absolute w-full h-full top-0 left-0 -z-10">
             <img :class="{'ml-7 !mr-0': index === 1}" :src="item.img" alt="" class="mr-7">
             <div>
-              <h3 class="text-2xl font-bold mb-5">{{ item.title }}</h3>
-              <p class="text-base">{{ item.short_desc }}</p>
+              <h3 class="text-xl lg:text-2xl font-bold mb-5">{{ item.title }}</h3>
+              <p class="text-sm lg:text-base">{{ item.short_desc }}</p>
             </div>
           </div>
           <div class="bg-secondaryColor p-4 lg:p-7 flex items-center">
