@@ -8,9 +8,14 @@
 <!--      </Slide>-->
 <!--    </Carousel>-->
     <HeroBlock/>
+    <IndSectors/>
+    <OurAccomplishments/>
+    <ProductsBlock/>
+    <Insights/>
     <IndSectors />
     <Locations />
     <OurAccomplishments />
+    <ProductsBlock/>
     <Insights />
     <Partners />
     <ContactsBlock/>
@@ -27,6 +32,7 @@ import OurAccomplishments from "@/views/MainPage/components/OurAccomplishments.v
 import Locations from "@/views/MainPage/components/Locations.vue";
 import HeroBlock from "@/views/MainPage/components/HeroBlock.vue";
 import Insights from "@/views/MainPage/components/Insights.vue";
+import ProductsBlock from "@/views/MainPage/components/Products.vue";
 import Partners from "@/views/MainPage/components/Partners.vue";
 import FooterBlock from "@/components/Footer.vue";
 import FormBlock from "@/views/MainPage/components/Form.vue";
@@ -35,7 +41,7 @@ import ContactsBlock from "@/views/MainPage/components/Contacts.vue";
 export default {
   name: "MainPage",
   components: {
-    ContactsBlock, FormBlock, FooterBlock, Insights, HeroBlock, OurAccomplishments, IndSectors, Locations, Partners,
+    ContactsBlock, FormBlock, FooterBlock, Insights, HeroBlock, OurAccomplishments, IndSectors, Locations, Partners, ProductsBlock
     Carousel,
     Slide,
     Pagination,
