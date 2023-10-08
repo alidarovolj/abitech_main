@@ -3,7 +3,7 @@
     <img alt="" class="absolute w-full h-full top-0 left-0 -z-10" src="@/assets/img/bg.png">
     <div class="container mx-auto px-4 lg:px-0">
       <div>
-        <div v-for="(item, index) of getAccomplishments" :key="index" :class="{'mb-2': getAccomplishments.length !== index + 1}"
+        <router-link to="/" v-for="(item, index) of getAccomplishments" :key="index" :class="{'mb-2': getAccomplishments.length !== index + 1}"
              class="flex" @mouseleave="activeBlock = null"
              @mouseover="activeBlock = index">
           <div :class="[{'flex-row-reverse': index === 1}, {'!opacity-100': activeBlock === index}]"
@@ -15,10 +15,10 @@
               <p class="text-sm lg:text-base">{{ item.short_desc }}</p>
             </div>
           </div>
-          <div class="bg-secondaryColor p-4 lg:p-7 flex items-center">
+          <div class="bg-secondaryColor p-4 lg:p-7 flex items-center w-14 text-center justify-center" :class="{ 'w-16' : activeBlock === index }">
             <img class="w-4 min-w-[16px]" alt="" src="@/assets/img/ourAccomplishments/chevronRight.svg">
           </div>
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
