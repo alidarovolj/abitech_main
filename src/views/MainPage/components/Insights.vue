@@ -7,37 +7,28 @@
       <div class="pt-8 pr-0 lg:pr-8 pb-6 block lg:flex items-center">
         <div v-if="activeBlock === null" class="w-full lg:w-[680px] mr-0 lg:mr-[52px]">
           <h2 class="text-3xl font-semibold text-secondaryColor mb-14">Insights</h2>
-          <div class="relative cursor-pointer z-30 mb-10 lg:mb-0">
-            <img alt="" class="rounded-md" src="@/assets/img/insights/kazMunaiGaz.png">
-            <div class="relative lg:absolute bg-white max-w-[680px] h-1/2 bottom-0 opacity-70 rounded-t-md py-4 px-6">
-              <h3 class="text-2xl font-bold">ПРОЕКТ «АСКОУ – ИНВЕНТАРИЗАЦИЯ» В АО «НК «КАЗМУНАЙГАЗ»</h3>
-              <p class="text-base">Национальной компанией «КазМунайГаз» в рамках цифровизации в 2020 году была внедрена
-                система автоматизированного учета основных средств «АСКОУ – Инвентаризация».
-              </p>
-            </div>
-          </div>
         </div>
         <div v-else class="w-full lg:w-[680px] mr-[52px] cursor-pointer">
           <h2 class="text-3xl font-semibold text-secondaryColor mb-14">Insights</h2>
-          <div class="relative">
-            <img alt="" class="rounded-t-md rounded-b-none lg:rounded-md" :src="blocks[activeBlock].img">
+          <router-link to="/" class="relative z-10">
+            <img alt="" class="rounded-t-md rounded-b-none lg:rounded-md" :src="getNews[activeBlock].img">
             <div class="relative lg:absolute bg-white max-w-[680px] h-1/2 bottom-0 opacity-70 rounded-t-none lg:rounded-t-md rounded-b-md lg:rounded-b-none py-4 px-6">
-              <h3 class="text-2xl font-bold">{{ blocks[activeBlock].title }}</h3>
-              <p class="text-base">{{ blocks[activeBlock].description }}</p>
+              <h3 class="text-2xl font-bold">{{ getNews[activeBlock].title }}</h3>
+              <p class="text-base">{{ getNews[activeBlock].short_desc }}</p>
             </div>
-          </div>
+          </router-link>
         </div>
         <div class="w-full lg:w-[419px]">
-          <div v-for="(block, index) of blocks" :key="index" :class="{'!mb-0': blocks.length === index + 1}"
+          <router-link to="/" v-for="(block, index) of getNews" :key="index" :class="{'!mb-0': getNews.length === index + 1}"
                class="relative block lg:flex z-30 items-center mb-7 bg-white rounded-lg cursor-pointer"
-               @mouseleave="activeBlock = null"
+               @mouseleave="activeBlock = 0"
                @mouseover="activeBlock = index">
             <div class="relative h-[168px] w-full lg:w-[243px]">
               <div class="absolute left-0 top-0 w-full h-full" style="background: linear-gradient(270deg, #fff -70%, rgba(26, 58, 46, 0.00) 100%);"></div>
               <img :src="block.img" alt="" class="rounded-l-lg w-full lg:w-[243px] min-w-full lg:min-w-[243px] h-full object-cover">
             </div>
             <p class="text-base font-bold px-6">{{ block.title }}</p>
-          </div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -45,33 +36,17 @@
 </template>
 
 <script>
-import img2 from '@/assets/img/insights/kazMunaiGaz.png'
-import img3 from '@/assets/img/insights/kazMunaiGaz.png'
-import img4 from '@/assets/img/insights/kazMunaiGaz.png'
+import {mapGetters} from "vuex";
 
 export default {
   name: "Insights",
   components: {},
+  computed: {
+    ...mapGetters(['getNews'])
+  },
   data() {
     return {
-      activeBlock: null,
-      blocks: [
-        {
-          title: "МОДУЛЬ «АСКОУ – ЭКОЛОГИЧЕСКИЙ МОНИТОРИНГ»",
-          description: "The team of GRATA International was ranked among the best firms in Kazakhstan and placed in the highest tiers - \"outstanding\" and \"recommended\" in General Business Law, Energy, Oil&Gas, Construction",
-          img: img2
-        },
-        {
-          title: "ABITECH – УЧАСТНИК МЕЖДУНАРОДНОГО ЦИФРОВОГО ФОРУМА DIGITAL ALMATY 2023",
-          description: "In the rankings, released by Chambers & Partners, GRATA International has confirmed its standing as one of the leading firms in Azerbaijan, Kazakhstan, Kyrgyzstan, Tajikistan and Uzbekistan received ratings across major practice areas.",
-          img: img3
-        },
-        {
-          title: "ABiTech и Tech Garden в Берлине",
-          description: "Securing rankings in IFLR1000, a key international legal directory for financial and corporate law, GRATA International confirms its position as one of the leading law firms in the region.",
-          img: img4
-        },
-      ]
+      activeBlock: 0,
     };
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <div class="relative w-full h-full">
     <div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-4/5">
-      <div class="relative h-full">
+      <div class="relative h-full flex items-center">
         <div class="scroll-parent">
           <div class="scroll-container">
             <div class="scroll-element primary">
@@ -18,13 +18,29 @@
                   alt=""
               />
             </div>
-            <div class="scroll-element third">
+            <!-- Добавьте отступ в 30px для каждого элемента -->
+            <div class="scroll-element tertiary">
               <img
                   class="w-max h-1/2"
                   src="@/assets/img/partners/3.png"
                   alt=""
               />
             </div>
+            <div class="scroll-element quaternary">
+              <img
+                  class="w-max h-1/2"
+                  src="@/assets/img/partners/1.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element quinary">
+              <img
+                  class="w-max h-1/2"
+                  src="@/assets/img/partners/2.png"
+                  alt=""
+              />
+            </div>
+            <!-- Дублируйте элементы с отступом в 30px -->
             <div class="scroll-element primary">
               <img
                   class="w-max h-1/2"
@@ -39,10 +55,24 @@
                   alt=""
               />
             </div>
-            <div class="scroll-element third">
+            <div class="scroll-element tertiary">
               <img
                   class="w-max h-1/2"
                   src="@/assets/img/partners/3.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element quaternary">
+              <img
+                  class="w-max h-1/2"
+                  src="@/assets/img/partners/1.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element quinary">
+              <img
+                  class="w-max h-1/2"
+                  src="@/assets/img/partners/2.png"
                   alt=""
               />
             </div>
@@ -60,31 +90,26 @@ export default {
 </script>
 
 <style scoped>
-.scroll-parent {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
 .scroll-container {
-  width: 100%; /* Увеличьте это значение, чтобы вместить все элементы */
-  height: 100%;
-  animation: scroll 5s linear infinite; /* 4 элемента * 3с = 12s */
+  width: 200%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: scroll 30s linear infinite; /* Увеличьте продолжительность анимации */
 }
 
 .scroll-element {
-  width: max-content;
-  margin-right: 70px;
-  height: 100%;
-  float: left;
+  display: inline-block;
+  width: calc(10% - 30px);
+  margin-right: 30px;
 }
 
 @keyframes scroll {
-  from {
+  0% {
     transform: translateX(0%);
   }
-  to {
+  100% {
     transform: translateX(-100%);
   }
 }

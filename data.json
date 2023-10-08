@@ -1,3 +1,20 @@
 {
-  "news": []
+  "news": [{
+    "id": 1,
+    "title": "ASKOU – INVENTORY PROJECT IN JSC NC KAZMUNAYGAS",
+    "img": required: "",
+    "short_desc": "Национальной компанией «КазМунайГаз» в рамках цифровизации в 2020 году была внедрена система автоматизированного учета основных средств «АСКОУ – Инвентаризация».",
+    "description": "The national company \"KazMunayGas\" within the framework of digitalization in 2020 introduced the system of automated accounting of fixed assets \"ASKOU – Inventory\". The work was done \"turnkey\", including the supply of equipment, user training and free maintenance in the first year of use. All fixed assets on the balance sheet of JSC NC KazMunayGas were digitized with RFID tags for various purposes, an external inspection was carried out and the current state of the OS was photographed, all data was stored in the system. The organizational structure of the enterprise was also created in the system, employees and users of fixed assets were introduced, user rights were delimited according to the authority matrix. The ASKOU – Inventory system will reduce the time of inventory several times, while involving a minimum of employees, minimizes the impact of the human factor on the results of inventory, automates control over all financially responsible persons / OS users. For ease of use, integration with the Enterprise ERP system - SAP and with Active Directory is implemented.",
+    "pdf": null
+  }],
+  "accomplishments": [
+    {
+      "id": 1,
+      "title": "Asia-Pacific, Asialaw Profiles 2021",
+      "short_desc": "The team of GRATA International was ranked among the best firms in Kazakhstan and placed in the highest tiers - outstanding and recommended in General Business Law, Energy, Oil&Gas, Construction",
+      "description": "ABiTech is ranked 4th in the Top 10 Innovative Companies Ranking of Kazakhstan 2018… by the National Agency for\nTechnological Development, together with the MOST Business Incubator, with the support of the Ministry for Investment and Development of the Republic of Kazakhstan, the “Ranking of Innovative Companies of Kazakhstan 2018” was held. Any Kazakh company could take part. The TOP 10 Winning Companies were selected based on the results of an assessment by independent experts and a technological assessment by NATR JSC. The success of ABiTech in introducing innovations in various industries was awarded with a Diploma and was awarded the 4th place in the rating of innovative companies in the Republic of Kazakhstan.",
+      "acc_pdf": null,
+      "certificate": null
+    }
+  ]
 }

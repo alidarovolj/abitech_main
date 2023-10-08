@@ -20,6 +20,8 @@
 
 <script>
 import {Carousel, Navigation, Pagination, Slide} from 'vue3-carousel'
+import {useMeta} from "vue-meta";
+
 import 'vue3-carousel/dist/carousel.css'
 import IndSectors from "@/views/MainPage/components/IndSectors.vue";
 import OurAccomplishments from "@/views/MainPage/components/OurAccomplishments.vue";
@@ -37,6 +39,9 @@ export default {
     Slide,
     Pagination,
     Navigation,},
+  setup() {
+    useMeta({title: "Главная"});
+  },
   data() {
     return {
       slides: [

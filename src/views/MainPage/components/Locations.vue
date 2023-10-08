@@ -10,18 +10,33 @@
     <div class="block lg:flex relative">
       <div class="relative mx-auto lg:mx-0 lg:absolute left-0 top-0 p-3 bg-white rounded-2xl w-72 z-30 mb-10 lg:mb-0">
         <p class="rounded-t-2xl bg-mainColor py-3 font-bold text-base text-center text-white">Locations</p>
-        <div :class="{ 'expanded' : isExpanded }" class="text-mainColor mt-3 px-3 text-base overflow-y-hidden first_state">
+        <div :class="{ 'expanded' : isExpanded }"
+             class="text-mainColor mt-3 px-3 text-base overflow-y-hidden first_state">
           <p class="border-y border-mainColor py-1 font-bold">
             Kazakhstan
           </p>
           <div class="pt-2 pb-5 border-b border-mainColor">
             <div class="flex items-center mb-1">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
-              <p>Almaty</p>
+              <router-link
+                  to="/"
+                  class="cursor-pointer"
+                  :class="{ 'font-semibold' : activeLocation === 0 }"
+                  @mouseover="activeLocation = 0"
+                  @mouseleave="activeLocation = null">
+                Almaty
+              </router-link>
             </div>
             <div class="flex items-center">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
-              <p>Astana</p>
+              <router-link
+                  to="/"
+                  class="cursor-pointer"
+                  :class="{ 'font-semibold' : activeLocation === 1 }"
+                  @mouseover="activeLocation = 1"
+                  @mouseleave="activeLocation = null">
+                Astana
+              </router-link>
             </div>
           </div>
           <p class="border-b border-mainColor py-1 font-bold">
@@ -30,7 +45,14 @@
           <div class="pt-2 pb-5 border-b border-mainColor">
             <div class="flex items-center mb-1">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
-              <p>Tashkent</p>
+              <router-link
+                  to="/"
+                  class="cursor-pointer"
+                  :class="{ 'font-semibold' : activeLocation === 2 }"
+                  @mouseover="activeLocation = 2"
+                  @mouseleave="activeLocation = null">
+                Tashkent
+              </router-link>
             </div>
           </div>
           <p class="border-b border-mainColor py-1 font-bold">
@@ -39,46 +61,85 @@
           <div class="pt-2">
             <div class="flex items-center mb-1">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
-              <p>Moskow</p>
+              <router-link
+                  to="/"
+                  class="cursor-pointer"
+                  :class="{ 'font-semibold' : activeLocation === 3 }"
+                  @mouseover="activeLocation = 3"
+                  @mouseleave="activeLocation = null">
+                Moskow
+              </router-link>
             </div>
             <div class="flex items-center mb-1">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
-              <p>Saint - Petersburg</p>
+              <router-link
+                  to="/"
+                  class="cursor-pointer"
+                  :class="{ 'font-semibold' : activeLocation === 4 }"
+                  @mouseover="activeLocation = 4"
+                  @mouseleave="activeLocation = null">
+                Saint - Petersburg
+              </router-link>
             </div>
           </div>
         </div>
       </div>
       <img class="" src="@/assets/img/locations/map.png" alt="">
-      <img
-          :class="{ 'opacity-100' : first === true }"
-          class="w-8 h-8 absolute top-[76%] right-[36%] transition-all opacity-0" src="@/assets/img/locations/point.png" alt="">
-      <img
-          :class="{ 'opacity-100' : second === true }"
-          class="w-8 h-8 absolute top-[74%] right-[20%] transition-all opacity-0"
-          src="@/assets/img/locations/point.png" alt="">
-      <img
-          :class="{ 'opacity-100' : third === true }"
-          class="w-8 h-8 absolute top-[78%] right-[25%] transition-all opacity-0"
-          src="@/assets/img/locations/point.png" alt="">
-      <img
-          :class="{ 'opacity-100' : fourth === true }"
-          class="w-8 h-8 absolute top-[79%] right-[30%] transition-all opacity-0"
-          src="@/assets/img/locations/point.png" alt="">
-      <img
-          :class="{ 'opacity-100' : fifth === true }"
-          class="w-8 h-8 absolute top-[86%] right-[28%] transition-all opacity-0"
-          src="@/assets/img/locations/point.png" alt="">
+      <img src="" alt="">
+      <router-link to="/">
+        <img
+            @mouseover="activeLocation = 0"
+            @mouseleave="activeLocation = null"
+            :class="[{ 'opacity-100' : first === true && getLocations[0] }, { 'w-9 h-9' : activeLocation === 0 }]"
+            class="w-8 h-8 absolute top-[76%] right-[36%] lg:top-[36%] lg:right-[36%] transition-all opacity-0 z-30"
+            src="@/assets/img/locations/point.png" alt="">
+      </router-link>
+      <router-link to="/">
+        <img
+            @mouseover="activeLocation = 1"
+            @mouseleave="activeLocation = null"
+            :class="[{ 'opacity-100' : second === true && getLocations[1] }, { 'w-9 h-9' : activeLocation === 1 }]"
+            class="w-8 h-8 absolute top-[74%] right-[20%] lg:top-[34%] lg:right-[20%] transition-all opacity-0 z-30"
+            src="@/assets/img/locations/point.png" alt="">
+      </router-link>
+      <router-link to="/">
+        <img
+            @mouseover="activeLocation = 2"
+            @mouseleave="activeLocation = null"
+            :class="[{ 'opacity-100' : third === true && getLocations[2] }, { 'w-9 h-9' : activeLocation === 2 }]"
+            class="w-8 h-8 absolute top-[78%] right-[25%] lg:top-[38%] lg:right-[25%] transition-all opacity-0 z-30"
+            src="@/assets/img/locations/point.png" alt="">
+      </router-link>
+      <router-link to="/">
+        <img
+            @mouseover="activeLocation = 3"
+            @mouseleave="activeLocation = null"
+            :class="[{ 'opacity-100' : fourth === true && getLocations[3] }, { 'w-9 h-9' : activeLocation === 3 }]"
+            class="w-8 h-8 absolute top-[79%] right-[30%] lg:top-[39%] lg:right-[30%] transition-all opacity-0 z-30"
+            src="@/assets/img/locations/point.png" alt="">
+      </router-link>
+      <router-link to="/">
+        <img
+            @mouseover="activeLocation = 4"
+            @mouseleave="activeLocation = null"
+            :class="[{ 'opacity-100' : fifth === true && getLocations[4] }, { 'w-9 h-9' : activeLocation === 4 }]"
+            class="w-8 h-8 absolute top-[86%] right-[28%] lg:top-[46%] lg:right-[28%] transition-all opacity-0 z-30"
+            src="@/assets/img/locations/point.png" alt="">
+      </router-link>
     </div>
   </div>
 </template>
 
 <script>
 
+import {mapGetters} from "vuex";
+
 export default {
   name: "HeroBlock",
   components: {},
   data() {
     return {
+      activeLocation: null,
       first: false,
       second: false,
       third: false,
@@ -86,6 +147,9 @@ export default {
       fifth: false,
       isExpanded: false,
     };
+  },
+  computed: {
+    ...mapGetters(['getLocations'])
   },
   mounted() {
     setTimeout(() => {
@@ -111,15 +175,16 @@ export default {
 </script>
 
 <style scoped>
-  .first_state {
-    height: 0;
-    transition: max-height 0.15s ease-out;
-    overflow: hidden;
-    max-height: 0;
-  }
-  .expanded {
-    height: 300px;
-    max-height: 300px;
-    transition: max-height 0.25s ease-in;
-  }
+.first_state {
+  height: 0;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.expanded {
+  height: 300px;
+  max-height: 300px;
+  transition: max-height 0.25s ease-in;
+}
 </style>
