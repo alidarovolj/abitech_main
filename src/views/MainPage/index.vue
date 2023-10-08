@@ -13,6 +13,7 @@
     <OurAccomplishments />
     <Insights />
     <Partners />
+    <ContactsBlock/>
     <FormBlock/>
     <FooterBlock/>
   </div>
@@ -29,10 +30,12 @@ import Insights from "@/views/MainPage/components/Insights.vue";
 import Partners from "@/views/MainPage/components/Partners.vue";
 import FooterBlock from "@/components/Footer.vue";
 import FormBlock from "@/views/MainPage/components/Form.vue";
+import ContactsBlock from "@/views/MainPage/components/Contacts.vue";
 
 export default {
   name: "MainPage",
-  components: {FormBlock, FooterBlock, Insights, HeroBlock, OurAccomplishments, IndSectors, Locations, Partners,
+  components: {
+    ContactsBlock, FormBlock, FooterBlock, Insights, HeroBlock, OurAccomplishments, IndSectors, Locations, Partners,
     Carousel,
     Slide,
     Pagination,
