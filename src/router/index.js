@@ -1,9 +1,12 @@
 import {createRouter, createWebHistory} from "vue-router";
 import MainPage from "@/views/MainPage/index.vue";
+import SectorPage from "@/views/Sector/index.vue";
 
 const router = createRouter({
     history: createWebHistory(), routes: [{
         path: "/", name: "MainPage", component: MainPage
+    },{
+        path: "/sectors/:id", name: "SectorPage", component: SectorPage
     }],
 });
 

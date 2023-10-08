@@ -1,5 +1,5 @@
 <template>
-  <div class="py-24 flex items-center justify-center">
+  <div id="contacts" class="py-24 flex items-center justify-center">
     <div class="container mx-auto px-4 lg:px-0">
       <div class="relative">
         <img alt="" class="" src="@/assets/img/form/bg.png">

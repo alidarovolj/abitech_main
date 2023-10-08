@@ -33,7 +33,7 @@
               </p>
               <div class="flex mt-3 w-0 h-0 second_text"
                    :class="{ expanded_second: isExpandedSecond === true }">
-                <a class="py-3 rounded px-14 bg-secondaryColor text-mainColor text-sm font-bold w-max" href="#">Order a call</a>
+                <a class="py-3 rounded px-14 bg-secondaryColor text-mainColor text-sm font-bold w-max" href="#contacts">Order a call</a>
               </div>
             </div>
           </div>

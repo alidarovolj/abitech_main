@@ -16,7 +16,7 @@
           </div>
         </div>
         <router-link
-            to="/"
+            :to="{ name: 'SectorPage', params: { id: item.id } }"
             @mouseover="activeBlock = index"
             @mouseleave="activeBlock = null"
             class="w-full lg:w-half relative block !mb-2 cursor-pointer grayscale transition-all"

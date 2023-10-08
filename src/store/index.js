@@ -50,67 +50,25 @@ export default createStore({
         }],
         indSectors: [
             {
+                id: 1,
                 title: "Oil & Gas",
                 description: "Our Oil and Gas team has extensive experience delivering complex projects. We will support and guide you through the rapidly changing environment of markets and help you to evaluate risks as well as opportunities. Our lawyers provide full legal support at all stages of the project lifecycle.",
                 img: img1,
-                content: "Our Oil and Gas team has extensive experience delivering complex projects. We have more than 250 highly qualified lawyers, who specialise in various aspects of the law to offer a fully integrated service.\n" +
-                    "We have over 30 years of experience working on oil and gas transactions, providing full legal support throughout the entire value chain.\n" +
-                    "\n" +
-                    "We will support and guide you through the rapidly changing environment of markets and help you to evaluate risks as well as opportunities. Our lawyers provide full legal support at all stages of the project lifecycle, including:\n" +
-                    "\n" +
-                    "Legal support in obtaining subsoil use rights.\n" +
-                    "Advice on subsoil use contracts.\n" +
-                    "M&A in subsoil projects: legal due diligence, drafting purchase agreements, transfer of assets, obtaining waiver in purchasing subsoil objects from state authorities.\n" +
-                    "Legal support in establishing and operation of joint ventures.\n" +
-                    "Environmental audit and litigation.\n" +
-                    "State control and regulation: legal advice and representation.\n" +
-                    "Taxation and tax dispute: audit and litigation.\n" +
-                    "Transfer pricing: export structuring, audit, litigation.\n" +
-                    "Production sharing agreement.\n" +
-                    "Joint venture agreement.\n" +
-                    "Dispute resolution and much more."
+                content: '<p class="mb-5">Our Oil and Gas team has extensive experience delivering complex projects. We have more than 250 highly qualified lawyers, who specialise in various aspects of the law to offer a fully integrated service.<br>We have over 30 years of experience working on oil and gas transactions, providing full legal support throughout the entire value chain.</p> <p class="mb-5">We will support and guide you through the rapidly changing environment of markets and help you to evaluate risks as well as opportunities. Our lawyers provide full legal support at all stages of the project lifecycle, including:</p> <ul class="list-disc pl-10"><li>Legal support in obtaining subsoil use rights.</li><li>Advice on subsoil use contracts.</li><li>M&A in subsoil projects: legal due diligence, drafting purchase agreements, transfer of assets, obtaining waiver in purchasing subsoil objects from state authorities.</li><li>Legal support in establishing and operation of joint ventures.</li><li>Environmental audit and litigation.</li><li>State control and regulation: legal advice and representation.</li><li>Taxation and tax dispute: audit and litigation.</li><li>Transfer pricing: export structuring, audit, litigation.</li><li>Production sharing agreement.</li><li>Joint venture agreement.</li><li>Dispute resolution and much more.</li></ul>"'
             },
             {
+                id: 2,
                 title: "Industry & Trade",
                 description: "Combining the strength of all our industry sectors we have created what we believe is a leading practice for assisting in establishing a strong legal presence and further support in the Industry and Trade business.",
                 img: img3,
-                content: "Our Oil and Gas team has extensive experience delivering complex projects. We have more than 250 highly qualified lawyers, who specialise in various aspects of the law to offer a fully integrated service.\n" +
-                    "We have over 30 years of experience working on oil and gas transactions, providing full legal support throughout the entire value chain.\n" +
-                    "\n" +
-                    "We will support and guide you through the rapidly changing environment of markets and help you to evaluate risks as well as opportunities. Our lawyers provide full legal support at all stages of the project lifecycle, including:\n" +
-                    "\n" +
-                    "Legal support in obtaining subsoil use rights.\n" +
-                    "Advice on subsoil use contracts.\n" +
-                    "M&A in subsoil projects: legal due diligence, drafting purchase agreements, transfer of assets, obtaining waiver in purchasing subsoil objects from state authorities.\n" +
-                    "Legal support in establishing and operation of joint ventures.\n" +
-                    "Environmental audit and litigation.\n" +
-                    "State control and regulation: legal advice and representation.\n" +
-                    "Taxation and tax dispute: audit and litigation.\n" +
-                    "Transfer pricing: export structuring, audit, litigation.\n" +
-                    "Production sharing agreement.\n" +
-                    "Joint venture agreement.\n" +
-                    "Dispute resolution and much more."
+                content: '<p class="mb-5">Our Oil and Gas team has extensive experience delivering complex projects. We have more than 250 highly qualified lawyers, who specialise in various aspects of the law to offer a fully integrated service.<br>We have over 30 years of experience working on oil and gas transactions, providing full legal support throughout the entire value chain.</p> <p class="mb-5">We will support and guide you through the rapidly changing environment of markets and help you to evaluate risks as well as opportunities. Our lawyers provide full legal support at all stages of the project lifecycle, including:</p> <ul class="list-disc pl-10"><li>Legal support in obtaining subsoil use rights.</li><li>Advice on subsoil use contracts.</li><li>M&A in subsoil projects: legal due diligence, drafting purchase agreements, transfer of assets, obtaining waiver in purchasing subsoil objects from state authorities.</li><li>Legal support in establishing and operation of joint ventures.</li><li>Environmental audit and litigation.</li><li>State control and regulation: legal advice and representation.</li><li>Taxation and tax dispute: audit and litigation.</li><li>Transfer pricing: export structuring, audit, litigation.</li><li>Production sharing agreement.</li><li>Joint venture agreement.</li><li>Dispute resolution and much more.</li></ul>"'
             },
             {
+                id: 3,
                 title: "Construction & Infrastructure",
                 description: "The Construction and Infrastructure team of GRATA International offer a full range of legal services to assist and advise our clients in the area of construction а infrastructure, energy, transport and other facilities in Kazakhstan, Central Asia and the CIS. ",
                 img: img2,
-                content: "Our Oil and Gas team has extensive experience delivering complex projects. We have more than 250 highly qualified lawyers, who specialise in various aspects of the law to offer a fully integrated service.\n" +
-                    "We have over 30 years of experience working on oil and gas transactions, providing full legal support throughout the entire value chain.\n" +
-                    "\n" +
-                    "We will support and guide you through the rapidly changing environment of markets and help you to evaluate risks as well as opportunities. Our lawyers provide full legal support at all stages of the project lifecycle, including:\n" +
-                    "\n" +
-                    "Legal support in obtaining subsoil use rights.\n" +
-                    "Advice on subsoil use contracts.\n" +
-                    "M&A in subsoil projects: legal due diligence, drafting purchase agreements, transfer of assets, obtaining waiver in purchasing subsoil objects from state authorities.\n" +
-                    "Legal support in establishing and operation of joint ventures.\n" +
-                    "Environmental audit and litigation.\n" +
-                    "State control and regulation: legal advice and representation.\n" +
-                    "Taxation and tax dispute: audit and litigation.\n" +
-                    "Transfer pricing: export structuring, audit, litigation.\n" +
-                    "Production sharing agreement.\n" +
-                    "Joint venture agreement.\n" +
-                    "Dispute resolution and much more."
+                content: '<p class="mb-5">Our Oil and Gas team has extensive experience delivering complex projects. We have more than 250 highly qualified lawyers, who specialise in various aspects of the law to offer a fully integrated service.<br>We have over 30 years of experience working on oil and gas transactions, providing full legal support throughout the entire value chain.</p> <p class="mb-5">We will support and guide you through the rapidly changing environment of markets and help you to evaluate risks as well as opportunities. Our lawyers provide full legal support at all stages of the project lifecycle, including:</p> <ul class="list-disc pl-10"><li>Legal support in obtaining subsoil use rights.</li><li>Advice on subsoil use contracts.</li><li>M&A in subsoil projects: legal due diligence, drafting purchase agreements, transfer of assets, obtaining waiver in purchasing subsoil objects from state authorities.</li><li>Legal support in establishing and operation of joint ventures.</li><li>Environmental audit and litigation.</li><li>State control and regulation: legal advice and representation.</li><li>Taxation and tax dispute: audit and litigation.</li><li>Transfer pricing: export structuring, audit, litigation.</li><li>Production sharing agreement.</li><li>Joint venture agreement.</li><li>Dispute resolution and much more.</li></ul>"'
             }
         ],
         locations: [

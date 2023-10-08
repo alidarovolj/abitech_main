@@ -16,7 +16,6 @@
     <Insights/>
     <ContactsBlock/>
     <FormBlock/>
-    <FooterBlock/>
   </div>
 </template>
 
@@ -41,7 +40,6 @@ export default {
   components: {
     ContactsBlock,
     FormBlock,
-    FooterBlock,
     Insights,
     HeroBlock,
     OurAccomplishments,
