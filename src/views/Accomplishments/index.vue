@@ -1,10 +1,10 @@
 <template>
   <div v-if="block" class="relative">
     <img alt="" class="absolute w-full h-full top-0 left-0 z-10" src="@/assets/img/bg.png">
-    <div class="container mx-auto px-4 lg:px-0 py-[67px]">
+    <div class="relative z-10 container mx-auto px-4 lg:px-0 py-[67px]">
       <div class="flex items-center justify-between mb-8">
-        <h1 class="text-5xl font-semibold text-mainColor whitespace-nowrap mr-1">Our Accomplishments</h1>
-        <div class="flex border-b-2 border-mainColor w-full"></div>
+        <h1 class="text-3xl lg:text-5xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">Our Accomplishments</h1>
+        <div class="hidden lg:flex border-b-2 border-mainColor w-full"></div>
       </div>
       <div class="flex flex-col lg:flex-row gap-5 mb-6">
         <img :src="block.img" alt="" class="w-full lg:w-1/2 h-80 object-cover rounded-tr-xl">
@@ -14,22 +14,15 @@
         </div>
       </div>
       <div class="flex items-center justify-between mb-8">
-        <h1 class="text-xl font-semibold text-mainColor whitespace-nowrap mr-1">Documents confirming the activity</h1>
-        <div class="flex border-b-2 border-mainColor w-full"></div>
+        <h1 class="text-xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">Documents confirming the activity</h1>
+        <div class="hidden lg:flex border-b-2 border-mainColor w-full"></div>
       </div>
       <div>
-        <div class="flex flex-col lg:flex-row items-center mb-2">
-          <button class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-white bg-mainColor rounded-lg mr-0 lg:mr-5">
+        <div v-for="(item, index) of block.certificates" :key="index" class="flex flex-col lg:flex-row items-center mb-5">
+          <button @click="downloadCertificate(item.file)" class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-white bg-mainColor rounded-lg mr-0 lg:mr-5">
             Download - PDF
           </button>
-          <p class="text-base font-medium text-mainColor">Certificate certifying the registration of a person as a
-            participant in a special economic zone</p>
-        </div>
-        <div class="flex flex-col lg:flex-row items-center">
-          <button class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-white bg-mainColor rounded-lg mr-0 lg:mr-5">
-            Download - PDF
-          </button>
-          <p class="text-base font-medium text-mainColor">Certificate of accreditation</p>
+          <p class="text-base font-medium text-mainColor">{{ item.name }}</p>
         </div>
       </div>
     </div>
@@ -49,12 +42,16 @@ export default {
   computed: {
     ...mapGetters(['getAccomplishments'])
   },
+  methods: {
+    downloadCertificate(fileUrl) {
+      const link = document.createElement("a");
+      link.href = fileUrl;
+      link.download = "certificate.pdf";
+      link.target = "_blank";
+      link.click();
+    },
+  },
   async mounted() {
-    // await this.getIndSectors.forEach((item, index) => {
-    //   if (item.id === this.$route.params.id) {
-    //     this.block = item
-    //   }
-    // })
     this.block = this.getAccomplishments[this.$route.params.id - 1]
   }
 }

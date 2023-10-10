@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex items-center justify-between absolute left-0 top-0 z-50 py-3 px-5">
-    <img v-if="$route.name === 'SectorPage'" class="" src="@/assets/img/logo-main.png" alt="">
+    <img v-if="$route.name === 'SectorPage' || $route.name === 'AccompPage' || $route.name === 'InsightsPage'" class="" src="@/assets/img/logo-main.png" alt="">
     <img v-else class="" src="@/assets/img/logo-white.png" alt="">
     <select class="w-max bg-mainColor p-2 text-white rounded-lg border border-white" :class="{ '!bg-white !text-mainColor !border-mainColor' : $route.name === 'SectorPage' }" name="" id="">
       <option value="">RU</option>

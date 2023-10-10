@@ -19,7 +19,7 @@
             <div class="flex items-center mb-1">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
               <router-link
-                  to="/"
+                  :to="{ name: 'LocationsPage', params: { id: 1 } }"
                   class="cursor-pointer"
                   :class="{ 'font-semibold' : activeLocation === 0 }"
                   @mouseover="activeLocation = 0"
@@ -30,7 +30,7 @@
             <div class="flex items-center">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
               <router-link
-                  to="/"
+                  :to="{ name: 'LocationsPage', params: { id: 2 } }"
                   class="cursor-pointer"
                   :class="{ 'font-semibold' : activeLocation === 1 }"
                   @mouseover="activeLocation = 1"
@@ -46,7 +46,7 @@
             <div class="flex items-center mb-1">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
               <router-link
-                  to="/"
+                  :to="{ name: 'LocationsPage', params: { id: 3 } }"
                   class="cursor-pointer"
                   :class="{ 'font-semibold' : activeLocation === 2 }"
                   @mouseover="activeLocation = 2"
@@ -62,7 +62,7 @@
             <div class="flex items-center mb-1">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
               <router-link
-                  to="/"
+                  :to="{ name: 'LocationsPage', params: { id: 4 } }"
                   class="cursor-pointer"
                   :class="{ 'font-semibold' : activeLocation === 3 }"
                   @mouseover="activeLocation = 3"
@@ -73,7 +73,7 @@
             <div class="flex items-center mb-1">
               <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
               <router-link
-                  to="/"
+                  :to="{ name: 'LocationsPage', params: { id: 5 } }"
                   class="cursor-pointer"
                   :class="{ 'font-semibold' : activeLocation === 4 }"
                   @mouseover="activeLocation = 4"
@@ -86,7 +86,8 @@
       </div>
       <img class="" src="@/assets/img/locations/map.png" alt="">
       <img src="" alt="">
-      <router-link to="/">
+      <router-link
+          :to="{ name: 'LocationsPage', params: { id: 1 } }">
         <img
             @mouseover="activeLocation = 0"
             @mouseleave="activeLocation = null"
@@ -94,7 +95,8 @@
             class="w-8 h-8 absolute top-[76%] right-[36%] lg:top-[36%] lg:right-[36%] transition-all opacity-0 z-30"
             src="@/assets/img/locations/point.png" alt="">
       </router-link>
-      <router-link to="/">
+      <router-link
+          :to="{ name: 'LocationsPage', params: { id: 2 } }">
         <img
             @mouseover="activeLocation = 1"
             @mouseleave="activeLocation = null"
@@ -102,7 +104,8 @@
             class="w-8 h-8 absolute top-[74%] right-[20%] lg:top-[34%] lg:right-[20%] transition-all opacity-0 z-30"
             src="@/assets/img/locations/point.png" alt="">
       </router-link>
-      <router-link to="/">
+      <router-link
+          :to="{ name: 'LocationsPage', params: { id: 3 } }">
         <img
             @mouseover="activeLocation = 2"
             @mouseleave="activeLocation = null"
@@ -110,7 +113,8 @@
             class="w-8 h-8 absolute top-[78%] right-[25%] lg:top-[38%] lg:right-[25%] transition-all opacity-0 z-30"
             src="@/assets/img/locations/point.png" alt="">
       </router-link>
-      <router-link to="/">
+      <router-link
+          :to="{ name: 'LocationsPage', params: { id: 4 } }">
         <img
             @mouseover="activeLocation = 3"
             @mouseleave="activeLocation = null"
@@ -118,7 +122,8 @@
             class="w-8 h-8 absolute top-[79%] right-[30%] lg:top-[39%] lg:right-[30%] transition-all opacity-0 z-30"
             src="@/assets/img/locations/point.png" alt="">
       </router-link>
-      <router-link to="/">
+      <router-link
+          :to="{ name: 'LocationsPage', params: { id: 5 } }">
         <img
             @mouseover="activeLocation = 4"
             @mouseleave="activeLocation = null"

@@ -3,7 +3,7 @@
     <img alt="" class="absolute w-full h-full top-0 left-0 z-10" src="@/assets/img/bg.png">
     <div class="container mx-auto px-4 lg:px-0 h-full">
       <div class="block lg:flex justify-between h-full">
-        <router-link to="/"
+        <router-link :to="{ name: 'ProdPage', params: { id: item.id } }"
                      v-for="(item, index) of getProducts" :key="index"
                      class="flex w-full lg:w-fourth relative h-full z-10 flex-col" @mouseleave="activeBlock = null"
                      @mouseover="activeBlock = index"

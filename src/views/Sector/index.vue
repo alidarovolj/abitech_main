@@ -2,8 +2,8 @@
   <div v-if="block">
     <div class="container mx-auto px-4 lg:px-0 py-[67px]">
       <div class="flex items-center justify-between mb-8">
-        <h1 class="text-5xl font-semibold text-mainColor whitespace-nowrap mr-1">{{ block.title }}</h1>
-        <div class="flex border-b-2 border-mainColor w-full"></div>
+        <h1 class="text-3xl lg:text-5xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ block.title }}</h1>
+        <div class="hidden lg:flex border-b-2 border-mainColor w-full"></div>
       </div>
       <img class="w-full h-80 object-cover rounded-tr-xl mb-8" :src="block.img" alt="">
       <div v-html="block.content" class="text-mainColor text-base"></div>

@@ -2,6 +2,9 @@ import {createRouter, createWebHistory} from "vue-router";
 import MainPage from "@/views/MainPage/index.vue";
 import SectorPage from "@/views/Sector/index.vue";
 import AccompPage from "@/views/Accomplishments/index.vue"
+import ProdPage from "@/views/Products/index.vue";
+import InsightsPage from "@/views/Insights/index.vue";
+import LocationsPage from "@/views/Locations/index.vue";
 
 const router = createRouter({
     history: createWebHistory(), routes: [{
@@ -10,7 +13,13 @@ const router = createRouter({
         path: "/sectors/:id", name: "SectorPage", component: SectorPage
     }, {
         path: "/accomplishments/:id", name: "AccompPage", component: AccompPage
-    }],
+    }, {
+        path: "/products/:id", name: "ProdPage", component: ProdPage
+    }, {
+        path: "/insights/:id", name: "InsightsPage", component: InsightsPage
+    }, {
+        path: "/locations/:id", name: "LocationsPage", component: LocationsPage
+    },],
 });
 
 router.beforeEach((to, from, next) => {

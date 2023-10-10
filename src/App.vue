@@ -7,7 +7,7 @@
   </metainfo>
   <div class="relative">
     <DefaultLayout>
-      <router-view></router-view>
+      <router-view :key="$route.fullPath"></router-view>
     </DefaultLayout>
   </div>
 </template>
