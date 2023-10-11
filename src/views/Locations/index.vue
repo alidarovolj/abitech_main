@@ -7,7 +7,7 @@
         <div class="hidden lg:flex border-b-2 border-white w-full"></div>
       </div>
       <div class="relative mb-11">
-        <div v-html="getLocations[activeLocation].addresses[0].map"></div>
+        <div v-html="getLocations[activeLocation - 1].addresses[0].map"></div>
         <div class="static lg:absolute left-0 top-0 w-full lg:w-1/3 bg-white h-full pt-9">
           <p class="bg-secondaryColor text-mainColor text-4xl py-3 px-8 mb-4">We placed</p>
           <div :class="{ 'expanded' : isExpanded }"
