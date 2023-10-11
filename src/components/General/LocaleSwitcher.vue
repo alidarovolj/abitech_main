@@ -1,9 +1,8 @@
 <template>
   <select
-      id=""
       v-model="currentLang"
-      class="border rounded-md px-2 lg:px-4 py-1 lg:py-2 cursor-pointer dark:bg-darkBg dark:text-whiteColor text-xs"
-      name=""
+      class="cursor-pointer w-max bg-mainColor p-2 text-white rounded-lg border border-white"
+      :class="{ '!bg-white !text-mainColor !border-mainColor' : $route.name === 'SectorPage' }" name="" id=""
       @change="switchLocale($event)"
   >
     <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang.value" class="px-5 py-2">
@@ -40,6 +39,11 @@ export default {
         },
         {
           id: 2,
+          value: "en",
+          title: "EN",
+        },
+        {
+          id: 3,
           value: "kz",
           title: "KZ",
         },

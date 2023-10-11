@@ -5,7 +5,9 @@
       <div class="block lg:flex flex-wrap justify-between">
         <div class="w-full lg:w-half p-10 text-secondaryColor bg-mainColor rounded-tl-xl mb-2">
           <div v-if="activeBlock === null">
-            <h3 class="mb-2 text-2xl font-bold">Industry sectors</h3>
+            <h3 class="mb-2 text-2xl font-bold">
+              {{ $t('mainPage.indSectors.title') }}
+            </h3>
             <p>250 professionals in 21 countries advise major international and local firms, funds, banks, insurance
               firms, construction companies, mining companies, airlines, light and heavy industry companies, telecoms,
               pharmaceuticals and others.Clients have access to quality legal services in the following industries.</p>

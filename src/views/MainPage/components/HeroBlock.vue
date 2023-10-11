@@ -19,21 +19,20 @@
               class="text-lg lg:text-4xl font-bold text-white w-0 overflow-hidden first_text"
               :class="{ expanded: isExpanded === true }"
             >
-              EFFECTIVE MANAGEMENT OF <br />
-              PROCESSES AND ASSETS
+              {{ $t('mainPage.hero.title') }}
             </h1>
             <div class=" mt-3">
               <p
                 class="text-xl w-0 text-white h-0 overflow-hidden second_text"
                 :class="{ expanded_second: isExpandedSecond === true }"
               >
-                Professional experience in consulting and implementation of
-                <br />
-                own developments in various industries
+                {{ $t('mainPage.hero.content') }}
               </p>
               <div class="flex mt-3 w-0 h-0 second_text"
                    :class="{ expanded_second: isExpandedSecond === true }">
-                <a class="py-3 rounded px-14 bg-secondaryColor text-mainColor text-sm font-bold w-max" href="#contacts">Order a call</a>
+                <a class="py-3 rounded px-14 bg-secondaryColor text-mainColor text-sm font-bold w-max" href="#contacts">
+                  {{ $t('mainPage.hero.order') }}
+                </a>
               </div>
             </div>
           </div>

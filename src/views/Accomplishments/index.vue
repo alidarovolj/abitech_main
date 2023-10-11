@@ -9,8 +9,12 @@
       <div class="flex flex-col lg:flex-row gap-5 mb-6">
         <img :src="block.img" alt="" class="w-full lg:w-1/2 h-80 object-cover rounded-tr-xl">
         <div>
-          <h2 class="font-bold text-4xl mb-5">{{ block.title }}</h2>
-          <p class="text-base font-medium">{{ block.description }}</p>
+          <h2 v-if="$i18n.locale === 'ru'" class="font-bold text-4xl mb-5">{{ block.title }}</h2>
+          <h2 v-if="$i18n.locale === 'kz'" class="font-bold text-4xl mb-5">{{ block.title_kz }}</h2>
+          <h2 v-if="$i18n.locale === 'en'" class="font-bold text-4xl mb-5">{{ block.title_en }}</h2>
+          <p v-if="$i18n.locale === 'ru'" class="text-base font-medium">{{ block.description }}</p>
+          <p v-if="$i18n.locale === 'kz'" class="text-base font-medium">{{ block.description_kz }}</p>
+          <p v-if="$i18n.locale === 'en'" class="text-base font-medium">{{ block.description_en }}</p>
         </div>
       </div>
       <div class="flex items-center justify-between mb-8">

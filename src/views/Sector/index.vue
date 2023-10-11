@@ -2,11 +2,15 @@
   <div v-if="block">
     <div class="container mx-auto px-4 lg:px-0 py-[67px]">
       <div class="flex items-center justify-between mb-8">
-        <h1 class="text-3xl lg:text-5xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ block.title }}</h1>
+        <h1 v-if="$i18n.locale === 'ru'" class="text-3xl lg:text-5xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ block.title }}</h1>
+        <h1 v-if="$i18n.locale === 'kz'" class="text-3xl lg:text-5xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ block.title_kz }}</h1>
+        <h1 v-if="$i18n.locale === 'en'" class="text-3xl lg:text-5xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ block.title_en }}</h1>
         <div class="hidden lg:flex border-b-2 border-mainColor w-full"></div>
       </div>
       <img class="w-full h-80 object-cover rounded-tr-xl mb-8" :src="block.img" alt="">
-      <div v-html="block.content" class="text-mainColor text-base"></div>
+      <div v-if="$i18n.locale === 'ru'" v-html="block.content" class="text-mainColor text-base"></div>
+      <div v-if="$i18n.locale === 'kz'" v-html="block.content_kz" class="text-mainColor text-base"></div>
+      <div v-if="$i18n.locale === 'en'" v-html="block.content_en" class="text-mainColor text-base"></div>
     </div>
   </div>
 </template>

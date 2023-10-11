@@ -12,7 +12,9 @@
         <div class=" sm:w-1/2 lg:w-third sm:absolute top-0 left-0 sm:-translate-y-[80%] lg:-translate-y-[85%]">
           <div class="bg-mainColor h-[46px] rounded-t-lg">
           </div>
-          <p class="bg-secondaryColor text-4xl px-7 py-3">Contact us</p>
+          <p class="bg-secondaryColor text-4xl px-7 py-3">
+            {{ $t('contactUs.title') }}
+          </p>
           <div class="bg-mainColor rounded-b-lg px-7 py-8 text-secondaryColor">
             <p class="text-xl mb-5">TOO "ADVANCED BUSINESS TECHNOLOGIES "
               info@abitech.kz</p>
@@ -34,7 +36,7 @@
             </div>
             <div class="flex items-center gap-2.5 mb-5">
               <img alt="" src="@/assets/img/contacts/map-pin.svg">
-              <p class="text-base">050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240</p>
+              <p class="text-base">{{ $t('contactUs.address') }}</p>
             </div>
           </div>
         </div>

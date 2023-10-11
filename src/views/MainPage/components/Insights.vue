@@ -6,7 +6,7 @@
     <div class="container mx-auto px-4 lg:px-0">
       <div class="pt-8 pr-0 lg:pr-8 pb-6 block lg:flex items-center">
         <div v-if="activeBlock === null" class="w-full lg:w-[680px] mr-0 lg:mr-[52px]">
-          <h2 class="text-3xl font-semibold text-secondaryColor mb-14">Insights</h2>
+          <h2 class="text-3xl font-semibold text-secondaryColor mb-14">{{ $t('insights') }}</h2>
         </div>
         <div v-else class="w-full lg:w-[680px] mr-[52px] cursor-pointer">
           <h2 class="text-3xl font-semibold text-secondaryColor mb-14">Insights</h2>

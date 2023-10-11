@@ -1,0 +1,81 @@
+{
+  "header": {
+    "main": "Main",
+    "indSectors": "Industry Sectors",
+    "locations": "Locations",
+    "accomplishments": "Our Achievements",
+    "products": "Products"
+  },
+  "mainPage": {
+    "hero": {
+      "title": "EFFICIENT MANAGEMENT OF PROCESSES AND ASSETS",
+      "content": "Professional consulting experience and proprietary developments across various industries",
+      "order": "Request a Call"
+    },
+    "indSectors": {
+      "title": "Industry Sectors",
+      "content": "250 specialists in 21 countries consult large international and local firms, funds, banks, insurance companies, construction companies, mining companies, airlines, light and heavy industry companies, telecommunications, pharmaceuticals, and more. Clients have access to quality legal services in the following sectors: ."
+    }
+  },
+  "locations": {
+    "title": "Locations",
+    "kazakhstan": {
+      "title": "Kazakhstan",
+      "almaty": "Almaty",
+      "astana": "Astana"
+    },
+    "uzbekistan": {
+      "title": "Uzbekistan",
+      "tashkent": "Tashkent"
+    },
+    "russia": {
+      "title": "Russia",
+      "moskow": "Moscow",
+      "saint": "Saint Petersburg"
+    }
+  },
+  "partners": "Our Key Partners and Clients",
+  "insights": "Insights",
+  "contactUs": {
+    "title": "Contact Us",
+    "address": "050052, Almaty City, Taugul Microdistrict, Mustai Karim Street, 13a, Office 240"
+  },
+  "form": {
+    "title": "How Can We Help You?",
+    "content": "Thank you for your interest in ABItech's services. Please take a moment to fill out this form. Fields marked with an asterisk (*) are required.",
+    "name": {
+      "title": "Name",
+      "placeholder": "Enter your name"
+    },
+    "subject": {
+      "title": "Subject of Inquiry",
+      "placeholder": "Enter the subject of your inquiry"
+    },
+    "email": {
+      "title": "E-mail",
+      "placeholder": "Enter your email"
+    },
+    "phone": {
+      "title": "Phone Number",
+      "placeholder": "Enter your phone number"
+    },
+    "button": "Send Inquiry"
+  },
+  "footer": {
+    "about": "About Us",
+    "safety": {
+      "title": "Safety",
+      "privacy": "Privacy Policy",
+      "cookie": "Cookie Usage Policy"
+    },
+    "social": "Social Media",
+    "news": {
+      "title": "Stay Informed",
+      "content": "Be the first to know about our latest innovations. Never miss out on exciting offers and promotions. Get expert consultations."
+    },
+    "form": {
+      "placeholder": "Email Address",
+      "button": "Subscribe"
+    }
+  }
+}

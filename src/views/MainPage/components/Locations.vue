@@ -9,11 +9,11 @@
     />
     <div class="block lg:flex relative">
       <div class="relative mx-auto lg:mx-0 lg:absolute left-0 top-0 p-3 bg-white rounded-2xl w-72 z-30 mb-10 lg:mb-0">
-        <p class="rounded-t-2xl bg-mainColor py-3 font-bold text-base text-center text-white">Locations</p>
+        <p class="rounded-t-2xl bg-mainColor py-3 font-bold text-base text-center text-white">{{ $t('locations.title') }}</p>
         <div :class="{ 'expanded' : isExpanded }"
              class="text-mainColor mt-3 px-3 text-base overflow-y-hidden first_state">
           <p class="border-y border-mainColor py-1 font-bold">
-            Kazakhstan
+            {{ $t('locations.kazakhstan.title') }}
           </p>
           <div class="pt-2 pb-5 border-b border-mainColor">
             <div class="flex items-center mb-1">
@@ -24,7 +24,7 @@
                   :class="{ 'font-semibold' : activeLocation === 0 }"
                   @mouseover="activeLocation = 0"
                   @mouseleave="activeLocation = null">
-                Almaty
+                {{ $t('locations.kazakhstan.almaty') }}
               </router-link>
             </div>
             <div class="flex items-center">
@@ -35,12 +35,12 @@
                   :class="{ 'font-semibold' : activeLocation === 1 }"
                   @mouseover="activeLocation = 1"
                   @mouseleave="activeLocation = null">
-                Astana
+                {{ $t('locations.kazakhstan.astana') }}
               </router-link>
             </div>
           </div>
           <p class="border-b border-mainColor py-1 font-bold">
-            Uzbekistan
+            {{ $t('locations.uzbekistan.title') }}
           </p>
           <div class="pt-2 pb-5 border-b border-mainColor">
             <div class="flex items-center mb-1">
@@ -51,12 +51,12 @@
                   :class="{ 'font-semibold' : activeLocation === 2 }"
                   @mouseover="activeLocation = 2"
                   @mouseleave="activeLocation = null">
-                Tashkent
+                {{ $t('locations.uzbekistan.tashkent') }}
               </router-link>
             </div>
           </div>
           <p class="border-b border-mainColor py-1 font-bold">
-            Russia
+            {{ $t('locations.russia.title') }}
           </p>
           <div class="pt-2">
             <div class="flex items-center mb-1">
@@ -67,7 +67,7 @@
                   :class="{ 'font-semibold' : activeLocation === 3 }"
                   @mouseover="activeLocation = 3"
                   @mouseleave="activeLocation = null">
-                Moskow
+                {{ $t('locations.russia.moskow') }}
               </router-link>
             </div>
             <div class="flex items-center mb-1">
@@ -78,7 +78,7 @@
                   :class="{ 'font-semibold' : activeLocation === 4 }"
                   @mouseover="activeLocation = 4"
                   @mouseleave="activeLocation = null">
-                Saint - Petersburg
+                {{ $t('locations.russia.saint') }}
               </router-link>
             </div>
           </div>

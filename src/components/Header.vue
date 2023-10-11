@@ -1,12 +1,9 @@
 <template>
   <div class="w-full flex items-center justify-between absolute left-0 top-0 z-50 py-3 px-5">
-    <img v-if="$route.name === 'SectorPage' || $route.name === 'AccompPage' || $route.name === 'InsightsPage'" class="" src="@/assets/img/logo-main.png" alt="">
-    <img v-else class="" src="@/assets/img/logo-white.png" alt="">
-    <select class="w-max bg-mainColor p-2 text-white rounded-lg border border-white" :class="{ '!bg-white !text-mainColor !border-mainColor' : $route.name === 'SectorPage' }" name="" id="">
-      <option value="">RU</option>
-      <option value="">KZ</option>
-      <option value="">EN</option>
-    </select>
+    <router-link v-if="$route.name === 'SectorPage' || $route.name === 'AccompPage' || $route.name === 'InsightsPage'"
+                 to="/"><img class="" src="@/assets/img/logo-main.png" alt=""></router-link>
+    <router-link v-else to="/"><img class="" src="@/assets/img/logo-white.png" alt=""></router-link>
+    <LocaleSwitcher />
   </div>
   <div class="hidden lg:flex">
     <div class="w-max fixed z-50 top-1/2 -translate-y-1/2 left-5 text-element">
@@ -24,8 +21,12 @@
 </template>
 
 <script>
+import LocaleSwitcher from "@/components/General/LocaleSwitcher.vue";
 export default {
   name: "Header",
+  components: {
+    LocaleSwitcher
+  },
   data() {
     return {
       active: 0,
