@@ -10,7 +10,10 @@ const router = createRouter({
         path: "/sectors/:id", name: "SectorPage", component: SectorPage
     }, {
         path: "/accomplishments/:id", name: "AccompPage", component: AccompPage
-    }],
+    }, {
+        path: "/accomplishments/:id", name: "AccompPage", component: AccompPage
+    }
+    ],
 });
 
 router.beforeEach((to, from, next) => {
