@@ -67,7 +67,7 @@
                     class="cursor-pointer block w-full"
                     @mouseleave="activeLocation = $route.params.id"
                     @mouseover="activeLocation = 4">
-                  Moskow
+                  Moscow
                 </router-link>
               </div>
               <div class="flex items-center mb-1">

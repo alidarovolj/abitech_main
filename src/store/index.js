@@ -147,11 +147,11 @@ export default createStore({
                         address_kz: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
                         address_en: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
                         phone: "+7 (771) 762-22-85",
-                        map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3A07ec4f2a037d035027265a8e6e3cd7865c0a2ca3bf2483236a04f93046a9e286&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
+                        map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3Ab608545a9131312c3b29a42631b1d2c452ff7cfe18235f389181997e98526fea&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
                     }
                 ]
             },
-            {   
+            {
                 id: 2,
                 name: "Astana",
                 addresses: [
@@ -179,7 +179,7 @@ export default createStore({
             },
             {
                 id: 4,
-                name: "Moskow",
+                name: "Moscow",
                 addresses: [
                     {
                         address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
