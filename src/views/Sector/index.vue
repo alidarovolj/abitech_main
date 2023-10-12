@@ -17,9 +17,13 @@
 
 <script>
 import {mapGetters} from "vuex";
+import {useMeta} from "vue-meta";
 
 export default {
   name: "SectorPage",
+  setup() {
+    useMeta({title: "Отрасль промышленности"});
+  },
   data() {
     return {
       block: null,

@@ -1,20 +1,25 @@
 {
+  "general": {
+    "download": "Download",
+    "feedback": "Feedback",
+    "addInfo": "Additional Information"
+  },
   "header": {
     "main": "Main",
-    "indSectors": "Industry Sectors",
+    "indSectors": "Industrial Sectors",
     "locations": "Locations",
     "accomplishments": "Our Achievements",
     "products": "Products"
   },
   "mainPage": {
     "hero": {
-      "title": "EFFICIENT MANAGEMENT OF PROCESSES AND ASSETS",
-      "content": "Professional consulting experience and proprietary developments across various industries",
+      "title": "EFFICIENT PROCESS AND <br>ASSET MANAGEMENT",
+      "content": "Professional consulting experience <br>and proprietary developments in various industries",
       "order": "Request a Call"
     },
     "indSectors": {
-      "title": "Industry Sectors",
-      "content": "250 specialists in 21 countries consult large international and local firms, funds, banks, insurance companies, construction companies, mining companies, airlines, light and heavy industry companies, telecommunications, pharmaceuticals, and more. Clients have access to quality legal services in the following sectors: ."
+      "title": "Industrial Sectors",
+      "content": "250 specialists in 21 countries consult large international and local firms, funds, banks, insurance companies, construction companies, mining companies, airlines, light and heavy industry companies, telecommunications, pharmaceuticals, and more. Clients have access to quality legal services in the following sectors:"
     }
   },
   "locations": {
@@ -35,10 +40,10 @@
     }
   },
   "partners": "Our Key Partners and Clients",
-  "insights": "Insights",
+  "insights": "Ideas",
   "contactUs": {
     "title": "Contact Us",
-    "address": "050052, Almaty City, Taugul Microdistrict, Mustai Karim Street, 13a, Office 240"
+    "address": "050052, Almaty, Taugul Microdistrict, Mustai Karim Street, Building 13A, Office 240"
   },
   "form": {
     "title": "How Can We Help You?",
@@ -59,7 +64,11 @@
       "title": "Phone Number",
       "placeholder": "Enter your phone number"
     },
-    "button": "Send Inquiry"
+    "button": "Submit Inquiry"
+  },
+  "accomplishments": {
+    "title": "Our Achievements",
+    "doc_title": "Documents Confirming Activities"
   },
   "footer": {
     "about": "About Us",
@@ -70,8 +79,8 @@
     },
     "social": "Social Media",
     "news": {
-      "title": "Stay Informed",
-      "content": "Be the first to know about our latest innovations. Never miss out on exciting offers and promotions. Get expert consultations."
+      "title": "Stay Informed with Our Latest News",
+      "content": "Be the first to know about our latest innovations. Never miss out on exciting offers and promotions. Get expert advice."
     },
     "form": {
       "placeholder": "Email Address",

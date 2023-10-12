@@ -1,4 +1,6 @@
 import {createStore} from "vuex";
+import axios from "@/utils/axios.js";
+import router from "@/router";
 import img1 from '@/assets/img/insights/kazMunaiGaz.png'
 import img1AccBg from '@/assets/img/ourAccomplishments/first-bg.png';
 import img1Acc from '@/assets/img/ourAccomplishments/first.png'
@@ -12,7 +14,16 @@ import imgProd4 from '@/assets/img/products/fourth.png'
 import acc1 from "@/assets/pdfs/1.pdf"
 
 export default createStore({
-    modules: {}, actions: {}, mutations: {}, state: {
+    modules: {},
+    actions: {
+        async sendMessage({commit}) {
+            const {data} = await axios.post("/branches/all", form);
+            commit("updateBranchesList", data);
+
+        }
+    },
+    mutations: {},
+    state: {
         news: [{
             id: 1,
             title: "АСКОУ – ПРОЕКТ ИНВЕНТАРИЗАЦИИ В АО НК «КАЗМУНАЙГАЗ»",
@@ -159,7 +170,9 @@ export default createStore({
             },
             {
                 id: 2,
-                name: "Astana",
+                name: "Астана",
+                name_kz: "Астана",
+                name_en: "Astana",
                 addresses: [
                     {
                         address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
@@ -172,7 +185,9 @@ export default createStore({
             },
             {
                 id: 3,
-                name: "Tashkent",
+                name: "Ташкент",
+                name_kz: "Ташкент",
+                name_en: "Tashkent",
                 addresses: [
                     {
                         address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
@@ -185,7 +200,9 @@ export default createStore({
             },
             {
                 id: 4,
-                name: "Moscow",
+                name: "Москва",
+                name_kz: "Москва",
+                name_en: "Moscow",
                 addresses: [
                     {
                         address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
@@ -198,7 +215,9 @@ export default createStore({
             },
             {
                 id: 5,
-                name: "Saint - Petersburg",
+                name: "Санкт-Петербург",
+                name_kz: "Санкт-Петербург",
+                name_en: "Saint - Petersburg",
                 addresses: [
                     {
                         address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
@@ -268,7 +287,8 @@ export default createStore({
                 }]
             },
         ]
-    }, getters: {
+    },
+    getters: {
         getNews: (state) => state.news,
         getAccomplishments: (state) => state.accomplishments,
         getIndSectors: (state) => state.indSectors,

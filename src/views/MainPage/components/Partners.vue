@@ -6,7 +6,7 @@
         alt=""
     />
     <div class="w-4/5 mx-auto flex h-1/2 items-end">
-      <p class="text-3xl text-secondaryColor mb-12">Наши ключевые партнеры и клиенты</p>
+      <p class="text-3xl text-secondaryColor mb-12">{{ $t('partners') }}</p>
     </div>
     <div class="h-1/2 bg-secondaryColor">
       <InfiniteScrollPartners/>

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10 sm:py-24">
+  <div id="contacts" class="py-10 sm:py-24">
     <div class="flex flex-col-reverse sm:block">
       <iframe
           class="px-4 sm:px-0"

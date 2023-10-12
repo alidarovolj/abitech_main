@@ -35,9 +35,13 @@
 
 <script>
 import {mapGetters} from "vuex";
+import {useMeta} from "vue-meta";
 
 export default {
   name: "AccompPage",
+  setup() {
+    useMeta({title: "Наше достижение"});
+  },
   data() {
     return {
       block: null,

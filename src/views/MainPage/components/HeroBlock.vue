@@ -1,5 +1,6 @@
 <template>
   <div
+      id="hero"
     class="h-screen bg-mainColor relative flex items-center justify-center w-full background-element"
   >
     <img
@@ -16,17 +17,16 @@
           <img src="@/assets/img/logo.png" alt="" />
           <div class="w-full lg:w-max" :class="{ 'ml-0 lg:ml-7': isExpanded === true }">
             <h1
-              class="text-lg lg:text-4xl font-bold text-white w-0 overflow-hidden first_text"
+              class="text-lg lg:text-4xl font-bold text-white uppercase w-0 overflow-hidden first_text"
               :class="{ expanded: isExpanded === true }"
-            >
-              {{ $t('mainPage.hero.title') }}
-            </h1>
+              v-html="$t('mainPage.hero.title')"
+            ></h1>
             <div class=" mt-3">
               <p
                 class="text-xl w-0 text-white h-0 overflow-hidden second_text"
                 :class="{ expanded_second: isExpandedSecond === true }"
+                v-html="$t('mainPage.hero.content')"
               >
-                {{ $t('mainPage.hero.content') }}
               </p>
               <div class="flex mt-3 w-0 h-0 second_text"
                    :class="{ expanded_second: isExpandedSecond === true }">

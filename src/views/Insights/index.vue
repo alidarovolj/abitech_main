@@ -6,20 +6,26 @@
         <img style="box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);" :src="block.img" alt="" class="w-full h-96 object-cover rounded mb-8">
         <div class="flex flex-col lg:flex-row gap-5 mb-6">
           <div>
-            <h2 class="font-bold text-4xl mb-5">{{ block.title }}</h2>
-            <p class="text-base font-medium">{{ block.description }}</p>
+            <h2 v-if="$i18n.locale === 'ru'" class="font-bold text-4xl mb-5">{{ block.title }}</h2>
+            <h2 v-if="$i18n.locale === 'kz'" class="font-bold text-4xl mb-5">{{ block.title_kz }}</h2>
+            <h2 v-if="$i18n.locale === 'en'" class="font-bold text-4xl mb-5">{{ block.title_en }}</h2>
+            <p v-if="$i18n.locale === 'ru'" class="text-base font-medium">{{ block.description }}</p>
+            <p v-if="$i18n.locale === 'kz'" class="text-base font-medium">{{ block.description_kz }}</p>
+            <p v-if="$i18n.locale === 'en'" class="text-base font-medium">{{ block.description_en }}</p>
           </div>
         </div>
         <div class="flex items-center justify-between mb-4">
-          <h1 class="text-xl font-bold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">Additional information</h1>
+          <h1 class="text-xl font-bold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ $t('general.addInfo') }}</h1>
           <div class="hidden lg:flex border-b-2 border-mainColor w-full"></div>
         </div>
         <div>
           <div v-for="(item, index) of block.certificates" :key="index" class="flex flex-col lg:flex-row items-center mb-5">
             <button @click="downloadCertificate(item.file)" class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-white bg-mainColor rounded-lg mr-0 lg:mr-5">
-              Download - PDF
+              {{ $t('general.download') }} - PDF
             </button>
-            <p class="text-base font-medium text-mainColor">{{ item.name }}</p>
+            <p v-if="$i18n.locale === 'ru'" class="text-base font-medium text-mainColor">{{ item.name }}</p>
+            <p v-if="$i18n.locale === 'kz'" class="text-base font-medium text-mainColor">{{ item.name_kz }}</p>
+            <p v-if="$i18n.locale === 'en'" class="text-base font-medium text-mainColor">{{ item.name_en }}</p>
           </div>
         </div>
       </div>
@@ -29,8 +35,12 @@
         <div v-for="(item, index) of getNews" :key="index" class="lg:w-[30%] w-full bg-white rounded-lg" style="box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);">
           <img class="rounded-lg" :src="item.img" alt="">
           <div class="p-4">
-            <p class="mb-3 font-bold">{{ item.title }}</p>
-            <p class="font-medium">{{ item.short_desc }}</p>
+            <p v-if="$i18n.locale === 'ru'" class="mb-3 font-bold">{{ item.title }}</p>
+            <p v-if="$i18n.locale === 'kz'" class="mb-3 font-bold">{{ item.title_kz }}</p>
+            <p v-if="$i18n.locale === 'en'" class="mb-3 font-bold">{{ item.title_en }}</p>
+            <p v-if="$i18n.locale === 'ru'" class="font-medium">{{ item.short_desc }}</p>
+            <p v-if="$i18n.locale === 'kz'" class="font-medium">{{ item.short_desc_kz }}</p>
+            <p v-if="$i18n.locale === 'en'" class="font-medium">{{ item.short_desc_en }}</p>
           </div>
         </div>
       </div>
@@ -40,6 +50,7 @@
 
 <script>
 import {mapGetters} from "vuex";
+import {useMeta} from "vue-meta";
 
 export default {
   name: "AccompPage",
@@ -47,6 +58,9 @@ export default {
     return {
       block: null,
     }
+  },
+  setup() {
+    useMeta({title: "Новость"});
   },
   computed: {
     ...mapGetters(['getNews'])

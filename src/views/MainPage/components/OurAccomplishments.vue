@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full lg:h-screen py-24 flex items-center justify-center relative w-full">
+  <div id="accomplishments" class="h-full lg:h-screen py-24 flex items-center justify-center relative w-full">
     <img alt="" class="absolute w-full h-full top-0 left-0 -z-10" src="@/assets/img/bg.png">
     <div class="container mx-auto px-4 lg:px-0">
       <div>
@@ -11,8 +11,12 @@
             <img :src="item.img_bg" alt="" class="absolute w-full h-full top-0 left-0 -z-10">
             <img :class="{'ml-7 !mr-0': index === 1}" :src="item.img" alt="" class="mr-7">
             <div>
-              <h3 class="text-xl lg:text-2xl font-bold mb-5">{{ item.title }}</h3>
-              <p class="text-sm lg:text-base">{{ item.short_desc }}</p>
+              <h3 v-if="$i18n.locale === 'ru'" class="text-xl lg:text-2xl font-bold mb-5">{{ item.title }}</h3>
+              <h3 v-if="$i18n.locale === 'kz'" class="text-xl lg:text-2xl font-bold mb-5">{{ item.title_kz }}</h3>
+              <h3 v-if="$i18n.locale === 'en'" class="text-xl lg:text-2xl font-bold mb-5">{{ item.title_en }}</h3>
+              <p v-if="$i18n.locale === 'ru'" class="text-sm lg:text-base">{{ item.short_desc }}</p>
+              <p v-if="$i18n.locale === 'kz'" class="text-sm lg:text-base">{{ item.short_desc_kz }}</p>
+              <p v-if="$i18n.locale === 'en'" class="text-sm lg:text-base">{{ item.short_desc_en }}</p>
             </div>
           </div>
           <div class="bg-secondaryColor p-4 lg:p-7 flex items-center w-14 text-center justify-center" :class="{ 'w-16' : activeBlock === index }">

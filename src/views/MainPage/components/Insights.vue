@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full lg:h-screen py-24 flex items-center justify-center relative w-full">
+  <div id="insights" class="h-full lg:h-screen py-24 flex items-center justify-center relative w-full">
     <div class="bg-mainColor absolute h-1/2 w-full top-0 -z-10">
     </div>
     <img alt="" class="absolute w-full h-full top-0 left-0 z-10" src="@/assets/img/bg.png">
@@ -14,8 +14,14 @@
             <img alt="" class="rounded-t-md rounded-b-none lg:rounded-md" :src="getNews[activeBlock].img">
             <div
                 class="relative lg:absolute bg-white max-w-[680px] h-1/2 bottom-0 opacity-70 rounded-t-none lg:rounded-t-md rounded-b-md lg:rounded-b-none py-4 px-6">
-              <h3 class="text-2xl font-bold">{{ getNews[activeBlock].title }}</h3>
-              <p class="text-base">{{ getNews[activeBlock].short_desc }}</p>
+              <h3 v-if="$i18n.locale === 'ru'" class="text-2xl font-bold">{{ getNews[activeBlock].title }}</h3>
+              <h3 v-if="$i18n.locale === 'kz'" class="text-2xl font-bold">{{ getNews[activeBlock].title_kz }}</h3>
+              <h3 v-if="$i18n.locale === 'en'" class="text-2xl font-bold">{{ getNews[activeBlock].title_en }}</h3>
+              <div class="h-20 overflow-y-auto">
+                <p v-if="$i18n.locale === 'ru'" class="text-base overflow-y-auto">{{ getNews[activeBlock].short_desc }}</p>
+                <p v-if="$i18n.locale === 'kz'" class="text-base">{{ getNews[activeBlock].short_desc_kz }}</p>
+                <p v-if="$i18n.locale === 'en'" class="text-base">{{ getNews[activeBlock].short_desc_en }}</p>
+              </div>
             </div>
           </router-link>
         </div>
@@ -31,7 +37,9 @@
               <img :src="block.img" alt=""
                    class="rounded-l-lg w-full lg:w-[243px] min-w-full lg:min-w-[243px] h-full object-cover">
             </div>
-            <p class="text-base font-bold px-6">{{ block.title }}</p>
+            <p v-if="$i18n.locale === 'ru'" class="text-base font-bold px-6">{{ block.title }}</p>
+            <p v-if="$i18n.locale === 'kz'" class="text-base font-bold px-6">{{ block.title_kz }}</p>
+            <p v-if="$i18n.locale === 'en'" class="text-base font-bold px-6">{{ block.title_en }}</p>
           </router-link>
         </div>
       </div>

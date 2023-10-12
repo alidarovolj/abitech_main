@@ -3,25 +3,74 @@
     <router-link v-if="$route.name === 'SectorPage' || $route.name === 'AccompPage' || $route.name === 'InsightsPage'"
                  to="/"><img class="" src="@/assets/img/logo-main.png" alt=""></router-link>
     <router-link v-else to="/"><img class="" src="@/assets/img/logo-white.png" alt=""></router-link>
-    <LocaleSwitcher />
+    <LocaleSwitcher/>
   </div>
   <div class="hidden lg:flex">
     <div class="w-max fixed z-50 top-1/2 -translate-y-1/2 left-5 text-element">
-      <router-link v-for="(link, index) of links" :key="index" class="block text-base w-max cursor-pointer"
-                   :class="[{ 'mb-[30px]' : links.length !== index + 1 }, { 'text-mainColor font-semibold' : active === index }]"
-                   :to="link.to">{{ link.name }}
-      </router-link>
+      <a
+          class="block text-base w-max cursor-pointer mb-[30px] text-white"
+          href="#hero"
+          :class="[{ 'font-semibold': activeAnchor === 'hero' }, { '!text-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]">
+        {{ $t('header.main') }}
+      </a>
+      <a
+          class="block text-base w-max cursor-pointer mb-[30px] text-white"
+          href="#indSectors"
+          :class="[{ 'font-semibold': activeAnchor === 'indSectors' }, { '!text-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]">
+        {{ $t('header.indSectors') }}
+      </a>
+      <a
+          class="block text-base w-max cursor-pointer mb-[30px] text-white"
+          href="#locations"
+          :class="[{ 'font-semibold': activeAnchor === 'locations' }, { '!text-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]">
+        {{ $t('header.locations') }}
+      </a>
+      <a
+          class="block text-base w-max cursor-pointer mb-[30px] text-white"
+          href="#accomplishments"
+          :class="[{ 'font-semibold': activeAnchor === 'accomplishments' }, { '!text-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]">
+        {{ $t('header.accomplishments') }}
+      </a>
+      <a
+          class="block text-base w-max cursor-pointer"
+          href="#products"
+          :class="[{ 'font-semibold': activeAnchor === 'products' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }, { '!text-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]">
+        {{ $t('header.products') }}
+      </a>
     </div>
     <div class="w-max fixed z-50 top-1/2 -translate-y-1/2 right-5">
-      <router-link :to="link.to" class="block w-3 h-3 mb-[30px] bg-mainColor rounded-full cursor-pointer"
-                   :class="[{ 'mb-[30px]' : links.length !== index + 1 }, { 'border-2 border-red-500' : active === index }]"
-                   v-for="(link, index) of links" :key="index"></router-link>
+      <a
+          class="block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          :class="[{ 'border-2 border-red-500' : activeAnchor === 'hero' }, { '!bg-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]"
+          href="#hero">
+      </a>
+      <a
+          class="block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          :class="[{ 'border-2 border-red-500' : activeAnchor === 'indSectors' }, { '!bg-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]"
+          href="#hero">
+      </a>
+      <a
+          class="block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          :class="[{ 'border-2 border-red-500' : activeAnchor === 'locations' }, { '!bg-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]"
+          href="#hero">
+      </a>
+      <a
+          class="block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          :class="[{ 'border-2 border-red-500' : activeAnchor === 'accomplishments' }, { '!bg-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]"
+          href="#hero">
+      </a>
+      <a
+          class="block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          :class="[{ 'border-2 border-red-500' : activeAnchor === 'products' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }, { '!bg-mainColor': activeAnchor === 'indSectors' || activeAnchor === 'accomplishments' || activeAnchor === 'insights' || activeAnchor === 'contacts' }, { 'text-white': $route.name === 'locationsPage' || $route.name === 'prodPage' }, { '!text-mainColor' : $route.name === 'InsightsPage' }]"
+          href="#hero">
+      </a>
     </div>
   </div>
 </template>
 
 <script>
 import LocaleSwitcher from "@/components/General/LocaleSwitcher.vue";
+
 export default {
   name: "Header",
   components: {
@@ -30,6 +79,7 @@ export default {
   data() {
     return {
       active: 0,
+      activeAnchor: null,
       links: [
         {
           id: 1,
@@ -63,7 +113,37 @@ export default {
     if (this.$route.name === 'MainPage') {
       this.active = 0
     }
-  }
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  beforeUnmount() {
+    // Remember to remove the event listener when the component is unmounted.
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      // Calculate the current scroll position and viewport height.
+      const scrollPosition = window.scrollY;
+      const viewportHeight = window.innerHeight;
+
+      // Define the anchors and their positions.
+      const anchors = {
+        hero: document.getElementById('hero').offsetTop,
+        indSectors: document.getElementById('indSectors').offsetTop,
+        locations: document.getElementById('locations').offsetTop,
+        accomplishments: document.getElementById('accomplishments').offsetTop,
+        products: document.getElementById('products').offsetTop,
+        contacts: document.getElementById('contacts').offsetTop,
+      };
+
+      // Find the anchor that is currently in view.
+      for (const anchor in anchors) {
+        if (scrollPosition >= anchors[anchor] && scrollPosition < anchors[anchor] + viewportHeight) {
+          this.activeAnchor = anchor;
+          break; // Stop searching when we find the active anchor.
+        }
+      }
+    },
+  },
 }
 </script>
 

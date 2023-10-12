@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full lg:h-screen bg-mainColor py-24 flex items-center justify-center relative">
+  <div id="products" class="h-full lg:h-screen bg-mainColor py-24 flex items-center justify-center relative">
     <img alt="" class="absolute w-full h-full top-0 left-0 z-10" src="@/assets/img/bg.png">
     <div class="container mx-auto px-4 lg:px-0 h-full">
       <div class="block lg:flex justify-between h-full">
@@ -12,8 +12,12 @@
                :class="{ 'lg:!h-0 lg:max-h-0' : activeBlock === index }">
           <div class="bg-secondaryColor text-white h-1/2 overflow-hidden px-5 py-4"
                :class="{ 'h-full' : activeBlock === index }">
-            <h3 class="text-base font-bold">{{ item.title }}</h3>
-            <p class="text-sm">{{ item.description }}</p>
+            <h3 v-if="$i18n.locale === 'ru'" class="text-base font-bold">{{ item.title }}</h3>
+            <h3 v-if="$i18n.locale === 'kz'" class="text-base font-bold">{{ item.title_kz }}</h3>
+            <h3 v-if="$i18n.locale === 'en'" class="text-base font-bold">{{ item.title_en }}</h3>
+            <p v-if="$i18n.locale === 'ru'" class="text-sm">{{ item.description }}</p>
+            <p v-if="$i18n.locale === 'kz'" class="text-sm">{{ item.description_kz }}</p>
+            <p v-if="$i18n.locale === 'en'" class="text-sm">{{ item.description_en }}</p>
           </div>
         </router-link>
       </div>
