@@ -3,7 +3,7 @@
     <img alt="" class="absolute w-full h-full top-0 left-0 z-10" src="@/assets/img/bg.png">
     <div class="relative z-10 container mx-auto px-4 lg:px-0 py-[67px]">
       <div class="flex items-center justify-between mb-8">
-        <h1 class="text-3xl lg:text-5xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">Our Accomplishments</h1>
+        <h1 class="text-3xl lg:text-5xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ $t('accomplishments.title') }}</h1>
         <div class="hidden lg:flex border-b-2 border-mainColor w-full"></div>
       </div>
       <div class="flex flex-col lg:flex-row gap-5 mb-6">
@@ -18,13 +18,13 @@
         </div>
       </div>
       <div class="flex items-center justify-between mb-8">
-        <h1 class="text-xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">Documents confirming the activity</h1>
+        <h1 class="text-xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ $t('accomplishments.doc_title') }}</h1>
         <div class="hidden lg:flex border-b-2 border-mainColor w-full"></div>
       </div>
       <div>
         <div v-for="(item, index) of block.certificates" :key="index" class="flex flex-col lg:flex-row items-center mb-5">
           <button @click="downloadCertificate(item.file)" class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-white bg-mainColor rounded-lg mr-0 lg:mr-5">
-            Download - PDF
+            {{ $t('general.download') }} - PDF
           </button>
           <p class="text-base font-medium text-mainColor">{{ item.name }}</p>
         </div>

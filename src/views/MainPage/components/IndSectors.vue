@@ -8,9 +8,7 @@
             <h3 class="mb-2 text-2xl font-bold">
               {{ $t('mainPage.indSectors.title') }}
             </h3>
-            <p>250 professionals in 21 countries advise major international and local firms, funds, banks, insurance
-              firms, construction companies, mining companies, airlines, light and heavy industry companies, telecoms,
-              pharmaceuticals and others.Clients have access to quality legal services in the following industries.</p>
+            <p>{{ $t('mainPage.indSectors.content') }}</p>
           </div>
           <div class="opacity-0 transition-all" :class="{ '!opacity-100' : getIndSectors[activeBlock] }" v-else>
             <h3 class="mb-2 text-2xl font-bold">{{ getIndSectors[activeBlock].title }}</h3>
