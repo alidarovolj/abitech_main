@@ -185,7 +185,7 @@ export default createStore({
             },
             {
                 id: 4,
-                name: "Moskow",
+                name: "Moscow",
                 addresses: [
                     {
                         address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
