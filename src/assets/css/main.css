@@ -78,3 +78,34 @@ a:hover {
         max-width: 1182px;
     }
 }
+
+.bg {
+    background-color: #1E3D37;
+}
+
+.el {
+    mix-blend-mode: exclusion;
+    background: radial-gradient(circle at 100% 100px, #1E3D37 100%, #1E3D37);
+    background-clip: text;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d3d3d3;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}

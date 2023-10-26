@@ -26,6 +26,7 @@ export default {
     switchLocale(event) {
       localStorage.setItem("locale", event.target.value);
       this.$i18n.locale = event.target.value;
+      this.$router.go()
     },
   },
   data() {

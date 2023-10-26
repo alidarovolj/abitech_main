@@ -1,7 +1,7 @@
 <template>
   <div
       id="hero"
-    class="h-screen bg-mainColor relative flex items-center justify-center w-full background-element"
+    class="bg h-screen bg-mainColor relative flex items-center justify-center w-full background-element"
   >
     <img
       class="absolute w-full h-full top-0 left-0 z-10"

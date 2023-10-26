@@ -72,17 +72,6 @@
                   {{ $t('locations.russia.moskow') }}
                 </router-link>
               </div>
-              <div class="flex items-center mb-1">
-                <img alt="" class="w-6 h-6" src="@/assets/img/locations/pin.png">
-                <router-link
-                    :class="[{ 'font-semibold' : activeLocation === 5 }, { 'bg-[#1E3D3729] rounded px-1' : activeLocation === 5 }]"
-                    :to="{ name: 'LocationsPage', params: { id: 5 } }"
-                    class="cursor-pointer block w-full"
-                    @mouseleave="activeLocation = $route.params.id"
-                    @mouseover="activeLocation = 5">
-                  {{ $t('locations.russia.saint') }}
-                </router-link>
-              </div>
             </div>
           </div>
         </div>

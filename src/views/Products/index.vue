@@ -10,7 +10,9 @@
         <div class="hidden lg:flex border-b-2 border-white w-full"></div>
       </div>
       <div class="flex flex-col lg:flex-row gap-5 mb-6 text-white">
-        <img :src="block.img" alt="" class="w-full lg:w-half h-full object-cover rounded-tr-xl">
+        <div class="w-full lg:w-1/2">
+          <img :src="block.img" alt="" class="w-full h-auto rounded-tr-xl">
+        </div>
         <div class="w-full lg:w-half flex flex-col justify-between">
           <div>
             <h2 v-if="$i18n.locale === 'ru'" class="font-bold text-4xl mb-5">{{ block.title }}</h2>
@@ -27,7 +29,7 @@
             </div>
             <div>
               <div v-for="(item, index) of block.certificates" :key="index" class="flex flex-col lg:flex-row items-center mb-5">
-                <button @click="downloadCertificate(item.file)" class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-mainColor bg-white rounded-lg mr-0 lg:mr-5">
+                <button @click="downloadCertificate(item.file, item.name)" class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-mainColor bg-white rounded-lg mr-0 lg:mr-5">
                   {{ $t('general.download') }} - PDF
                 </button>
                 <p v-if="$i18n.locale === 'ru'" class="text-base font-medium text-mainColor">{{ item.name }}</p>
@@ -66,10 +68,10 @@ export default {
     this.block = this.getProducts[this.$route.params.id - 1]
   },
   methods: {
-    downloadCertificate(fileUrl) {
+    downloadCertificate(fileUrl, name) {
       const link = document.createElement("a");
       link.href = fileUrl;
-      link.download = "certificate.pdf";
+      link.download = name;
       link.target = "_blank";
       link.click();
     },

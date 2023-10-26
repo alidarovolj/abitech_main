@@ -16,26 +16,25 @@
             {{ $t('contactUs.title') }}
           </p>
           <div class="bg-mainColor rounded-b-lg px-7 py-8 text-secondaryColor">
-            <p class="text-xl mb-5">TOO "ADVANCED BUSINESS TECHNOLOGIES "
-              info@abitech.kz</p>
+            <p class="text-xl mb-5">TOO "ADVANCED BUSINESS TECHNOLOGIES"</p>
             <div class="flex items-center gap-2.5 mb-5">
-              <img alt="" src="@/assets/img/contacts/phone-call.svg">
+              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/phone-call.svg">
               <p class="text-base">+7 (771) 762-22-85</p>
             </div>
             <div class="flex items-center gap-2.5 mb-5">
-              <img alt="" src="@/assets/img/contacts/brand-instagram.svg">
+              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/brand-instagram.svg">
               <p class="text-base">INSTAGRAM - abitechkz</p>
             </div>
             <div class="flex items-center gap-2.5 mb-5">
-              <img alt="" src="@/assets/img/contacts/brand-facebook.svg">
-              <p class="text-base">FACEBOOK - ABiTech</p>
+              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/email.png">
+              <p class="text-base">info@abitech.kz</p>
             </div>
             <div class="flex items-center gap-2.5 mb-5">
-              <img alt="" src="@/assets/img/contacts/brand-linkedin.svg">
+              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/brand-linkedin.svg">
               <p class="text-base">LINKEDIN - abitechkz</p>
             </div>
             <div class="flex items-center gap-2.5 mb-5">
-              <img alt="" src="@/assets/img/contacts/map-pin.svg">
+              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/map-pin.svg">
               <p class="text-base">{{ $t('contactUs.address') }}</p>
             </div>
           </div>

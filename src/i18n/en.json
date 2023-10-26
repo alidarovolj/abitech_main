@@ -13,13 +13,13 @@
   },
   "mainPage": {
     "hero": {
-      "title": "EFFICIENT PROCESS AND <br>ASSET MANAGEMENT",
-      "content": "Professional consulting experience <br>and proprietary developments in various industries",
+      "title": "Efficient Asset and <br>Process Management ",
+      "content": "Professional experience in consulting and implementing custom solutions across diverse industries.",
       "order": "Request a Call"
     },
     "indSectors": {
       "title": "Industrial Sectors",
-      "content": "250 specialists in 21 countries consult large international and local firms, funds, banks, insurance companies, construction companies, mining companies, airlines, light and heavy industry companies, telecommunications, pharmaceuticals, and more. Clients have access to quality legal services in the following sectors:"
+      "content": "250 professionals in 21 countries advise major international and local firms, funds, banks, insurance firms, construction companies, mining companies, airlines, light and heavy industry companies, telecoms, pharmaceuticals and others.Clients have access to quality legal services in the following industries."
     }
   },
   "locations": {
@@ -34,9 +34,8 @@
       "tashkent": "Tashkent"
     },
     "russia": {
-      "title": "Russia",
-      "moskow": "Moscow",
-      "saint": "Saint Petersburg"
+      "title": "United Arab Emirates",
+      "moskow": "Abu Dhabi"
     }
   },
   "partners": "Our Key Partners and Clients",

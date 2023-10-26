@@ -70,17 +70,6 @@
                 {{ $t('locations.russia.moskow') }}
               </router-link>
             </div>
-            <div class="flex items-center mb-1">
-              <img class="w-6 h-6" src="@/assets/img/locations/pin.png" alt="">
-              <router-link
-                  :to="{ name: 'LocationsPage', params: { id: 5 } }"
-                  class="cursor-pointer"
-                  :class="{ 'font-semibold' : activeLocation === 4 }"
-                  @mouseover="activeLocation = 4"
-                  @mouseleave="activeLocation = null">
-                {{ $t('locations.russia.saint') }}
-              </router-link>
-            </div>
           </div>
         </div>
       </div>
@@ -119,16 +108,7 @@
             @mouseover="activeLocation = 3"
             @mouseleave="activeLocation = null"
             :class="[{ 'opacity-100' : fourth === true && getLocations[3] }, { 'w-9 h-9' : activeLocation === 3 }]"
-            class="w-8 h-8 absolute top-[79%] right-[30%] lg:top-[39%] lg:right-[30%] transition-all opacity-0 z-30"
-            src="@/assets/img/locations/point.png" alt="">
-      </router-link>
-      <router-link
-          :to="{ name: 'LocationsPage', params: { id: 5 } }">
-        <img
-            @mouseover="activeLocation = 4"
-            @mouseleave="activeLocation = null"
-            :class="[{ 'opacity-100' : fifth === true && getLocations[4] }, { 'w-9 h-9' : activeLocation === 4 }]"
-            class="w-8 h-8 absolute top-[86%] right-[28%] lg:top-[46%] lg:right-[28%] transition-all opacity-0 z-30"
+            class="w-8 h-8 absolute top-[89%] right-[35%] lg:top-[51%] lg:right-[31%] transition-all opacity-0 z-30"
             src="@/assets/img/locations/point.png" alt="">
       </router-link>
     </div>
