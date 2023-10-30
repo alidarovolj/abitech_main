@@ -1,6 +1,6 @@
 <template>
   <div id="locations"
-      class="h-full lg:h-screen bg-mainColor relative flex items-center justify-center w-full background-element py-10 lg:py-0"
+      class="h-full location lg:h-screen bg-mainColor relative flex items-center justify-center w-full background-element py-10 lg:py-0"
   >
     <img
         class="absolute w-full h-full top-0 left-0 z-10"

@@ -12,82 +12,196 @@
             class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
           <ul class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
             <li>
-              <img
-                  src="@/assets/img/partners/1.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/1.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/2.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/2.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/3.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/3.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/4.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/4.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/5.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/5.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/6.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/6.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/7.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/1.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/8.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/2.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/9.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/3.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/10.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/4.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/11.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/5.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/12.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/6.png"
+                />
+              </div>
             </li>
             <li>
-              <img
-                  src="@/assets/img/partners/13.png"
-                  alt=""
-              />
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/1.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/2.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/3.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/4.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/5.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/6.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/1.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/2.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/3.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/4.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/5.png"
+                />
+              </div>
+            </li>
+            <li>
+              <div class="colored-image">
+                <img
+                    alt=""
+                    src="@/assets/img/partners/green/6.png"
+                />
+              </div>
             </li>
           </ul>
         </div>

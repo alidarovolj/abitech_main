@@ -8,50 +8,50 @@
   <div class="hidden lg:flex">
     <div class="w-max fixed z-50 top-1/2 -translate-y-1/2 left-5 text-element">
       <a
-          class="el block text-base w-max cursor-pointer mb-[30px]"
+          class="text-secondaryColor el block text-base w-max cursor-pointer mb-[30px]"
           href="https://abitech.creoad.kz/#hero">
         {{ $t('header.main') }}
       </a>
       <a
-          class="el block text-base w-max cursor-pointer mb-[30px]"
+          class="text-secondaryColor el block text-base w-max cursor-pointer mb-[30px]"
           href="https://abitech.creoad.kz/#indSectors">
         {{ $t('header.indSectors') }}
       </a>
       <a
-          class="el block text-base w-max cursor-pointer mb-[30px]"
+          class="text-secondaryColor el block text-base w-max cursor-pointer mb-[30px]"
           href="https://abitech.creoad.kz/#locations">
         {{ $t('header.locations') }}
       </a>
       <a
-          class="el block text-base w-max cursor-pointer mb-[30px]"
+          class="text-secondaryColor el block text-base w-max cursor-pointer mb-[30px]"
           href="https://abitech.creoad.kz/#accomplishments">
         {{ $t('header.accomplishments') }}
       </a>
       <a
-          class="el block text-base w-max cursor-pointer"
+          class="text-secondaryColor el block text-base w-max cursor-pointer"
           href="https://abitech.creoad.kz/#products">
         {{ $t('header.products') }}
       </a>
     </div>
     <div class="w-max fixed z-50 top-1/2 -translate-y-1/2 right-5">
       <a
-          class="el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
           href="https://abitech.creoad.kz/#hero">
       </a>
       <a
-          class="el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
           href="https://abitech.creoad.kz/#indSectors">
       </a>
       <a
-          class="el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
           href="https://abitech.creoad.kz/#locations">
       </a>
       <a
-          class="el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
           href="https://abitech.creoad.kz/#accomplishments">
       </a>
       <a
-          class="el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
+          class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
           href="https://abitech.creoad.kz/#products">
       </a>
     </div>
@@ -111,18 +111,7 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
   },
   beforeUnmount() {
-    // Remember to remove the event listener when the component is unmounted.
     window.removeEventListener('scroll', this.handleScroll);
   },
 }
 </script>
-
-<style>
-a {
-  text-decoration: none;
-  color: green; /* Задайте начальный цвет для ссылок на белом фоне */
-}
-div.bg-mainColor a {
-  color: white;
-}
-</style>

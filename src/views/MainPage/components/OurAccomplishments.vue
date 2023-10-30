@@ -10,7 +10,7 @@
                   v-for="itemIndex in 3"
                   :key="(slideIndex - 1) * 3 + itemIndex - 1"
                   :to="{ name: 'AccompPage', params: { id: getAccomplishments[(slideIndex - 1) * 3 + itemIndex - 1].id } }"
-                  class="flex mb-2"
+                  class="flex mb-2 w-full"
                   @mouseleave="activeBlock = null"
                   @mouseover="(activeBlock = (slideIndex - 1) * 3 + itemIndex - 1)"
               >
@@ -18,7 +18,7 @@
                      class="block lg:flex items-center text-white pl-6 lg:pl-12 p-4 lg:p-8 relative bg-mainColor opacity-90 transition-all">
                   <img :src="getAccomplishments[(slideIndex - 1) * 3 + itemIndex - 1].img_bg" alt="" class="absolute w-full h-full top-0 left-0 -z-10">
                   <img :class="{'ml-7 mr-0': itemIndex === 2}" :src="getAccomplishments[(slideIndex - 1) * 3 + itemIndex - 1].img" alt="" class="mr-7 w-[178px] h-[118px]">
-                  <div>
+                  <div class="w-full">
                     <h3 v-if="$i18n.locale === 'ru'" class="text-xl lg:text-2xl font-bold mb-5">{{ getAccomplishments[(slideIndex - 1) * 3 + itemIndex - 1].title }}</h3>
                     <h3 v-if="$i18n.locale === 'kz'" class="text-xl lg:text-2xl font-bold mb-5">{{ getAccomplishments[(slideIndex - 1) * 3 + itemIndex - 1].title_kz }}</h3>
                     <h3 v-if="$i18n.locale === 'en'" class="text-xl lg:text-2xl font-bold mb-5">{{ getAccomplishments[(slideIndex - 1) * 3 + itemIndex - 1].title_en }}</h3>

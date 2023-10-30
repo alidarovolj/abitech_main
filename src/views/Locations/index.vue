@@ -1,5 +1,5 @@
 <template>
-  <div v-if="block" class="relative bg-mainColor">
+  <div v-if="block" class="relative bg-mainColor location">
     <img class="w-full h-full absolute left-0 top-0" src="@/assets/img/locations/map.png" alt="">
     <div class="w-full h-full absolute left-0 top-0 bg-mainColor opacity-90"></div>
     <div class="relative z-40 container mx-auto px-4 lg:px-0 py-[67px]">
@@ -23,7 +23,7 @@
                 <router-link
                     :class="[{ 'font-semibold' : activeLocation === 1 }, { 'bg-[#1E3D3729] rounded px-1' : activeLocation === 1 }]"
                     :to="{ name: 'LocationsPage', params: { id: 1 } }"
-                    class="cursor-pointer block w-full"
+                    class="cursor-pointer block w-full text-mainColor"
                     @mouseleave="activeLocation = $route.params.id"
                     @mouseover="activeLocation = 1">
                   {{ $t('locations.kazakhstan.almaty') }}
@@ -34,7 +34,7 @@
                 <router-link
                     :class="[{ 'font-semibold' : activeLocation === 2 }, { 'bg-[#1E3D3729] rounded px-1' : activeLocation === 2 }]"
                     :to="{ name: 'LocationsPage', params: { id: 2 } }"
-                    class="cursor-pointer block w-full"
+                    class="cursor-pointer block w-full text-mainColor"
                     @mouseleave="activeLocation = $route.params.id"
                     @mouseover="activeLocation = 2">
                   {{ $t('locations.kazakhstan.astana') }}
@@ -50,7 +50,7 @@
                 <router-link
                     :class="[{ 'font-semibold' : activeLocation === 3 }, { 'bg-[#1E3D3729] rounded px-1' : activeLocation === 3 }]"
                     :to="{ name: 'LocationsPage', params: { id: 3 } }"
-                    class="cursor-pointer block w-full"
+                    class="cursor-pointer block w-full text-mainColor"
                     @mouseleave="activeLocation = $route.params.id"
                     @mouseover="activeLocation = 3">
                   {{ $t('locations.uzbekistan.tashkent') }}
@@ -66,7 +66,7 @@
                 <router-link
                     :class="[{ 'font-semibold' : activeLocation === 4 }, { 'bg-[#1E3D3729] rounded px-1' : activeLocation === 4 }]"
                     :to="{ name: 'LocationsPage', params: { id: 4 } }"
-                    class="cursor-pointer block w-full"
+                    class="cursor-pointer block w-full !text-mainColor"
                     @mouseleave="activeLocation = $route.params.id"
                     @mouseover="activeLocation = 4">
                   {{ $t('locations.russia.moskow') }}

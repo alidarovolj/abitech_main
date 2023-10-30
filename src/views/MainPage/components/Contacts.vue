@@ -26,7 +26,7 @@
               <p class="text-base">INSTAGRAM - abitechkz</p>
             </div>
             <div class="flex items-center gap-2.5 mb-5">
-              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/email.png">
+              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/mail.png">
               <p class="text-base">info@abitech.kz</p>
             </div>
             <div class="flex items-center gap-2.5 mb-5">
