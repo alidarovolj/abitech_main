@@ -11,16 +11,16 @@
       </div>
       <div class="flex flex-col lg:flex-row gap-5 mb-6 text-white">
         <div class="w-full lg:w-1/2">
-          <img :src="block.img" alt="" class="w-full h-auto rounded-tr-xl">
+          <img :src="block.img" alt="" class="w-full h-full object-cover rounded-tr-xl">
         </div>
         <div class="w-full lg:w-half flex flex-col justify-between">
           <div>
-            <h2 v-if="$i18n.locale === 'ru'" class="font-bold text-4xl mb-5">{{ block.title }}</h2>
-            <h2 v-if="$i18n.locale === 'kz'" class="font-bold text-4xl mb-5">{{ block.title_kz }}</h2>
-            <h2 v-if="$i18n.locale === 'en'" class="font-bold text-4xl mb-5">{{ block.title_en }}</h2>
-            <p v-if="$i18n.locale === 'ru'" class="text-base font-medium">{{ block.description }}</p>
-            <p v-if="$i18n.locale === 'kz'" class="text-base font-medium">{{ block.description_kz }}</p>
-            <p v-if="$i18n.locale === 'en'" class="text-base font-medium">{{ block.description_en }}</p>
+            <h2 v-if="$i18n.locale === 'ru'" class="font-bold text-xl lg:text-4xl mb-5">{{ block.title }}</h2>
+            <h2 v-if="$i18n.locale === 'kz'" class="font-bold text-xl lg:text-4xl mb-5">{{ block.title_kz }}</h2>
+            <h2 v-if="$i18n.locale === 'en'" class="font-bold text-xl lg:text-4xl mb-5">{{ block.title_en }}</h2>
+            <p v-if="$i18n.locale === 'ru'" class="text-sm lg:text-base font-medium">{{ block.description }}</p>
+            <p v-if="$i18n.locale === 'kz'" class="text-sm lg:text-base font-medium">{{ block.description_kz }}</p>
+            <p v-if="$i18n.locale === 'en'" class="text-sm lg:text-base font-medium">{{ block.description_en }}</p>
           </div>
           <div>
             <div class="flex items-center justify-between mb-8">
@@ -41,8 +41,8 @@
         </div>
       </div>
     </div>
-    <ProductsBlock />
   </div>
+  <ProductsBlock :half="true" />
 </template>
 
 <script>

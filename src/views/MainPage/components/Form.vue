@@ -13,13 +13,13 @@
               <p class="mb-4 text-2xl">{{ $t('form.name.title') }}*</p>
               <input id="name"
                      class="bg-transparent border-b border-[#1A3A2E] outline-none px-5 py-3 text-[18px] text-[#757575]"
-                     :placeholder="$t('form.name.title')" type="text">
+                     :placeholder="$t('form.name.placeholder')" type="text">
             </label>
             <label class="flex flex-col w-full sm:w-half" for="title">
               <p class="mb-4 text-2xl">{{ $t('form.subject.title') }}*</p>
               <input id="title"
                      class="bg-transparent border-b border-[#1A3A2E] outline-none px-5 py-3 text-[18px] text-[#757575]"
-                     :placeholder="$t('form.subject.title')" type="text">
+                     :placeholder="$t('form.subject.placeholder')" type="text">
             </label>
           </div>
           <div class="flex flex-col sm:flex-row gap-5 mb-12">
@@ -27,13 +27,13 @@
               <p class="mb-4 text-2xl">{{ $t('form.email.title') }}*</p>
               <input id="name"
                      class="bg-transparent border-b border-[#1A3A2E] outline-none px-5 py-3 text-[18px] text-[#757575]"
-                     :placeholder="$t('form.email.title')" type="text">
+                     :placeholder="$t('form.email.placeholder')" type="text">
             </label>
             <label class="flex flex-col w-full sm:w-half" for="title">
-              <p class="mb-4 text-2xl">{{ $t('form.email.title') }}*</p>
+              <p class="mb-4 text-2xl">{{ $t('form.phone.title') }}*</p>
               <input id="title"
                      class="bg-transparent border-b border-[#1A3A2E] outline-none px-5 py-3 text-[18px] text-[#757575]"
-                     :placeholder="$t('form.email.title')" type="text">
+                     :placeholder="$t('form.phone.placeholder')" type="text">
             </label>
           </div>
           <button class="py-4 px-8 bg-mainColor w-full lg:w-max text-white rounded-lg text-2xl" type="submit">{{ $t('form.button') }}</button>

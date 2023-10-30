@@ -3,11 +3,10 @@
     <h2 class="text-2xl font-semibold mb-10 dark:text-whiteColor">{{ $t('form.heading') }}</h2>
     <div class="block lg:flex rounded-2xl bg-white dark:bg-darkBgColor text-blackColor dark:text-white">
       <div class="w-full lg:w-1/3">
-        <iframe class="rounded-t-xl lg:rounded-tr-none lg:rounded-l-2xl"
-                frameborder="0"
-                height="649"
-                src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a9d23a8cc635bd099bc33d6ccc533d8d18c977c429689eaf69c699df8b5ee23&amp;source=constructor"
-                width="100%"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.9834251224374!2d76.85627007664084!3d43.209836980992705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836830b210f111%3A0x11c14c21ab78baed!2sABiTech!5e0!3m2!1sru!2skz!4v1698696989863!5m2!1sru!2skz"
+            width="100%" height="649" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-t-xl lg:rounded-tr-none lg:rounded-l-2xl"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="w-full lg:w-2/3 p-7 flex flex-col justify-center">
         <h3 class="text-2xl font-semibold mb-3">{{ $t('form.header') }}</h3>

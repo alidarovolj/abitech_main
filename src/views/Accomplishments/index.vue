@@ -9,9 +9,9 @@
       <div class="flex flex-col lg:flex-row gap-5 mb-6">
         <img :src="block.img" alt="" class="w-full lg:w-1/2 h-80 object-cover rounded-tr-xl">
         <div>
-          <h2 v-if="$i18n.locale === 'ru'" class="font-bold text-4xl mb-5">{{ block.title }}</h2>
-          <h2 v-if="$i18n.locale === 'kz'" class="font-bold text-4xl mb-5">{{ block.title_kz }}</h2>
-          <h2 v-if="$i18n.locale === 'en'" class="font-bold text-4xl mb-5">{{ block.title_en }}</h2>
+          <h2 v-if="$i18n.locale === 'ru'" class="font-bold text-xl lg:text-4xl mb-5">{{ block.title }}</h2>
+          <h2 v-if="$i18n.locale === 'kz'" class="font-bold text-xl lg:text-4xl mb-5">{{ block.title_kz }}</h2>
+          <h2 v-if="$i18n.locale === 'en'" class="font-bold text-xl lg:text-4xl mb-5">{{ block.title_en }}</h2>
           <p v-if="$i18n.locale === 'ru'" class="text-base font-medium">{{ block.description }}</p>
           <p v-if="$i18n.locale === 'kz'" class="text-base font-medium">{{ block.description_kz }}</p>
           <p v-if="$i18n.locale === 'en'" class="text-base font-medium">{{ block.description_en }}</p>
@@ -23,7 +23,7 @@
       </div>
       <div>
         <div v-for="(item, index) of block.certificates" :key="index" class="flex flex-col lg:flex-row items-center mb-5">
-          <button @click="downloadCertificate(item.file)" class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-white bg-mainColor rounded-lg mr-0 lg:mr-5">
+          <button @click="downloadCertificate(item.file)" class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-white bg-mainColor rounded-lg mr-0 lg:mr-5 mb-3 lg:mb-0">
             {{ $t('general.download') }} - PDF
           </button>
           <p class="text-base font-medium text-mainColor">{{ item.name }}</p>

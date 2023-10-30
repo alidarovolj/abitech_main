@@ -18,11 +18,11 @@
       <div v-if="$i18n.locale === 'ru'" class="text-mainColor text-base" v-html="block.content"></div>
       <div v-if="$i18n.locale === 'kz'" class="text-mainColor text-base" v-html="block.content_kz"></div>
       <div v-if="$i18n.locale === 'en'" class="text-mainColor text-base" v-html="block.content_en"></div>
-      <p v-if="$i18n.locale === 'en'">We have worked with :</p>
-      <p v-if="$i18n.locale === 'ru'">Мы работали с:</p>
-      <p v-if="$i18n.locale === 'kz'">Біз жұмыс істедік:</p>
+      <p class="text-base font-semibold" v-if="$i18n.locale === 'en'">We have worked with :</p>
+      <p class="text-base font-semibold" v-if="$i18n.locale === 'ru'">Мы работали с:</p>
+      <p class="text-base font-semibold" v-if="$i18n.locale === 'kz'">Біз жұмыс істедік:</p>
       <div class="flex items-center">
-        <img class=" h-20 mr-7" v-for="(item, index) of block.works" :key="index" alt="" :src="item">
+        <img class=" h-36 mr-7 w-36 object-contain" v-for="(item, index) of block.works" :key="index" alt="" :src="item">
       </div>
     </div>
   </div>

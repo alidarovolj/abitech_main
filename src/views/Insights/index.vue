@@ -29,18 +29,18 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="container mx-auto px-4 lg:px-0">
-      <div class="block lg:flex justify-between">
-        <div v-for="(item, index) of getNews" :key="index" class="lg:w-[30%] w-full bg-white rounded-lg" style="box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);">
-          <img class="rounded-lg" :src="item.img" alt="">
-          <div class="p-4">
-            <p v-if="$i18n.locale === 'ru'" class="mb-3 font-bold">{{ item.title }}</p>
-            <p v-if="$i18n.locale === 'kz'" class="mb-3 font-bold">{{ item.title_kz }}</p>
-            <p v-if="$i18n.locale === 'en'" class="mb-3 font-bold">{{ item.title_en }}</p>
-            <p v-if="$i18n.locale === 'ru'" class="font-medium">{{ item.short_desc }}</p>
-            <p v-if="$i18n.locale === 'kz'" class="font-medium">{{ item.short_desc_kz }}</p>
-            <p v-if="$i18n.locale === 'en'" class="font-medium">{{ item.short_desc_en }}</p>
+      <div class="container mx-auto px-4 lg:px-0">
+        <div class="block lg:flex justify-between">
+          <div v-for="(item, index) of getNews" :key="index" class="lg:w-[30%] w-full bg-white rounded-lg" style="box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.25);">
+            <img class="rounded-lg" :src="item.img" alt="">
+            <div class="p-4">
+              <p v-if="$i18n.locale === 'ru'" class="mb-3 font-bold">{{ item.title }}</p>
+              <p v-if="$i18n.locale === 'kz'" class="mb-3 font-bold">{{ item.title_kz }}</p>
+              <p v-if="$i18n.locale === 'en'" class="mb-3 font-bold">{{ item.title_en }}</p>
+              <p v-if="$i18n.locale === 'ru'" class="font-medium">{{ item.short_desc }}</p>
+              <p v-if="$i18n.locale === 'kz'" class="font-medium">{{ item.short_desc_kz }}</p>
+              <p v-if="$i18n.locale === 'en'" class="font-medium">{{ item.short_desc_en }}</p>
+            </div>
           </div>
         </div>
       </div>

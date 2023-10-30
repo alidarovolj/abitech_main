@@ -17,30 +17,86 @@
           <div class="scroll-container">
             <div class="scroll-element primary">
               <img
-                class="w-full h-full"
+                class="w-full h-full object-cover"
                 src="@/assets/img/heroBlock/1.png"
                 alt=""
               />
             </div>
             <div class="scroll-element secondary">
               <img
-                class="w-full h-full"
+                class="w-full h-full object-cover"
                 src="@/assets/img/heroBlock/2.png"
                 alt=""
               />
             </div>
             <div class="scroll-element third">
               <img
-                class="w-full h-full"
+                class="w-full h-full object-cover"
                 src="@/assets/img/heroBlock/3.png"
                 alt=""
               />
             </div>
             <div class="scroll-element fourth">
               <img
-                class="w-full h-full"
+                class="w-full h-full object-cover"
                 src="@/assets/img/heroBlock/4.png"
                 alt=""
+              />
+            </div>
+            <div class="scroll-element primary">
+              <img
+                  class="w-full h-full object-cover"
+                  src="@/assets/img/heroBlock/1.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element secondary">
+              <img
+                  class="w-full h-full object-cover"
+                  src="@/assets/img/heroBlock/2.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element third">
+              <img
+                  class="w-full h-full object-cover"
+                  src="@/assets/img/heroBlock/3.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element fourth">
+              <img
+                  class="w-full h-full object-cover"
+                  src="@/assets/img/heroBlock/4.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element primary">
+              <img
+                  class="w-full h-full object-cover"
+                  src="@/assets/img/heroBlock/1.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element secondary">
+              <img
+                  class="w-full h-full object-cover"
+                  src="@/assets/img/heroBlock/2.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element third">
+              <img
+                  class="w-full h-full object-cover"
+                  src="@/assets/img/heroBlock/3.png"
+                  alt=""
+              />
+            </div>
+            <div class="scroll-element fourth">
+              <img
+                  class="w-full h-full object-cover"
+                  src="@/assets/img/heroBlock/4.png"
+                  alt=""
               />
             </div>
           </div>

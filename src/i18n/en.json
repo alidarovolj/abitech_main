@@ -14,12 +14,12 @@
   "mainPage": {
     "hero": {
       "title": "Efficient Asset and <br>Process Management ",
-      "content": "Professional experience in consulting and implementing custom solutions across diverse industries.",
+      "content": "Professional experience in consulting and <br>implementing custom solutions across diverse industries.",
       "order": "Request a Call"
     },
     "indSectors": {
       "title": "Industrial Sectors",
-      "content": "250 professionals in 21 countries advise major international and local firms, funds, banks, insurance firms, construction companies, mining companies, airlines, light and heavy industry companies, telecoms, pharmaceuticals and others.Clients have access to quality legal services in the following industries."
+      "content": "At ABiTech, we specialise in providing  technological solutions to a diverse range of industries, empowering them to achieve operational excellence. Our expertise spans across oil & gas, energy, mining, transportation, logistics, manufacturing, aviation, retail, fashion, automotive, chemical, and warehousing sectors. Our solutions are tailored to meet the unique challenges and opportunities of each industry, enabling businesses to thrive in today's rapidly evolving global marketplace."
     }
   },
   "locations": {
@@ -34,10 +34,15 @@
       "tashkent": "Tashkent"
     },
     "russia": {
+      "title": "Russia",
+      "saint_petersburg": "Saint Petersburg"
+    },
+    "uae": {
       "title": "United Arab Emirates",
-      "moskow": "Abu Dhabi"
+      "abu_dhabi": "Abu Dhabi"
     }
   },
+  "products": "Products",
   "partners": "Our Key Partners and Clients",
   "insights": "Ideas",
   "contactUs": {

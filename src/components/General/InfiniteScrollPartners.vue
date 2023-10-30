@@ -220,6 +220,6 @@ export default {
 ul li img {
   object-fit: contain;
   width: auto;
-  height: 150px;
+  height: 100px;
 }
 </style>

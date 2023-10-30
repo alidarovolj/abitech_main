@@ -11,8 +11,8 @@ import imgInds3 from "@/assets/img/indSectors/3.jpg";
 import imgInds4 from "@/assets/img/indSectors/4.jpg";
 import imgProd1 from '@/assets/img/products/first.png'
 import imgProd2 from '@/assets/img/products/second.png'
-import imgProd3 from '@/assets/img/products/third.png'
-import imgProd4 from '@/assets/img/products/fourth.png'
+import imgProd3 from '@/assets/img/products/third.jpg'
+import imgProd4 from '@/assets/img/products/fourth.jpg'
 import acc1 from "@/assets/pdfs/1.pdf"
 import prodPDF1 from "@/assets/pdfs/1.pdf"
 import prodPDF2 from "@/assets/pdfs/2.pdf"
@@ -119,66 +119,6 @@ export default createStore({
                 name_en: "Certificate certifying the registration of a person as a participant in a special economic zone",
                 file: acc1
             }]
-        }, {
-            id: 4,
-            title: "Asia-Pacific, Asialaw Profiles 2021",
-            title_kz: "Asia-Pacific, Asialaw Profiles 2021",
-            title_en: "Asia-Pacific, Asialaw Profiles 2021",
-            img: img3Acc,
-            img_bg: img1AccBg,
-            short_desc: "Команда GRATA International вошла в число лучших фирм Казахстана и заняла высшие позиции - выдающиеся и рекомендованные в области общего коммерческого права, энергетики, нефти и газа, строительства.",
-            short_desc_kz: "GRATA International командасы Қазақстандағы ең жақсы фирмалардың қатарына қосылды және ең жоғары деңгейге қойылды - жалпы бизнес құқығы, энергетика, мұнай және газ, құрылыс саласында үздік және ұсынылды.",
-            short_desc_en: "The team of GRATA International was ranked among the best firms in Kazakhstan and placed in the highest tiers - outstanding and recommended in General Business Law, Energy, Oil&Gas, Construction",
-            description: "ABiTech заняла 4-е место в рейтинге «Топ-10 инновационных компаний Казахстана 2018»... по версии Национального агентства по\n" + "Технологического развития совместно с Бизнес-инкубатором МОСТ при поддержке Министерства по инвестициям и развитию РК проведен «Рэнкинг инновационных компаний Казахстана 2018». Принять участие могла любая казахстанская компания. ТОП-10 компаний-победителей были выбраны по результатам оценки независимых экспертов и технологической оценки АО «НАТР». Успехи ABiTech во внедрении инноваций в различных отраслях промышленности отмечены Дипломом и присвоено 4 место в рейтинге инновационных компаний Республики Казахстан.",
-            description_kz: "ABiTech 2018 жылғы Қазақстанның үздік 10 инновациялық компаниясының рейтингінде 4-ші орынды иеленді…\n" + "Технологиялық даму, MOST бизнес-инкубаторымен бірлесіп, Қазақстан Республикасы Инвестициялар және даму министрлігінің қолдауымен «Қазақстанның инновациялық компанияларының рейтингі-2018» өткізілді. Кез келген қазақстандық компания қатыса алады. ТОП 10 жеңімпаз компания тәуелсіз сарапшылардың бағалауы мен «NATR» АҚ технологиялық бағалауының нәтижелері бойынша таңдалды. ABiTech компаниясының әртүрлі салаларға инновацияларды енгізудегі жетістігі Дипломмен марапатталып, Қазақстан Республикасындағы инновациялық компаниялардың рейтингінде 4-орынға ие болды.",
-            description_en: "ABiTech is ranked 4th in the Top 10 Innovative Companies Ranking of Kazakhstan 2018… by the National Agency for\nTechnological Development, together with the MOST Business Incubator, with the support of the Ministry for Investment and Development of the Republic of Kazakhstan, the “Ranking of Innovative Companies of Kazakhstan 2018” was held. Any Kazakh company could take part. The TOP 10 Winning Companies were selected based on the results of an assessment by independent experts and a technological assessment by NATR JSC. The success of ABiTech in introducing innovations in various industries was awarded with a Diploma and was awarded the 4th place in the rating of innovative companies in the Republic of Kazakhstan.",
-            certificates: [{
-                id: 1,
-                name: "Свидетельство, удостоверяющее регистрацию лица в качестве участника специальной экономической зоны",
-                name_kz: "Тұлғаның арнайы экономикалық аймаққа қатысушы ретінде тіркелгенін куәландыратын куәлік",
-                name_en: "Certificate certifying the registration of a person as a participant in a special economic zone",
-                file: acc1
-            }]
-        }, {
-            id: 5,
-            title: "Asia-Pacific, Asialaw Profiles 2021",
-            title_kz: "Asia-Pacific, Asialaw Profiles 2021",
-            title_en: "Asia-Pacific, Asialaw Profiles 2021",
-            img: img3Acc,
-            img_bg: img1AccBg,
-            short_desc: "Команда GRATA International вошла в число лучших фирм Казахстана и заняла высшие позиции - выдающиеся и рекомендованные в области общего коммерческого права, энергетики, нефти и газа, строительства.",
-            short_desc_kz: "GRATA International командасы Қазақстандағы ең жақсы фирмалардың қатарына қосылды және ең жоғары деңгейге қойылды - жалпы бизнес құқығы, энергетика, мұнай және газ, құрылыс саласында үздік және ұсынылды.",
-            short_desc_en: "The team of GRATA International was ranked among the best firms in Kazakhstan and placed in the highest tiers - outstanding and recommended in General Business Law, Energy, Oil&Gas, Construction",
-            description: "ABiTech заняла 4-е место в рейтинге «Топ-10 инновационных компаний Казахстана 2018»... по версии Национального агентства по\n" + "Технологического развития совместно с Бизнес-инкубатором МОСТ при поддержке Министерства по инвестициям и развитию РК проведен «Рэнкинг инновационных компаний Казахстана 2018». Принять участие могла любая казахстанская компания. ТОП-10 компаний-победителей были выбраны по результатам оценки независимых экспертов и технологической оценки АО «НАТР». Успехи ABiTech во внедрении инноваций в различных отраслях промышленности отмечены Дипломом и присвоено 4 место в рейтинге инновационных компаний Республики Казахстан.",
-            description_kz: "ABiTech 2018 жылғы Қазақстанның үздік 10 инновациялық компаниясының рейтингінде 4-ші орынды иеленді…\n" + "Технологиялық даму, MOST бизнес-инкубаторымен бірлесіп, Қазақстан Республикасы Инвестициялар және даму министрлігінің қолдауымен «Қазақстанның инновациялық компанияларының рейтингі-2018» өткізілді. Кез келген қазақстандық компания қатыса алады. ТОП 10 жеңімпаз компания тәуелсіз сарапшылардың бағалауы мен «NATR» АҚ технологиялық бағалауының нәтижелері бойынша таңдалды. ABiTech компаниясының әртүрлі салаларға инновацияларды енгізудегі жетістігі Дипломмен марапатталып, Қазақстан Республикасындағы инновациялық компаниялардың рейтингінде 4-орынға ие болды.",
-            description_en: "ABiTech is ranked 4th in the Top 10 Innovative Companies Ranking of Kazakhstan 2018… by the National Agency for\nTechnological Development, together with the MOST Business Incubator, with the support of the Ministry for Investment and Development of the Republic of Kazakhstan, the “Ranking of Innovative Companies of Kazakhstan 2018” was held. Any Kazakh company could take part. The TOP 10 Winning Companies were selected based on the results of an assessment by independent experts and a technological assessment by NATR JSC. The success of ABiTech in introducing innovations in various industries was awarded with a Diploma and was awarded the 4th place in the rating of innovative companies in the Republic of Kazakhstan.",
-            certificates: [{
-                id: 1,
-                name: "Свидетельство, удостоверяющее регистрацию лица в качестве участника специальной экономической зоны",
-                name_kz: "Тұлғаның арнайы экономикалық аймаққа қатысушы ретінде тіркелгенін куәландыратын куәлік",
-                name_en: "Certificate certifying the registration of a person as a participant in a special economic zone",
-                file: acc1
-            }]
-        }, {
-            id: 6,
-            title: "Asia-Pacific, Asialaw Profiles 2021",
-            title_kz: "Asia-Pacific, Asialaw Profiles 2021",
-            title_en: "Asia-Pacific, Asialaw Profiles 2021",
-            img: img3Acc,
-            img_bg: img1AccBg,
-            short_desc: "Команда GRATA International вошла в число лучших фирм Казахстана и заняла высшие позиции - выдающиеся и рекомендованные в области общего коммерческого права, энергетики, нефти и газа, строительства.",
-            short_desc_kz: "GRATA International командасы Қазақстандағы ең жақсы фирмалардың қатарына қосылды және ең жоғары деңгейге қойылды - жалпы бизнес құқығы, энергетика, мұнай және газ, құрылыс саласында үздік және ұсынылды.",
-            short_desc_en: "The team of GRATA International was ranked among the best firms in Kazakhstan and placed in the highest tiers - outstanding and recommended in General Business Law, Energy, Oil&Gas, Construction",
-            description: "ABiTech заняла 4-е место в рейтинге «Топ-10 инновационных компаний Казахстана 2018»... по версии Национального агентства по\n" + "Технологического развития совместно с Бизнес-инкубатором МОСТ при поддержке Министерства по инвестициям и развитию РК проведен «Рэнкинг инновационных компаний Казахстана 2018». Принять участие могла любая казахстанская компания. ТОП-10 компаний-победителей были выбраны по результатам оценки независимых экспертов и технологической оценки АО «НАТР». Успехи ABiTech во внедрении инноваций в различных отраслях промышленности отмечены Дипломом и присвоено 4 место в рейтинге инновационных компаний Республики Казахстан.",
-            description_kz: "ABiTech 2018 жылғы Қазақстанның үздік 10 инновациялық компаниясының рейтингінде 4-ші орынды иеленді…\n" + "Технологиялық даму, MOST бизнес-инкубаторымен бірлесіп, Қазақстан Республикасы Инвестициялар және даму министрлігінің қолдауымен «Қазақстанның инновациялық компанияларының рейтингі-2018» өткізілді. Кез келген қазақстандық компания қатыса алады. ТОП 10 жеңімпаз компания тәуелсіз сарапшылардың бағалауы мен «NATR» АҚ технологиялық бағалауының нәтижелері бойынша таңдалды. ABiTech компаниясының әртүрлі салаларға инновацияларды енгізудегі жетістігі Дипломмен марапатталып, Қазақстан Республикасындағы инновациялық компаниялардың рейтингінде 4-орынға ие болды.",
-            description_en: "ABiTech is ranked 4th in the Top 10 Innovative Companies Ranking of Kazakhstan 2018… by the National Agency for\nTechnological Development, together with the MOST Business Incubator, with the support of the Ministry for Investment and Development of the Republic of Kazakhstan, the “Ranking of Innovative Companies of Kazakhstan 2018” was held. Any Kazakh company could take part. The TOP 10 Winning Companies were selected based on the results of an assessment by independent experts and a technological assessment by NATR JSC. The success of ABiTech in introducing innovations in various industries was awarded with a Diploma and was awarded the 4th place in the rating of innovative companies in the Republic of Kazakhstan.",
-            certificates: [{
-                id: 1,
-                name: "Свидетельство, удостоверяющее регистрацию лица в качестве участника специальной экономической зоны",
-                name_kz: "Тұлғаның арнайы экономикалық аймаққа қатысушы ретінде тіркелгенін куәландыратын куәлік",
-                name_en: "Certificate certifying the registration of a person as a participant in a special economic zone",
-                file: acc1
-            }]
         }], indSectors: [{
             id: 1,
             title: "Нефть & Газ",
@@ -194,9 +134,9 @@ export default createStore({
             works: [part1, part4]
         }, {
             id: 2,
-            title: "Горнодобывающая промышленность (клиенты АГМК)",
-            title_kz: "Тау-кен (AGMK клиенттері)",
-            title_en: "Mining  (clients AGMK)",
+            title: "Горнодобывающая промышленность",
+            title_kz: "Тау-кен",
+            title_en: "Mining",
             description: "Технология RFID произвела революцию в горнодобывающей промышленности. Используя RFID-метки, компании могут эффективно отслеживать и управлять широким спектром активов, включая оборудование, инструменты и транспортные средства, гарантируя, что их местоположение и статус будут известны в режиме реального времени. Эта технология также упрощает управление запасами, особенно запасными частями и расходными материалами. Персонал может быть оснащен бейджами RFID, позволяющими точно отслеживать местоположение на горнодобывающих объектах, что повышает меры безопасности и возможности реагирования на чрезвычайные ситуации. RFID играет жизненно важную роль в цепочке поставок и логистике, регулируя движение материалов от добычи до переработки. Он также играет важную роль в планировании технического обслуживания и проверок, гарантируя соответствие оборудования стандартам безопасности. Внедрение RFID требует стратегического планирования и постоянного управления, но его преимущества с точки зрения безопасности, эффективности и соблюдения требований неоценимы для горнодобывающей промышленности.",
             description_kz: "RFID технологиясы тау-кен өнеркәсібіндегі операцияларда төңкеріс жасады. RFID тегтерін қолдану арқылы компаниялар активтердің кең ауқымын, соның ішінде жабдықтарды, құралдарды және көліктерді тиімді бақылап, басқара алады, олардың орны мен күйі нақты уақытта белгілі болуын қамтамасыз етеді. Бұл технология сонымен қатар инвентарлық қорларды, әсіресе қосалқы бөлшектер мен шығын материалдарын басқаруды жеңілдетеді. Персонал RFID бейджиктерімен жабдықталуы мүмкін, бұл тау-кен өндірісі объектілерінде орналасқан жерді дәл бақылауға мүмкіндік береді, бұл қауіпсіздік шаралары мен төтенше жағдайларды жою мүмкіндіктерін арттырады. RFID жеткізу тізбегі мен логистикада маңызды рөл атқарады, материалдардың өндіруден өңдеуге дейінгі қозғалысын реттейді. Ол сондай-ақ техникалық қызмет көрсету мен тексерулерді жоспарлауда маңызды рөл атқарады, жабдықтың қауіпсіздік стандарттарына сәйкестігіне кепілдік береді. RFID енгізу стратегиялық жоспарлауды және тұрақты басқаруды талап етеді, бірақ оның қауіпсіздік, тиімділік және сәйкестік бойынша артықшылықтары тау-кен өнеркәсібі үшін баға жетпес құнды болып табылады.",
             description_en: "RFID technology has revolutionized operations in the mining industry. By employing RFID tags, companies can effectively track and manage a wide array of assets, including equipment, tools, and vehicles, ensuring their location and status are known in real-time. This technology also streamlines inventory management, particularly for spare parts and consumables. Personnel can be equipped with RFID badges, enabling precise location tracking within mining facilities, which enhances safety measures and emergency response capabilities. RFID plays a vital role in supply chain and logistics, regulating the movement of materials from extraction to processing. It is also instrumental in scheduling maintenance and inspections, guaranteeing equipment compliance with safety standards. Implementing RFID requires strategic planning and ongoing management, but its benefits in terms of safety, efficiency, and compliance are invaluable to the mining industry.",
@@ -204,7 +144,7 @@ export default createStore({
             content: '<p class="mb-5">Технология RFID произвела революцию в горнодобывающей промышленности. Используя RFID-метки, компании могут эффективно отслеживать и управлять широким спектром активов, включая оборудование, инструменты и транспортные средства, гарантируя, что их местоположение и статус будут известны в режиме реального времени. Эта технология также упрощает управление запасами, особенно запасными частями и расходными материалами. Персонал может быть оснащен бейджами RFID, позволяющими точно отслеживать местоположение на горнодобывающих объектах, что повышает меры безопасности и возможности реагирования на чрезвычайные ситуации. RFID играет жизненно важную роль в цепочке поставок и логистике, регулируя движение материалов от добычи до переработки. Он также играет важную роль в планировании технического обслуживания и проверок, гарантируя соответствие оборудования стандартам безопасности. Внедрение RFID требует стратегического планирования и постоянного управления, но его преимущества с точки зрения безопасности, эффективности и соблюдения требований неоценимы для горнодобывающей промышленности.</p>',
             content_kz: '<p class="mb-5">RFID технологиясы тау-кен өнеркәсібіндегі операцияларда төңкеріс жасады. RFID тегтерін қолдану арқылы компаниялар активтердің кең ауқымын, соның ішінде жабдықтарды, құралдарды және көліктерді тиімді бақылап, басқара алады, олардың орны мен күйі нақты уақытта белгілі болуын қамтамасыз етеді. Бұл технология сонымен қатар инвентарлық қорларды, әсіресе қосалқы бөлшектер мен шығын материалдарын басқаруды жеңілдетеді. Персонал RFID бейджиктерімен жабдықталуы мүмкін, бұл тау-кен өндірісі объектілерінде орналасқан жерді дәл бақылауға мүмкіндік береді, бұл қауіпсіздік шаралары мен төтенше жағдайларды жою мүмкіндіктерін арттырады. RFID жеткізу тізбегі мен логистикада маңызды рөл атқарады, материалдардың өндіруден өңдеуге дейінгі қозғалысын реттейді. Ол сондай-ақ техникалық қызмет көрсету мен тексерулерді жоспарлауда маңызды рөл атқарады, жабдықтың қауіпсіздік стандарттарына сәйкестігіне кепілдік береді. RFID енгізу стратегиялық жоспарлауды және тұрақты басқаруды талап етеді, бірақ оның қауіпсіздік, тиімділік және сәйкестік бойынша артықшылықтары тау-кен өнеркәсібі үшін баға жетпес құнды болып табылады.</p>',
             content_en: '<p class="mb-5">RFID technology has revolutionized operations in the mining industry. By employing RFID tags, companies can effectively track and manage a wide array of assets, including equipment, tools, and vehicles, ensuring their location and status are known in real-time. This technology also streamlines inventory management, particularly for spare parts and consumables. Personnel can be equipped with RFID badges, enabling precise location tracking within mining facilities, which enhances safety measures and emergency response capabilities. RFID plays a vital role in supply chain and logistics, regulating the movement of materials from extraction to processing. It is also instrumental in scheduling maintenance and inspections, guaranteeing equipment compliance with safety standards. Implementing RFID requires strategic planning and ongoing management, but its benefits in terms of safety, efficiency, and compliance are invaluable to the mining industry.</p>',
-            works: []
+            works: [part5]
         }, {
             id: 3,
             title: "Транспорт и логистика",
@@ -237,7 +177,10 @@ export default createStore({
                 address_kz: "050052, Алматы, Таугүл шағын ауданы, Мұстай Кәрім көшесі, 13а, 240 каб.",
                 address_en: "050052, Almaty, Taugul microdistrict, Mustai Karim street, 13a, office 240",
                 phone: "+7 (771) 762-22-85",
-                map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3Ab608545a9131312c3b29a42631b1d2c452ff7cfe18235f389181997e98526fea&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
+                map: "<iframe\n" +
+                    "                    src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.9834251224374!2d76.85627007664084!3d43.209836980992705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836830b210f111%3A0x11c14c21ab78baed!2sABiTech!5e0!3m2!1sru!2skz!4v1698696989863!5m2!1sru!2skz\"\n" +
+                    "                    width=\"100%\" height=\"574\" style=\"border:0;\" allowFullScreen=\"\" loading=\"lazy\" className=\"px-4 sm:px-0\"\n" +
+                    "                    referrerPolicy=\"no-referrer-when-downgrade\"></iframe>"
             }]
         }, {
             id: 2, name: "Астана", name_kz: "Астана", name_en: "Astana", addresses: [{
@@ -256,7 +199,15 @@ export default createStore({
                 map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3Ab608545a9131312c3b29a42631b1d2c452ff7cfe18235f389181997e98526fea&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
             }]
         }, {
-            id: 4, name: "Абу-Даби", name_kz: "Абу-Даби", name_en: "Abu-Dhabi", addresses: [{
+            id: 4, name: "Санкт-Петербург", name_kz: "Санкт-Петербург", name_en: "Saint Petersburg", addresses: [{
+                address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
+                address_kz: "050052, Алматы, Таугүл шағын ауданы, Мұстай Кәрім көшесі, 13а, 240 каб.",
+                address_en: "050052, Almaty, Taugul microdistrict, Mustai Karim street, 13a, office 240",
+                phone: "+7 (771) 762-22-85",
+                map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3Ab608545a9131312c3b29a42631b1d2c452ff7cfe18235f389181997e98526fea&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
+            }]
+        }, {
+            id: 5, name: "Абу-Даби", name_kz: "Абу-Даби", name_en: "Abu-Dhabi", addresses: [{
                 address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
                 address_kz: "050052, Алматы, Таугүл шағын ауданы, Мұстай Кәрім көшесі, 13а, 240 каб.",
                 address_en: "050052, Almaty, Taugul microdistrict, Mustai Karim street, 13a, office 240",
@@ -266,7 +217,7 @@ export default createStore({
         }], products: [{
             id: 1,
             title: "АСКОУ – ИНВЕНТАРИЗАЦИЯ",
-            title_kz: "ASCOU – ИНВЕНТОРЛЫҚ",
+            title_kz: "ASCOA – ИНВЕНТОРЛЫҚ",
             title_en: "ASCOA - INVENTORY",
             description: "ASCOA - Inventory» — комплексное решение, предназначенное для обеспечения тщательной инвентаризации активов, включая товарно-материальные запасы, основные средства и другие ресурсы внутри предприятия. Разработка данной системы была обусловлена острой необходимостью точного учета и управления объектами в различных организационных структурах. \"ASCOA - Inventory\" предлагает целостное представление об активах организации и их количествах в различных подразделениях, а также ведет подробную историю жизненного цикла каждого объекта - от приобретения до утилизации. Помимо стандартного управления запасами Система обладает расширенными функциями, позволяющими отслеживать физическое перемещение активов и накладывать ограничения на их вывоз из определенных мест, таких как офисы или организационные помещения.Кроме того, она тщательно регистрирует вход и выход контролируемых активов.Кроме того, «ASCOA - Inventory» предлагает возможность связывать активы с конкретными местоположениями, повышая точность управления и отслеживания активов.",
             description_kz: "ASCOA - Инвентаризация» бұл кәсіпорын ішіндегі қорларды, негізгі құралдарды және басқа ресурстарды қоса алғанда, активтерді мұқият түгендеуді қамтамасыз етуге арналған кешенді шешім. Бұл жүйенің дамуы әртүрлі ұйымдық құрылымдардағы объектілерді дәл есепке алу және басқарудың маңызды қажеттілігінен туындады. Әкімшілік кеңселерден өндірістік нысандарға дейінгі баптаулар.\"ASCOA - Инвентарлық\" ұйымның активтері мен олардың әртүрлі бөлімшелердегі санының тұтас көрінісін ұсынады, сонымен қатар әрбір нысанның өмірлік циклінің егжей-тегжейлі тарихын сақтайды - сатып алудан шығаруға дейін. Стандартты инвентарлық басқарудан тыс. , жүйе активтердің физикалық қозғалысын бақылауға және оларды кеңселер немесе ұйымдық үй-жайлар сияқты белгіленген аумақтардан шығаруға шектеулер енгізуге мүмкіндік беретін жетілдірілген мүмкіндіктерге ие.Сонымен қатар, ол бақыланатын активтердің кіруі мен шығуын мұқият журналдайды. «ASCOA - түгендеу» активтерді басқару мен қадағалаудағы дәлдікті арттыра отырып, белгілі бір орындармен активтерді байланыстыру мүмкіндігін ұсынады.",
@@ -278,8 +229,8 @@ export default createStore({
         }, {
             id: 2,
             title: "АСКОУ – СКЛАД",
-            title_kz: "ASCOU – ҚОЙМА",
-            title_en: "ASCOU – WAREHOUSE",
+            title_kz: "ASCOA – ҚОЙМА",
+            title_en: "ASCOA – WAREHOUSE",
             description: "ASCOA – Склад» — это сложная система, предназначенная для учета, управления запасами и точного отслеживания товарно-материальных запасов на огромных складских объектах. На крупных производственных предприятиях, где на складах хранятся тысячи, а часто и десятки тысяч отдельных товаров, каждый из них Кроме того, может охватывать множество отдельных объектов запасов, товаров и материалов. Традиционно проведение инвентаризации такого обширного набора предметов представляет собой трудоемкую работу, часто занимающую несколько месяцев и преимущественно выполняемую вручную. Ускорить эту операцию почти до за один день или даже часы, одновременно обеспечивая прозрачность и автоматизацию, был разработан комплекс «АСКОА-Склад».Благодаря интеграции технологии RFID «АСКОА-Склад» обеспечивает быструю инвентаризацию, оприходование и выдачу товарно-материальных ценностей, обеспечивая при этом бесшовную совместимость. с существующей учетной и финансовой системами предприятия.Такая интеграция оптимизирует операции, повышает точность и существенно ускоряет общий процесс управления запасами.",
             description_kz: "ASCOA – қойма» – бұл кең қоймалардағы тауарлық-материалдық қорларды есепке алуға, басқаруға және дәл қадағалауға арналған күрделі жүйе. Қоймаларда мыңдаған, көбінесе он мыңдаған әртүрлі заттар бар ірі өндірістік кәсіпорындарда олардың әрқайсысында бұдан әрі көптеген жекелеген инвентарлық объектілерді, тауарларды және материалдарды қамтуы мүмкін.Дәстүрлі түрде заттардың мұндай кең ауқымын түгендеу көп уақытты қажет ететін жұмыс, көбінесе бірнеше айға созылады және негізінен қолмен орындалатын процестерге байланысты. Бұл операцияны тездету үшін шамамен бір күн немесе тіпті сағат, бір мезгілде ашықтық пен автоматтандыруды қамтамасыз ете отырып, ASCOA-Warehouse кешені әзірленді.RFID технологиясының интеграциясы арқылы «ASCOA - қойма» тауарлық-материалдық құндылықтарды жылдам түгендеуді, капиталдандыруды және шығаруды жеңілдетеді, сонымен бірге үздіксіз үйлесімділікті ұсынады. кәсіпорынның қолданыстағы бухгалтерлік және қаржылық жүйелерімен.Бұл интеграция операцияларды оңтайландырады, дәлдікті арттырады және жалпы қорларды басқару процесін айтарлықтай жылдамдатады.",
             description_en: "ASCOA – Warehouse\" is a sophisticated system tailored for the accounting, inventory management, and precise tracking of inventory items within vast warehouse facilities. In sizeable manufacturing enterprises, where warehouses house thousands, and often tens of thousands, of distinct items, each of these may further encompass numerous individual objects of inventory, goods, and materials. Traditionally, conducting inventory for such an extensive array of items is a time-consuming endeavour, often extending over several months and predominantly reliant on manual processes. To expedite this operation to nearly one day or even hours, while simultaneously ensuring transparency and automation, the ASCOA-Warehouse complex was developed. Through the integration of RFID technology, \"ASCOA - Warehouse\" facilitates swift inventorying, capitalization, and issuance of inventory items, all while offering seamless compatibility with the existing accounting and financial systems of the enterprise. This integration streamlines operations, enhances accuracy, and significantly expedites the overall inventory management process.",
@@ -291,7 +242,7 @@ export default createStore({
             id: 3,
             title: "АСКОУ – охрана труда и безопасность",
             title_kz: "АСКОУ – еңбекті қорғау және қауіпсіздік",
-            title_en: "ASCOU – OCCUPATIONAL HEALTH AND SAFETY",
+            title_en: "ASCOA – OCCUPATIONAL HEALTH AND SAFETY",
             description: "Модуль ASCOA по охране труда и технике безопасности предоставляет комплексную платформу для отслеживания и документирования учебных занятий по охране труда, а также позволяет легко управлять записями с помощью подписей и фотографий на мобильных устройствах. Эта универсальная система распространяется на медицинские осмотры и регистрацию сотрудников. Кроме того, система охраны труда на основе RFID обеспечивает отслеживание персонала в режиме реального времени, проверку защитного оборудования, отчеты об инцидентах и мониторинг соответствия требованиям. Хотя внедрение требует тщательного планирования, преимущества в области безопасности, соответствия требованиям и операционной эффективности делают его ценной инвестицией в благополучие на рабочем месте.",
             description_kz: "ASCOA Еңбекті қорғау және қауіпсіздік модулі мобильді құрылғылардағы қолтаңбалар мен фотосуреттер арқылы жазбаларды үздіксіз басқару, еңбекті қорғау бойынша оқу сабақтарын қадағалау және құжаттау үшін жан-жақты платформаны ұсынады. Бұл әмбебап жүйе медициналық тексерулер мен қызметкерлерді тіркеуді қамтиды. Сонымен қатар, RFID негізіндегі OHS жүйесі нақты уақыт режимінде персоналды қадағалауды, қауіпсіздік жабдығын тексеруді, оқиға туралы есеп беруді және сәйкестікті бақылауды ұсынады. Іске асыру мұқият жоспарлауды қажет еткенімен, қауіпсіздік, сәйкестік және операциялық тиімділіктегі артықшылықтар оны жұмыс орнының әл-ауқаты үшін құнды инвестицияға айналдырады.",
             description_en: "The ASCOA Occupational Health and Safety module provides a comprehensive platform for tracking and documenting OSH training sessions, seamlessly managing records through signatures and photos on mobile devices. This versatile system extends to include medical examinations and employee registration. Additionally, an RFID-based OHS system offers real-time personnel tracking, safety equipment verification, incident reporting, and compliance monitoring. While implementation requires careful planning, the benefits in safety, compliance, and operational efficiency make it a valuable investment for workplace well-being.",
@@ -302,8 +253,8 @@ export default createStore({
         }, {
             id: 4,
             title: "АСКОУ – ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ И РЕМОНТ",
-            title_kz: "ASCOU – ҚЫЗМЕТ КӨРСЕТУ ЖӘНЕ ЖӨНДЕУ",
-            title_en: "ASCOU – MAINTENANCE AND REPAIR",
+            title_kz: "ASCOA – ҚЫЗМЕТ КӨРСЕТУ ЖӘНЕ ЖӨНДЕУ",
+            title_en: "ASCOA – MAINTENANCE AND REPAIR",
             description: "Система технического обслуживания и ремонта ASCOA обеспечивает бесперебойную работу инфраструктуры и оборудования, особенно на крупных, географически рассредоточенных предприятиях. Автоматизированное планирование и выполнение технического обслуживания, а также тщательный оперативный учет играют решающую роль в обеспечении оптимальной производительности. Это особенно важно, когда оборудование отвечает за соблюдение стандартов безопасности на транспорте, например, в поездах и самолетах. Интегрируя передовые системы, такие как ASCOA – техническое обслуживание и ремонт, компании могут осуществлять контроль в режиме реального времени над плановыми задачами по техническому обслуживанию, независимо от отраслевой специфики. Кроме того, возможность собирать и анализировать данные об операционных расхождениях позволяет предприятиям активно решать проблемы и принимать специализированные меры по снижению сбоев и отказов оборудования.",
             description_kz: "ASCOA техникалық қызмет көрсету және жөндеу жүйесі инфрақұрылым мен жабдықтардың, әсіресе ірі, географиялық тұрғыдан шашыраңқы кәсіпорындар үшін үздіксіз жұмыс істеуін қамтамасыз етеді. Техникалық қызмет көрсетуді автоматтандырылған жоспарлау және орындау, мұқият операциялық есеппен қатар, оңтайлы өнімділікті қамтамасыз етуде шешуші рөл атқарады. Бұл әсіресе жабдыққа пойыздар мен ұшақтар сияқты тасымалдаудағы қауіпсіздік стандарттарын сақтау міндеті қойылған кезде өте маңызды. ASCOA - техникалық қызмет көрсету және жөндеу сияқты озық жүйелерді біріктіру арқылы компаниялар салалық ерекшеліктерге қарамастан жоспарланған техникалық қызмет көрсету тапсырмаларын нақты уақытта бақылауды жүзеге асыра алады. Сонымен қатар, операциялық сәйкессіздіктер туралы деректерді жинау және талдау мүмкіндігі бизнеске мәселелерді белсенді түрде шешуге және жабдықтың ақаулары мен ақауларын азайту үшін арнайы шараларды жүзеге асыруға мүмкіндік береді.",
             description_en: "ASCOA maintenance and repair system ensures seamless functioning of infrastructure and equipment, particularly for large, geographically dispersed enterprises. The automated planning and execution of maintenance, along with diligent operational accounting, play a pivotal role in ensuring optimal performance. This is especially crucial when equipment is tasked with upholding safety standards in transportation, such as for trains and planes. By integrating advanced systems, like ASCOA - maintenance and repair, companies can exercise real-time control over planned maintenance tasks, regardless of industry specifics. Additionally, the ability to collect and analyse data on operational discrepancies empowers businesses to proactively address issues and implement specialised measures to reduce equipment malfunctions and failures.",
