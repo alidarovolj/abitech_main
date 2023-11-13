@@ -28,13 +28,13 @@
             <h3 @click="$router.push({ name: 'ProdPage', params: { id: item.id } })" v-if="$i18n.locale === 'en'"
                 class="text-base font-bold cursor-pointer">{{ item.title_en }}</h3>
             <p @click="$router.push({ name: 'ProdPage', params: { id: item.id } })" v-if="$i18n.locale === 'ru'"
-               class="text-sm cursor-pointer mb-3 h-[300px] overflow-y-hidden"
+               class="text-sm cursor-pointer mb-3 h-[280px] overflow-y-hidden"
                :class="{ '!h-[80%] overflow-y-auto' : activeBlock === index }">{{ item.description }}</p>
             <p @click="$router.push({ name: 'ProdPage', params: { id: item.id } })" v-if="$i18n.locale === 'kz'"
-               class="text-sm cursor-pointer mb-3 h-[300px] overflow-y-hidden"
+               class="text-sm cursor-pointer mb-3 h-[280px] overflow-y-hidden"
                :class="{ '!h-[80%] overflow-y-auto' : activeBlock === index }">{{ item.description_kz }}</p>
             <p @click="$router.push({ name: 'ProdPage', params: { id: item.id } })" v-if="$i18n.locale === 'en'"
-               class="text-sm cursor-pointer mb-3 h-[300px] overflow-y-hidden"
+               class="text-sm cursor-pointer mb-3 h-[280px] overflow-y-hidden"
                :class="{ '!h-[80%] overflow-y-auto' : activeBlock === index }">{{ item.description_en }}</p>
             <div v-if="activeBlock === index" class="overflow-hidden">
               <div v-for="(sert, ind) of item.certificates" :key="ind"

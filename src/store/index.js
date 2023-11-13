@@ -4,7 +4,11 @@ import img1AccBg from '@/assets/img/ourAccomplishments/first-bg.png';
 import img1Acc from '@/assets/img/ourAccomplishments/11.jpg'
 import img2Acc from '@/assets/img/ourAccomplishments/22.jpg'
 import img3Acc from '@/assets/img/ourAccomplishments/33.png'
-import img1 from '@/assets/img/insights/kazMunaiGaz.png'
+import img1 from '@/assets/img/clients/1.png'
+import img2 from '@/assets/img/clients/2.png'
+import img3 from '@/assets/img/clients/3.png'
+import img4 from '@/assets/img/clients/4.png'
+import img5 from '@/assets/img/clients/5.png'
 import imgInds1 from "@/assets/img/indSectors/1.jpg";
 import imgInds2 from "@/assets/img/indSectors/2.jpg";
 import imgInds3 from "@/assets/img/indSectors/3.jpg";
@@ -22,7 +26,7 @@ import part1 from '@/assets/img/partners/1.png'
 import part2 from '@/assets/img/partners/2.png'
 import part3 from '@/assets/img/partners/3.png'
 import part4 from '@/assets/img/partners/4.png'
-import part5 from '@/assets/img/partners/5.png'
+import part5 from '@/assets/img/partners/5.svg'
 import part6 from '@/assets/img/partners/6.png'
 import part7 from '@/assets/img/partners/7.png'
 import part8 from '@/assets/img/partners/8.png'
@@ -40,38 +44,79 @@ export default createStore({
 
         }
     }, mutations: {}, state: {
-        news: [{
+        clients: [{
             id: 1,
-            title: "АСКОУ – ПРОЕКТ ИНВЕНТАРИЗАЦИИ В АО НК «КАЗМУНАЙГАЗ»",
-            title_kz: "ASKOU – «ҚАЗМҰНАЙГАЗ» ҰК» АҚ ТҮҚМАЛДЫҚ ЖОБАСЫ",
-            title_en: "ASKOU – INVENTORY PROJECT IN JSC NC KAZMUNAYGAS",
+            title: "АЛМАЛЫКСКИЙ ГОРНО-МЕТАЛЛУРГИЧЕСКИЙ КОМБИНАТ",
+            title_kz: "АЛМАЛЫҚ ТЕН-МЕТАЛЛУРГИЯ КОМБИНАТЫ",
+            title_en: "ALMALYK MINING AND METALLURGICAL COMBINE",
+            img: img5,
+            short_desc: "Оцифровано и зарегистрировано более 4500 колесных пар, более 500 грузовых вагонов, более 50 тяговых агрегатов",
+            short_desc_kz: "4500+ доңғалақ жұптары, 500+ жүк вагондары, 50+ тартқыш қондырғылар цифрланған және тіркелген",
+            short_desc_en: "4,500+ wheelsets, 500+ freight cars, 50+ traction units digitized and registered",
+            description: ['4,500+ колесных пар, 500+ грузовых вагонов, 50+ тяговых устройств цифровизированы и зарегистрированы', 'Мониторинг и запись пробега подвижного состава на железнодорожной сети на 26 станциях', 'Задачи по техническому обслуживанию автоматически отправляются на 100+ смартфонов инженеров', 'Снижение затрат на обслуживание и ремонт на 10%'],
+            description_kz: ['4,500+ wheelsets, 500+ freight cars, 50+ traction units digitized and registered', 'Monitoring and recording the mileage of rolling stocks on the railway network at 26 stations', 'Maintenance tasks automatically sent to 100+ engineers\' smartphones', 'Reduction of cost in maintenance and repair by 10%'],
+            description_en: ['4,500+ wheelsets, 500+ freight cars, 50+ traction units digitized and registered', 'Monitoring and recording the mileage of rolling stocks on the railway network at 26 stations', 'Maintenance tasks automatically sent to 100+ engineers\' smartphones', 'Reduction of cost in maintenance and repair by 10%'],
+        }, {
+            id: 2,
+            title: "КАЗАЭРОНАВИГАЦИЯ",
+            title_kz: "ҚАЗАЭРОНАВИГАЦИЯ",
+            title_en: "KAZAERONAVIGATION",
+            img: img4,
+            short_desc: "15 филиалов по Казахстану 4500+ оборудования оцифровано и зарегистрировано",
+            short_desc_kz: "Қазақстан бойынша 15 филиал 4500-ден астам жабдық цифрландырылған және тіркелген",
+            short_desc_en: "15 branches across Kazakhstan 4,500+ equipment digitized and registered",
+            description: ['15 филиалов по всему Казахстану, где цифровизированы и зарегистрированы 4,500+ оборудования', 'Задачи по техническому обслуживанию автоматически отправляются на 450+ смартфонов инженеров', 'Более 100 задач планируются и мониторятся ежемесячно в каждом филиале', 'Оборудование надежно работает более 5 лет'],
+            description_kz: ['Қазақстанда 15 филиал, жағымдыландырылды және тіркеуге 4,500+ жабдықтық', 'Техникашыларға арналған жасау және жағдайлар автоматты түрде жіберілді 450+ смартфонға', 'Филиалдар бойынша ай сайын 100-ден астам іс-шараны кестеледі және бақылау жасайды', 'Жабдықтық 5 жылдан астам уақыт бойы жағдайды жұмыс істейді'],
+            description_en: ['15 branches across Kazakhstan 4,500+ equipment digitized and registered', 'Maintenance tasks automatically sent to 450+ engineers\' smartphones', 'Over 100 tasks scheduled and monitored monthly per branch', 'Equipment has reliably operating for over 5 years'],
+        }, {
+            id: 3,
+            title: "КАЗМУНАЙГАЗ",
+            title_kz: "ҚАЗМҰНАЙГАЗ",
+            title_en: "KAZMUNAYGAZ",
+            img: img3,
+            short_desc: "Более 20 000 основных средств и оборудования оцифрованы и зарегистрированы",
+            short_desc_kz: "20 000+ негізгі құралдар мен жабдықтар цифрландырылды және тіркелді",
+            short_desc_en: "20,000+ fixed assets and equipment digitized and registered",
+            description: ['20,000+ основных средств и оборудования цифровизированы и зарегистрированы', 'Инвентаризация и время отслеживания сокращены с 2 месяцев до 1 недели', 'Инвентаризация надежно функционирует более 3 лет'],
+            description_kz: ['20,000+ нысан тауарлар және жабдықтарды сандырады және тіркеуде', 'Тауарларды жасау мен уақытты көрсету уақыты 2 айдан 1 аптаға көшірілді', 'Тауарларды жасау 3 жылдан астам жағдайды ажырату'],
+            description_en: ['20,000+ fixed assets and equipment digitized and registered', 'Inventory and tracking time reduced from 2 months to 1 week', 'Inventory has been reliably operating for over 3 years'],
+        }, {
+            id: 4,
+            title: "ШАТЫР",
+            title_kz: "ШАТЫР",
+            title_en: "SHATYR ENTERPRISE",
+            img: img2,
+            short_desc: "800 000+ постельного белья и мягкой съемной техники оцифрованы и зарегистрированы",
+            short_desc_kz: "800 000+ төсек-орын және жұмсақ алынбалы жабдық цифрланған және тіркелген",
+            short_desc_en: "800,000+ bed linen and soft detachable equipment digitized and registered",
+            description: ['800,000+ постельного белья и мягкого съемного оборудования цифровизированы и зарегистрированы', 'Ежедневное мониторинга инвентаря и отслеживание каждой единицы на этапах стирки, хранения и передачи', 'Инвентаризация надежно работает более 3 лет'],
+            description_kz: ['800,000+ жаттығу материалдары мен жумыс жасауға бағытталған мягкі жабыс құрылымдары цифрландырылды және тіркеуге тұжырылды', 'Күнделікті инвентарларды мониторлау және жуықтау, сақтау және аудару адамдарының өткенін көру', 'Инвентарлар 3 жылдан астам уақыт аштықтармен жұмыс істейді'],
+            description_en: ['800,000+ bed linen and soft detachable equipment digitized and registered', 'Daily monitoring of inventory and tracking for each item through washing, storage, and transfer stages', 'Inventory has been reliably operating for over 3 years'],
+        }, {
+            id: 5,
+            title: "КАЗТРАНСОЙЛ",
+            title_kz: "ҚАЗТРАНСОЙЛ",
+            title_en: "KAZTRANSOIL",
             img: img1,
-            short_desc: "Национальной компанией «КазМунайГаз» в рамках цифровизации в 2020 году была внедрена система автоматизированного учета основных средств «АСКОУ – Инвентаризация».",
-            short_desc_kz: "«ҚазМұнайГаз» ұлттық компаниясы 2020 жылы «АСКОУ – Инвентаризация» негізгі бөлімдерінің автоматтандырылған жүйесіне негізделген.",
-            short_desc_en: "The national company \"KazMunayGas\" as part of digitalization in 2020 introduced an automated accounting system for fixed assets \"ASKOU - Inventory\".",
-            description: "Национальная компания «КазМунайГаз» в рамках цифровизации в 2020 году внедрила систему автоматизированного учета основных средств «АСКОУ – Инвентаризация». Работа выполнялась «под ключ», включая поставку оборудования, обучение пользователей и бесплатное обслуживание в первый год использования. Все основные средства на балансе АО НК «КазМунайГаз» были оцифрованы RFID-метками различного назначения, проведен внешний осмотр и фотографировано текущее состояние ОС, все данные сохранены в системе. В системе также была создана организационная структура предприятия, введены сотрудники и пользователи основных средств, разграничены права пользователей согласно матрице полномочий. Система АСКОУ – Инвентаризация сократит время инвентаризации в несколько раз, привлекая при этом минимум сотрудников, минимизирует влияние человеческого фактора на результаты инвентаризации, автоматизирует контроль за всеми финансово ответственными лицами/пользователями ОС. Для удобства использования реализована интеграция с ERP-системой предприятия – SAP и с Active Directory.",
-            description_kz: "«ҚазМұнайГаз» ұлттық компаниясы цифрландыру аясында 2020 жылы «ASKOU – Inventory» негізгі құралдарды автоматтандырылған есепке алу жүйесін енгізді. Жұмыс «кілтпен» орындалды, оның ішінде жабдықты жеткізу, пайдаланушыларды оқыту және пайдаланудың бірінші жылында тегін техникалық қызмет көрсету. «ҚазМұнайГаз» ҰК АҚ теңгеріміндегі барлық негізгі құралдар әртүрлі мақсаттағы RFID белгілерімен цифрландырылды, сыртқы тексеру жүргізілді және ОЖ-ның ағымдағы жағдайы суретке түсірілді, барлық деректер жүйеде сақталды. Жүйеде кәсіпорынның ұйымдық құрылымы да құрылды, жұмыскерлер мен негізгі құралдарды пайдаланушылар енгізілді, өкілеттік матрицасы бойынша пайдаланушы құқықтары шектелді. ASKOU – Түгендеу жүйесі ең аз қызметкерлерді тарта отырып, түгендеу уақытын бірнеше есе қысқартады, түгендеу нәтижелеріне адам факторының әсерін барынша азайтады, барлық қаржылық жауапты тұлғаларды/ОЖ пайдаланушыларын бақылауды автоматтандырады. Пайдаланудың қарапайымдылығы үшін Enterprise ERP жүйесімен - SAP және Active Directory-мен интеграция жүзеге асырылады.",
-            description_en: "The national company \"KazMunayGas\" within the framework of digitalization in 2020 introduced the system of automated accounting of fixed assets \"ASKOU – Inventory\". The work was done \"turnkey\", including the supply of equipment, user training and free maintenance in the first year of use. All fixed assets on the balance sheet of JSC NC KazMunayGas were digitized with RFID tags for various purposes, an external inspection was carried out and the current state of the OS was photographed, all data was stored in the system. The organizational structure of the enterprise was also created in the system, employees and users of fixed assets were introduced, user rights were delimited according to the authority matrix. The ASKOU – Inventory system will reduce the time of inventory several times, while involving a minimum of employees, minimizes the impact of the human factor on the results of inventory, automates control over all financially responsible persons / OS users. For ease of use, integration with the Enterprise ERP system - SAP and with Active Directory is implemented.",
-            certificates: [{
-                id: 1,
-                name: "Printed version of the news",
-                name_kz: "Жаңалықтың баспа нұсқасы",
-                name_en: "Печатная версия новости",
-                file: acc1
-            }]
+            short_desc: "7500+ основных средств и оборудования оцифрованы и зарегистрированы",
+            short_desc_kz: "7 500+ негізгі құралдар мен жабдықтар цифрландырылды және тіркелді",
+            short_desc_en: "7,500+ fixed assets and equipment digitized and registered",
+            description: ['7,500+ основных средств и оборудования цифровизированы и зарегистрированы', 'Инвентаризация и время отслеживания сокращены с 2 месяцев до 1 недели', 'Инвентаризация надежно работает более 3 лет'],
+            description_kz: ['7,500+ нысандық мүлдемдер мен жабдықтарды цифрландырып жаздап алынды', 'Инвентаризация және бақылау уақыты 2 айдан 1 аптаға көмейтілді', 'Инвентаризация 3 жылдан астам уақыт барысында сенімді жұмыс істейді'],
+            description_en: ['7,500+ fixed assets and equipment digitized and registered', 'Inventory and tracking time reduced from 2 months to 1 week', 'Inventory has been reliably operating for over 3 years'],
         }], accomplishments: [{
             id: 1,
-            title: "«КазАэронавигация» (США, Орландо, 2018) RFID Journal Live ЛУЧШЕЕ ВНЕДРЕНИЕ RFID-ТЕХНОЛОГИИ",
-            title_kz: "«ҚазАэронавигация» (АҚШ, Орландо, 2018 ж.) RFID Journal Live RFID ТЕХНОЛОГИЯСЫНЫҢ ҮЗДІК ЕНГІЗУІ",
-            title_en: "\"KazAeronavigation\" (USA, Orlando, 2018) RFID Journal Live BEST IMPLEMENTATION OF RFID TECHNOLOGY ",
+            title: "KazAeroNavigation - (USA, Orlando 2018, RFID Journal)",
+            title_kz: "KazAeroNavigation - (USA, Orlando 2018, RFID Journal)",
+            title_en: "KazAeroNavigation - (USA, Orlando 2018, RFID Journal)",
             img: img1Acc,
             img_bg: img1AccBg,
-            short_desc: "",
-            short_desc_kz: "",
-            short_desc_en: "",
-            description: "",
-            description_kz: "",
-            description_en: "",
+            short_desc: "Награда за лучшее внедрение технологии RFID",
+            short_desc_kz: "RFID технологиясын ең жақсы енгізу үшін марапат",
+            short_desc_en: "Award for the best implementation of RFID technology \n",
+            description: "Награда за лучшее внедрение технологии RFID",
+            description_kz: "RFID технологиясын ең жақсы енгізу үшін марапат",
+            description_en: "Award for the best implementation of RFID technology \n",
             certificates: [{
                 id: 1,
                 name: "Свидетельство, удостоверяющее регистрацию лица в качестве участника специальной экономической зоны",
@@ -81,17 +126,17 @@ export default createStore({
             }]
         }, {
             id: 2,
-            title: "«КазМунайГаз» (США Лас-Вегас 2022) RFID Journal Live ЛУЧШЕЕ ВНЕДРЕНИЕ RFID-ТЕХНОЛОГИИ",
-            title_kz: "«ҚазМұнайГаз» (АҚШ Лас-Вегас 2022) RFID журналы тікелей эфирде RFID ТЕХНОЛОГИЯСЫНЫҢ ҮЗДІК ЖАСАУЫ",
-            title_en: "\"KazMunayGas\" (USA Las Vegas 2022) RFID Journal Live BEST IMPLEMENTATION OF RFID TECHNOLOGY \n",
-            img: img2Acc,
+            title: "KazMunayGas ( USA, Las Vegas 2022, RFID Journal) ",
+            title_kz: "KazMunayGas ( USA, Las Vegas 2022, RFID Journal) ",
+            title_en: "KazMunayGas ( USA, Las Vegas 2022, RFID Journal) ",
+            img: img3Acc,
             img_bg: img1AccBg,
-            short_desc: "",
-            short_desc_kz: "",
-            short_desc_en: "",
-            description: "",
-            description_kz: "",
-            description_en: "",
+            short_desc: "Награда за лучшее внедрение технологии RFID",
+            short_desc_kz: "RFID технологиясын ең жақсы енгізу марапаты",
+            short_desc_en: "Award for the best implementation of RFID technology",
+            description: "Награда за лучшее внедрение технологии RFID",
+            description_kz: "rfid технологиясын ең жақсы енгізу марапаты",
+            description_en: "Award for the best implementation of RFID technology",
             certificates: [{
                 id: 1,
                 name: "Свидетельство, удостоверяющее регистрацию лица в качестве участника специальной экономической зоны",
@@ -104,7 +149,7 @@ export default createStore({
             title: "ТОП-4 ИННОВАЦИОННЫХ КОМПАНИЙ КАЗАХСТАНА",
             title_kz: "ҚАЗАҚСТАНДАҒЫ ТОП 4 ИННОВАЦИЯЛЫҚ КОМПАНИЯЛАР",
             title_en: "TOP 4 INNOVATIVE COMPANIES IN KAZAKHSTAN",
-            img: img3Acc,
+            img: img2Acc,
             img_bg: img1AccBg,
             short_desc: "",
             short_desc_kz: "",
@@ -121,9 +166,9 @@ export default createStore({
             }]
         }], indSectors: [{
             id: 1,
-            title: "Нефть & Газ",
-            title_kz: "Мұнай & газ",
-            title_en: "Oil & Gas",
+            title: "Нефть и Газ / Энергетика",
+            title_kz: "Мұнай және газ / Энергетика",
+            title_en: "Oil & Gas / Energy",
             description: "Технология RFID нашла ценное применение в нефтегазовой промышленности. Оно обеспечивает отслеживание и управление активами в режиме реального времени, от оборудования до персонала, улучшая протоколы безопасности и процедуры реагирования на чрезвычайные ситуации. Кроме того, RFID помогает в управлении запасами, логистике цепочки поставок, мониторинге окружающей среды и соблюдении нормативных требований. Он играет решающую роль в мониторинге состояния трубопроводов, обеспечении технического обслуживания оборудования и повышении безопасности посредством контроля доступа. Более того, системы RFID облегчают регистрацию данных и отчетность, повышая эффективность и соответствие отраслевым стандартам. Несмотря на многочисленные преимущества, успешное внедрение технологии RFID требует тщательного планирования и постоянного управления.",
             description_kz: "RFID технологиясы мұнай-газ саласында құнды қолданбаларды тапты. Ол жабдықтан бастап персоналға дейін активтерді нақты уақыт режимінде бақылауға және басқаруға, қауіпсіздік хаттамалары мен төтенше жағдайларға әрекет ету процедураларын жақсартуға мүмкіндік береді. Сонымен қатар, RFID инвентарлық қорларды басқаруға, жеткізу тізбегін логистикаға, қоршаған ортаны бақылауға және нормативтік талаптарға сәйкестікке көмектеседі. Ол құбыр жағдайларын бақылауда, жабдыққа техникалық қызмет көрсетуді қамтамасыз етуде және қол жеткізуді басқару арқылы қауіпсіздікті күшейтуде шешуші рөл атқарады. Сонымен қатар, RFID жүйелері тиімділікті арттыру және салалық стандарттарға сәйкестік үшін деректерді тіркеуді және есептілікті жеңілдетеді. Көптеген артықшылықтарына қарамастан, RFID технологиясын сәтті енгізу мұқият жоспарлауды және тұрақты басқаруды талап етеді.",
             description_en: "RFID technology has found valuable applications in the oil and gas industry. It enables real-time tracking and management of assets, from equipment to personnel, enhancing safety protocols and emergency response procedures. Additionally, RFID aids in inventory management, supply chain logistics, environmental monitoring, and regulatory compliance. It plays a crucial role in monitoring pipeline conditions, ensuring equipment maintenance, and bolstering security through access control. Moreover, RFID systems facilitate data logging and reporting for improved efficiency and compliance with industry standards. Despite its numerous benefits, successful implementation of RFID technology requires careful planning and ongoing management.",
@@ -177,18 +222,15 @@ export default createStore({
                 address_kz: "050052, Алматы, Таугүл шағын ауданы, Мұстай Кәрім көшесі, 13а, 240 каб.",
                 address_en: "050052, Almaty, Taugul microdistrict, Mustai Karim street, 13a, office 240",
                 phone: "+7 (771) 762-22-85",
-                map: "<iframe\n" +
-                    "                    src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.9834251224374!2d76.85627007664084!3d43.209836980992705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836830b210f111%3A0x11c14c21ab78baed!2sABiTech!5e0!3m2!1sru!2skz!4v1698696989863!5m2!1sru!2skz\"\n" +
-                    "                    width=\"100%\" height=\"574\" style=\"border:0;\" allowFullScreen=\"\" loading=\"lazy\" className=\"px-4 sm:px-0\"\n" +
-                    "                    referrerPolicy=\"no-referrer-when-downgrade\"></iframe>"
+                map: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2907.9834251224374!2d76.85627007664084!3d43.209836980992705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836830b210f111%3A0x11c14c21ab78baed!2sABiTech!5e0!3m2!1sru!2skz!4v1698696989863!5m2!1sru!2skz\" width=\"100%\" height=\"574\" style=\"border:0;\" allowFullScreen=\"\" loading=\"lazy\" className=\"px-4 sm:px-0\" referrerPolicy=\"no-referrer-when-downgrade\"></iframe>"
             }]
         }, {
             id: 2, name: "Астана", name_kz: "Астана", name_en: "Astana", addresses: [{
-                address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
-                address_kz: "050052, Алматы, Таугүл шағын ауданы, Мұстай Кәрім көшесі, 13а, 240 каб.",
-                address_en: "050052, Almaty, Taugul microdistrict, Mustai Karim street, 13a, office 240",
+                address: "Республика Казахстан, г. Астана , пр. Кабанбай Батыра, 11, офис 3",
+                address_kz: "Қазақстан Республикасы, Астана қаласы, Қабанбай батыр даңғылы, 11, 3-кабинет",
+                address_en: "Republic of Kazakhstan, Astana, Kabanbai Batyr Ave., 11, office 3",
                 phone: "+7 (771) 762-22-85",
-                map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3Ab608545a9131312c3b29a42631b1d2c452ff7cfe18235f389181997e98526fea&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
+                map: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.2724352719465!2d71.41255777705925!3d51.140327037452415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424586bd7b789913%3A0x3e826265a96c6da6!2z0L_RgNC-0YHQvy4g0JrQsNCx0LDQvdCx0LDQuSDQkdCw0YLRi9GA0LAgMTEsINCQ0YHRgtCw0L3QsCAwMjAwMDA!5e0!3m2!1sru!2skz!4v1698743883162!5m2!1sru!2skz\" width=\"100%\" height=\"574\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
             }]
         }, {
             id: 3, name: "Ташкент", name_kz: "Ташкент", name_en: "Tashkent", addresses: [{
@@ -199,41 +241,41 @@ export default createStore({
                 map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3Ab608545a9131312c3b29a42631b1d2c452ff7cfe18235f389181997e98526fea&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
             }]
         }, {
-            id: 4, name: "Санкт-Петербург", name_kz: "Санкт-Петербург", name_en: "Saint Petersburg", addresses: [{
-                address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
-                address_kz: "050052, Алматы, Таугүл шағын ауданы, Мұстай Кәрім көшесі, 13а, 240 каб.",
-                address_en: "050052, Almaty, Taugul microdistrict, Mustai Karim street, 13a, office 240",
+            id: 4, name: "Москва", name_kz: "Мәскеу", name_en: "Moscow", addresses: [{
+                address: "Россия, г. Видное, 432072 Московская обл., г. Видное, пр-т, Ленинского Комсомола, 41, офис 206",
+                address_kz: "Ресей, Видное, 432072 Мәскеу облысы, Видное қ., Ленинский комсомол даңғылы, 41, 206 каб.",
+                address_en: "Russia, Vidnoye, 432072 Moscow region, Vidnoye, Leninsky Komsomol Ave., 41, office 206",
                 phone: "+7 (771) 762-22-85",
-                map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3Ab608545a9131312c3b29a42631b1d2c452ff7cfe18235f389181997e98526fea&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
+                map: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.3258679083374!2d37.698442477254616!3d55.54411070804549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aafd2b15cb085%3A0x90c8dfd5312a4c0d!2z0L_RgNC-0YHQvy4g0JvQtdC90LjQvdGB0LrQvtCz0L4g0JrQvtC80YHQvtC80L7Qu9CwLCA0MSwg0JLQuNC00L3QvtC1LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDE0MjcwMQ!5e0!3m2!1sru!2skz!4v1698743929891!5m2!1sru!2skz\" width=\"100%\" height=\"574\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
             }]
         }, {
-            id: 5, name: "Абу-Даби", name_kz: "Абу-Даби", name_en: "Abu-Dhabi", addresses: [{
-                address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
-                address_kz: "050052, Алматы, Таугүл шағын ауданы, Мұстай Кәрім көшесі, 13а, 240 каб.",
-                address_en: "050052, Almaty, Taugul microdistrict, Mustai Karim street, 13a, office 240",
+            id: 5, name: "Дубай", name_kz: "Дубай", name_en: "Dubai", addresses: [{
+                address: "Dubai Hills Estate Park Ridge Tower C Dubai, UAE",
+                address_kz: "Dubai Hills Estate Park Ridge Tower C Dubai, UAE",
+                address_en: "Dubai Hills Estate Park Ridge Tower C Dubai, UAE",
                 phone: "+7 (771) 762-22-85",
-                map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3Ab608545a9131312c3b29a42631b1d2c452ff7cfe18235f389181997e98526fea&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
+                map: "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.6976101799564!2d55.24626747621318!3d25.112095535140913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6949f8b0bcf3%3A0x3d76a11f9f13a24d!2sPark%20Ridge%20Tower%20C!5e0!3m2!1sru!2skz!4v1698743954510!5m2!1sru!2skz\" width=\"100%\" height=\"574\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
             }]
         }], products: [{
             id: 1,
             title: "АСКОУ – ИНВЕНТАРИЗАЦИЯ",
             title_kz: "ASCOA – ИНВЕНТОРЛЫҚ",
             title_en: "ASCOA - INVENTORY",
-            description: "ASCOA - Inventory» — комплексное решение, предназначенное для обеспечения тщательной инвентаризации активов, включая товарно-материальные запасы, основные средства и другие ресурсы внутри предприятия. Разработка данной системы была обусловлена острой необходимостью точного учета и управления объектами в различных организационных структурах. \"ASCOA - Inventory\" предлагает целостное представление об активах организации и их количествах в различных подразделениях, а также ведет подробную историю жизненного цикла каждого объекта - от приобретения до утилизации. Помимо стандартного управления запасами Система обладает расширенными функциями, позволяющими отслеживать физическое перемещение активов и накладывать ограничения на их вывоз из определенных мест, таких как офисы или организационные помещения.Кроме того, она тщательно регистрирует вход и выход контролируемых активов.Кроме того, «ASCOA - Inventory» предлагает возможность связывать активы с конкретными местоположениями, повышая точность управления и отслеживания активов.",
-            description_kz: "ASCOA - Инвентаризация» бұл кәсіпорын ішіндегі қорларды, негізгі құралдарды және басқа ресурстарды қоса алғанда, активтерді мұқият түгендеуді қамтамасыз етуге арналған кешенді шешім. Бұл жүйенің дамуы әртүрлі ұйымдық құрылымдардағы объектілерді дәл есепке алу және басқарудың маңызды қажеттілігінен туындады. Әкімшілік кеңселерден өндірістік нысандарға дейінгі баптаулар.\"ASCOA - Инвентарлық\" ұйымның активтері мен олардың әртүрлі бөлімшелердегі санының тұтас көрінісін ұсынады, сонымен қатар әрбір нысанның өмірлік циклінің егжей-тегжейлі тарихын сақтайды - сатып алудан шығаруға дейін. Стандартты инвентарлық басқарудан тыс. , жүйе активтердің физикалық қозғалысын бақылауға және оларды кеңселер немесе ұйымдық үй-жайлар сияқты белгіленген аумақтардан шығаруға шектеулер енгізуге мүмкіндік беретін жетілдірілген мүмкіндіктерге ие.Сонымен қатар, ол бақыланатын активтердің кіруі мен шығуын мұқият журналдайды. «ASCOA - түгендеу» активтерді басқару мен қадағалаудағы дәлдікті арттыра отырып, белгілі бір орындармен активтерді байланыстыру мүмкіндігін ұсынады.",
-            description_en: "ASCOA - Inventory\" is a comprehensive solution designed to provide a thorough inventory of assets, including inventory, fixed assets, and other resources within an enterprise. The development of this system was driven by the critical need to accurately record and manage objects in various organisational settings, spanning from administrative offices to manufacturing facilities. \"ASCOA - Inventory\" offers a holistic view of the organisation's assets and their quantities across different divisions, while also maintaining a detailed history of each object's lifecycle - from acquisition to disposal. Beyond standard inventory management, the system boasts advanced features, allowing for the monitoring of physical movements of assets and the imposition of restrictions on their removal from designated areas, such as offices or organisational premises. Additionally, it meticulously logs the entry and exit of controlled assets. Moreover, \"ASCOA - Inventory\" offers the capability to associate assets with specific locations, enhancing precision in asset management and tracking.",
+            description: "ASCOA - Inventory — комплексное решение, предназначенное для проведения тщательной оценки активов предприятия, включая товарно-материальные запасы, основные средства и другие ресурсы. Разработка этой системы была мотивирована острой необходимостью точного учета и эффективного управления объектами в различных организационных средах, начиная от административных офисов и заканчивая производственными помещениями. ASCOA - Inventory обеспечивает комплексный обзор активов организации и их количества в различных отделах, а также ведет подробный учет жизненного цикла каждого объекта - от приобретения до утилизации. Помимо стандартного управления запасами, система предлагает расширенные функциональные возможности, позволяющие отслеживать физическое перемещение активов и налагать ограничения на их вывоз из определенных зон, таких как офисы или организационные помещения. Он также тщательно регистрирует вход и выход контролируемых активов. Более того, ASCOA - Inventory предлагает возможность связывать активы с конкретными местоположениями, повышая точность управления и отслеживания активов.",
+            description_kz: "ASCOA – Түгендеу – бұл кәсіпорынның активтерін мұқият бағалауға арналған, түгендеу қорларын, негізгі құралдарды және басқа ресурстарды қамтитын кешенді шешім. Бұл жүйенің дамуы әкімшілік кеңселерден бастап өндірістік нысандарға дейінгі әртүрлі ұйымдық орталардағы объектілерді дәл жазу және тиімді басқарудың маңызды қажеттілігінен туындады. ASCOA - Түгендеу ұйымның активтері мен олардың әртүрлі бөлімшелердегі санының жан-жақты шолуын қамтамасыз етеді, сонымен қатар әрбір объектінің өмірлік циклінің егжей-тегжейлі жазбасын сақтайды - сатып алудан бастап шығаруға дейін. Стандартты түгендеуді басқарудан басқа, жүйе активтердің физикалық қозғалысын бақылауға және оларды кеңселер немесе ұйымдық үй-жайлар сияқты белгілі бір аумақтардан шығаруға шектеулер енгізуге мүмкіндік беретін жетілдірілген функцияларды ұсынады. Ол сондай-ақ бақыланатын активтердің кіруі мен шығуын мұқият журналдайды. Сонымен қатар, ASCOA - Түгендеу активтерді басқару мен қадағалаудағы дәлдікті арттыра отырып, белгілі бір орындармен активтерді байланыстыру мүмкіндігін ұсынады.",
+            description_en: "ASCOA - Inventory is a comprehensive solution designed to conduct a thorough assessment of an enterprise's assets, encompassing inventory, fixed assets, and other resources. The development of this system was motivated by the critical need for accurate recording and effective management of objects in various organizational environments, ranging from administrative offices to manufacturing facilities. ASCOA - Inventory provides a comprehensive overview of the organization's assets and their quantities across different departments, while also maintaining a detailed record of each object's lifecycle - from acquisition to disposal. In addition to standard inventory management, the system offers advanced functionalities, enabling the monitoring of physical movements of assets and the imposition of restrictions on their removal from specified areas, such as offices or organizational premises. It also meticulously logs the entry and exit of controlled assets. Moreover, ASCOA - Inventory offers the capability to associate assets with specific locations, enhancing precision in asset management and tracking.",
             img: imgProd1,
             certificates: [{
                 id: 1, name: "ASCOA - INVENTORY", file: prodPDF1
             }]
         }, {
             id: 2,
-            title: "АСКОУ – СКЛАД",
-            title_kz: "ASCOA – ҚОЙМА",
-            title_en: "ASCOA – WAREHOUSE",
-            description: "ASCOA – Склад» — это сложная система, предназначенная для учета, управления запасами и точного отслеживания товарно-материальных запасов на огромных складских объектах. На крупных производственных предприятиях, где на складах хранятся тысячи, а часто и десятки тысяч отдельных товаров, каждый из них Кроме того, может охватывать множество отдельных объектов запасов, товаров и материалов. Традиционно проведение инвентаризации такого обширного набора предметов представляет собой трудоемкую работу, часто занимающую несколько месяцев и преимущественно выполняемую вручную. Ускорить эту операцию почти до за один день или даже часы, одновременно обеспечивая прозрачность и автоматизацию, был разработан комплекс «АСКОА-Склад».Благодаря интеграции технологии RFID «АСКОА-Склад» обеспечивает быструю инвентаризацию, оприходование и выдачу товарно-материальных ценностей, обеспечивая при этом бесшовную совместимость. с существующей учетной и финансовой системами предприятия.Такая интеграция оптимизирует операции, повышает точность и существенно ускоряет общий процесс управления запасами.",
-            description_kz: "ASCOA – қойма» – бұл кең қоймалардағы тауарлық-материалдық қорларды есепке алуға, басқаруға және дәл қадағалауға арналған күрделі жүйе. Қоймаларда мыңдаған, көбінесе он мыңдаған әртүрлі заттар бар ірі өндірістік кәсіпорындарда олардың әрқайсысында бұдан әрі көптеген жекелеген инвентарлық объектілерді, тауарларды және материалдарды қамтуы мүмкін.Дәстүрлі түрде заттардың мұндай кең ауқымын түгендеу көп уақытты қажет ететін жұмыс, көбінесе бірнеше айға созылады және негізінен қолмен орындалатын процестерге байланысты. Бұл операцияны тездету үшін шамамен бір күн немесе тіпті сағат, бір мезгілде ашықтық пен автоматтандыруды қамтамасыз ете отырып, ASCOA-Warehouse кешені әзірленді.RFID технологиясының интеграциясы арқылы «ASCOA - қойма» тауарлық-материалдық құндылықтарды жылдам түгендеуді, капиталдандыруды және шығаруды жеңілдетеді, сонымен бірге үздіксіз үйлесімділікті ұсынады. кәсіпорынның қолданыстағы бухгалтерлік және қаржылық жүйелерімен.Бұл интеграция операцияларды оңтайландырады, дәлдікті арттырады және жалпы қорларды басқару процесін айтарлықтай жылдамдатады.",
-            description_en: "ASCOA – Warehouse\" is a sophisticated system tailored for the accounting, inventory management, and precise tracking of inventory items within vast warehouse facilities. In sizeable manufacturing enterprises, where warehouses house thousands, and often tens of thousands, of distinct items, each of these may further encompass numerous individual objects of inventory, goods, and materials. Traditionally, conducting inventory for such an extensive array of items is a time-consuming endeavour, often extending over several months and predominantly reliant on manual processes. To expedite this operation to nearly one day or even hours, while simultaneously ensuring transparency and automation, the ASCOA-Warehouse complex was developed. Through the integration of RFID technology, \"ASCOA - Warehouse\" facilitates swift inventorying, capitalization, and issuance of inventory items, all while offering seamless compatibility with the existing accounting and financial systems of the enterprise. This integration streamlines operations, enhances accuracy, and significantly expedites the overall inventory management process.",
+            title: "АСКОУ – УПРАВЛЕНИЕ СКЛАДОМ",
+            title_kz: "ASCOA – ҚОЙМА БАСҚАРУ",
+            title_en: "ASCOA – WAREHOUSE MANAGEMENT",
+            description: "ASCOA – Управление складом – это сложная система, предназначенная для учета, управления запасами и точного отслеживания товарных запасов на огромных складских объектах. На крупных производственных предприятиях, где на складах хранятся тысячи, а часто и десятки тысяч отдельных предметов, каждый из них может дополнительно включать в себя множество отдельных объектов запасов, товаров и материалов. Традиционно проведение инвентаризации такого обширного набора товаров является трудоемким процессом, часто занимающим несколько месяцев и преимущественно выполняемым вручную. Чтобы ускорить эту операцию практически до одного дня или даже часа, одновременно обеспечив прозрачность и автоматизацию, был разработан комплекс управления «АСКОА-Склад». Благодаря интеграции технологии RFID ASCOA - Управление складом облегчает быструю инвентаризацию, оприходование и выдачу товарно-материальных запасов, обеспечивая при этом полную совместимость с существующими учетными и финансовыми системами предприятия. Такая интеграция оптимизирует операции, повышает точность и значительно ускоряет общий процесс управления запасами.",
+            description_kz: "ASCOA – Қойманы басқару – бұл кең қоймалардағы тауарлық-материалдық қорларды есепке алуға, басқаруға және нақты қадағалауға арналған күрделі жүйе. Қоймаларда мыңдаған, көбінесе ондаған мың түрлі заттар бар ірі өндірістік кәсіпорындарда олардың әрқайсысы тауарлық-материалдық қорлардың, тауарлардың және материалдардың көптеген жеке объектілерін қамтуы мүмкін. Дәстүрлі түрде мұндай кең ауқымды элементтерді түгендеу көп уақытты қажет ететін жұмыс, көбінесе бірнеше айға созылады және негізінен қолмен орындалатын процестерге тәуелді. Бұл операцияны шамамен бір тәулікке немесе тіпті сағатқа дейін жеделдету үшін, сонымен бірге бір мезгілде ашықтық пен автоматтандыруды қамтамасыз ету үшін ASCOA-Warehouse басқару кешені әзірленді. RFID технологиясын біріктіру арқылы ASCOA - қойманы басқару кәсіпорынның қолданыстағы бухгалтерлік және қаржылық жүйелерімен үздіксіз үйлесімділікті ұсына отырып, тауарлық-материалдық құндылықтарды жылдам түгендеуді, капиталдандыруды және шығаруды жеңілдетеді. Бұл біріктіру операцияларды жеңілдетеді, дәлдікті арттырады және жалпы қорларды басқару процесін айтарлықтай жылдамдатады.",
+            description_en: "ASCOA – Warehouse management is a sophisticated system tailored for the accounting, inventory management, and precise tracking of inventory items within vast warehouse facilities. In sizeable manufacturing enterprises, where warehouses house thousands, and often tens of thousands, of distinct items, each of these may further encompass numerous individual objects of inventory, goods, and materials. Traditionally, conducting inventory for such an extensive array of items is a time-consuming endeavour, often extending over several months and predominantly reliant on manual processes. To expedite this operation to nearly one day or even hours, while simultaneously ensuring transparency and automation, the ASCOA-Warehouse management complex was developed. Through the integration of RFID technology, ASCOA - Warehouse management facilitates swift inventorying, capitalization, and issuance of inventory items, all while offering seamless compatibility with the existing accounting and financial systems of the enterprise. This integration streamlines operations, enhances accuracy, and significantly expedites the overall inventory management process.",
             img: imgProd2,
             certificates: [{
                 id: 1, name: "ASCOA - WAREHOUSE", file: prodPDF2
@@ -255,16 +297,16 @@ export default createStore({
             title: "АСКОУ – ТЕХНИЧЕСКОЕ ОБСЛУЖИВАНИЕ И РЕМОНТ",
             title_kz: "ASCOA – ҚЫЗМЕТ КӨРСЕТУ ЖӘНЕ ЖӨНДЕУ",
             title_en: "ASCOA – MAINTENANCE AND REPAIR",
-            description: "Система технического обслуживания и ремонта ASCOA обеспечивает бесперебойную работу инфраструктуры и оборудования, особенно на крупных, географически рассредоточенных предприятиях. Автоматизированное планирование и выполнение технического обслуживания, а также тщательный оперативный учет играют решающую роль в обеспечении оптимальной производительности. Это особенно важно, когда оборудование отвечает за соблюдение стандартов безопасности на транспорте, например, в поездах и самолетах. Интегрируя передовые системы, такие как ASCOA – техническое обслуживание и ремонт, компании могут осуществлять контроль в режиме реального времени над плановыми задачами по техническому обслуживанию, независимо от отраслевой специфики. Кроме того, возможность собирать и анализировать данные об операционных расхождениях позволяет предприятиям активно решать проблемы и принимать специализированные меры по снижению сбоев и отказов оборудования.",
-            description_kz: "ASCOA техникалық қызмет көрсету және жөндеу жүйесі инфрақұрылым мен жабдықтардың, әсіресе ірі, географиялық тұрғыдан шашыраңқы кәсіпорындар үшін үздіксіз жұмыс істеуін қамтамасыз етеді. Техникалық қызмет көрсетуді автоматтандырылған жоспарлау және орындау, мұқият операциялық есеппен қатар, оңтайлы өнімділікті қамтамасыз етуде шешуші рөл атқарады. Бұл әсіресе жабдыққа пойыздар мен ұшақтар сияқты тасымалдаудағы қауіпсіздік стандарттарын сақтау міндеті қойылған кезде өте маңызды. ASCOA - техникалық қызмет көрсету және жөндеу сияқты озық жүйелерді біріктіру арқылы компаниялар салалық ерекшеліктерге қарамастан жоспарланған техникалық қызмет көрсету тапсырмаларын нақты уақытта бақылауды жүзеге асыра алады. Сонымен қатар, операциялық сәйкессіздіктер туралы деректерді жинау және талдау мүмкіндігі бизнеске мәселелерді белсенді түрде шешуге және жабдықтың ақаулары мен ақауларын азайту үшін арнайы шараларды жүзеге асыруға мүмкіндік береді.",
-            description_en: "ASCOA maintenance and repair system ensures seamless functioning of infrastructure and equipment, particularly for large, geographically dispersed enterprises. The automated planning and execution of maintenance, along with diligent operational accounting, play a pivotal role in ensuring optimal performance. This is especially crucial when equipment is tasked with upholding safety standards in transportation, such as for trains and planes. By integrating advanced systems, like ASCOA - maintenance and repair, companies can exercise real-time control over planned maintenance tasks, regardless of industry specifics. Additionally, the ability to collect and analyse data on operational discrepancies empowers businesses to proactively address issues and implement specialised measures to reduce equipment malfunctions and failures.",
+            description: "Система технического обслуживания и ремонта ASCOA обеспечивает бесперебойную работу инфраструктуры и оборудования, особенно на крупных, географически рассредоточенных предприятиях. Автоматизированное планирование и выполнение технического обслуживания, а также тщательный оперативный учет играют решающую роль в обеспечении оптимальной производительности. Это особенно важно, когда оборудование отвечает за соблюдение стандартов безопасности на транспорте, например, в поездах и самолетах. Интегрируя передовые системы, такие как ASCOA – Maintenance and Repair, компании могут осуществлять контроль в режиме реального времени над плановыми задачами по техническому обслуживанию, независимо от отраслевой специфики. Кроме того, возможность собирать и анализировать данные об операционных расхождениях позволяет предприятиям активно решать проблемы и принимать специализированные меры по снижению сбоев и отказов оборудования.",
+            description_kz: "ASCOA Maintenance and Repair жүйесі инфрақұрылым мен жабдықтың, әсіресе ірі, географиялық тұрғыдан шашыраңқы кәсіпорындар үшін үздіксіз жұмыс істеуін қамтамасыз етеді. Техникалық қызмет көрсетуді автоматтандырылған жоспарлау және орындау, мұқият операциялық есеппен қатар, оңтайлы өнімділікті қамтамасыз етуде шешуші рөл атқарады. Бұл әсіресе жабдыққа пойыздар мен ұшақтар сияқты тасымалдаудағы қауіпсіздік стандарттарын сақтау міндеті қойылған кезде өте маңызды. ASCOA - Maintenance and Repair сияқты жетілдірілген жүйелерді біріктіру арқылы компаниялар саланың ерекшеліктеріне қарамастан жоспарланған техникалық қызмет көрсету тапсырмаларын нақты уақытта бақылауды жүзеге асыра алады. Сонымен қатар, операциялық сәйкессіздіктер туралы деректерді жинау және талдау мүмкіндігі бизнеске мәселелерді белсенді түрде шешуге және жабдықтың ақаулары мен ақауларын азайту үшін арнайы шараларды жүзеге асыруға мүмкіндік береді.",
+            description_en: "ASCOA Maintenance and Repair system ensures seamless functioning of infrastructure and equipment, particularly for large, geographically dispersed enterprises. The automated planning and execution of maintenance, along with diligent operational accounting, play a pivotal role in ensuring optimal performance. This is especially crucial when equipment is tasked with upholding safety standards in transportation, such as for trains and planes. By integrating advanced systems, like ASCOA - Maintenance and Repair, companies can exercise real-time control over planned maintenance tasks, regardless of industry specifics. Additionally, the ability to collect and analyse data on operational discrepancies empowers businesses to proactively address issues and implement specialised measures to reduce equipment malfunctions and failures.",
             img: imgProd4,
             certificates: [{
                 id: 1, name: "ASCOA - MAINTENANCE AND REPAIR", file: prodPDF4
             }]
         },]
     }, getters: {
-        getNews: (state) => state.news,
+        getClients: (state) => state.clients,
         getAccomplishments: (state) => state.accomplishments,
         getIndSectors: (state) => state.indSectors,
         getLocations: (state) => state.locations,

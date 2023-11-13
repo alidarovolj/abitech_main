@@ -24,7 +24,7 @@
           </div>
           <div>
             <div class="flex items-center justify-between mb-8">
-              <h1 class="text-xl font-semibold text-white whitespace-normal lg:whitespace-nowrap mr-1">Product presentations</h1>
+              <h1 class="text-xl font-semibold text-white whitespace-normal lg:whitespace-nowrap mr-1">{{ $t('general.prod_pres') }}</h1>
               <div class="hidden lg:flex border-b-2 border-white w-full"></div>
             </div>
             <div>

@@ -30,7 +30,7 @@
               </p>
               <div class="flex mt-3 w-0 h-0 second_text"
                    :class="{ expanded_second: isExpandedSecond === true }">
-                <a class="py-3 rounded px-14 bg-secondaryColor whitespace-normal lg:whitespace-nowrap text-mainColor text-sm font-bold w-max" href="#contacts">
+                <a class="py-3 rounded px-14 bg-secondaryColor whitespace-normal lg:whitespace-nowrap text-mainColor text-sm font-bold w-max" href="https://wa.me/77717622285">
                   {{ $t('mainPage.hero.order') }}
                 </a>
               </div>
@@ -43,7 +43,7 @@
       <div class="absolute left-1/2 bottom-9 -translate-x-1/2 flex z-30">
         <a href="tel:+77717622285"><img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/1.png" alt=""/></a>
         <a href="https://www.instagram.com/abitechkz/"><img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/2.png" alt=""/></a>
-<!--        <a href=""><img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/3.png" alt=""/></a>-->
+        <a href="https://www.facebook.com/abitechkz/"><img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/3.png" alt=""/></a>
         <a href="https://kz.linkedin.com/company/abitechkz"><img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/4.png" alt=""/></a>
         <a href="https://www.google.com/maps/place/ABiTech/@43.209837,76.8562701,17z/data=!3m1!4b1!4m6!3m5!1s0x38836830b210f111:0x11c14c21ab78baed!8m2!3d43.2098331!4d76.858845!16s%2Fg%2F11h42x8zfr?entry=ttu"><img class="px-3 cursor-pointer" src="@/assets/img/heroBlock/icons/5.png" alt=""/></a>
       </div>

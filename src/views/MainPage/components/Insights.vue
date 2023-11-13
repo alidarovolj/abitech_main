@@ -6,40 +6,43 @@
     <div class="container mx-auto px-4 lg:px-0">
       <div class="pt-8 pr-0 lg:pr-8 pb-6 block lg:flex items-center">
         <div v-if="activeBlock === null" class="w-full lg:w-[680px] mr-0 lg:mr-[52px]">
-          <h2 class="text-3xl font-semibold text-secondaryColor mb-14">{{ $t('insights') }}</h2>
+          <h2 class="text-3xl font-semibold text-secondaryColor mb-14">{{ $t('clients') }}</h2>
         </div>
-        <div v-else class="w-full lg:w-[680px] mr-[52px] cursor-pointer">
-          <h2 class="text-3xl font-semibold text-secondaryColor mb-14">Insights</h2>
-          <router-link :to="{ name: 'InsightsPage', params: { id: getNews[activeBlock].id } }" class="relative z-10">
-            <img alt="" class="rounded-t-md rounded-b-none lg:rounded-md" :src="getNews[activeBlock].img">
+        <div v-else class="w-full lg:w-2/3 mr-[52px] cursor-pointer">
+          <h2 class="text-3xl font-semibold text-secondaryColor mb-14">{{ $t('clients') }}</h2>
+          <router-link :to="{ name: 'InsightsPage', params: { id: getClients[activeBlock].id } }" class="relative z-10">
+            <img :src="getClients[activeBlock].img" alt="" class="rounded-t-md rounded-b-none lg:rounded-md">
             <div
-                class="relative lg:absolute bg-white max-w-[680px] h-1/2 bottom-0 opacity-70 rounded-t-none lg:rounded-t-md rounded-b-md lg:rounded-b-none py-4 px-6">
-              <h3 v-if="$i18n.locale === 'ru'" class="text-2xl font-bold">{{ getNews[activeBlock].title }}</h3>
-              <h3 v-if="$i18n.locale === 'kz'" class="text-2xl font-bold">{{ getNews[activeBlock].title_kz }}</h3>
-              <h3 v-if="$i18n.locale === 'en'" class="text-2xl font-bold">{{ getNews[activeBlock].title_en }}</h3>
+                class="relative lg:absolute bg-white w-full h-1/2 bottom-0 opacity-70 rounded-t-none lg:rounded-t-md rounded-b-md lg:rounded-b-none py-4 px-6">
+              <h3 v-if="$i18n.locale === 'ru'" class="text-2xl font-bold">{{ getClients[activeBlock].title }}</h3>
+              <h3 v-if="$i18n.locale === 'kz'" class="text-2xl font-bold">{{ getClients[activeBlock].title_kz }}</h3>
+              <h3 v-if="$i18n.locale === 'en'" class="text-2xl font-bold">{{ getClients[activeBlock].title_en }}</h3>
               <div class="h-20 overflow-y-auto">
-                <p v-if="$i18n.locale === 'ru'" class="text-base overflow-y-auto">{{ getNews[activeBlock].short_desc }}</p>
-                <p v-if="$i18n.locale === 'kz'" class="text-base">{{ getNews[activeBlock].short_desc_kz }}</p>
-                <p v-if="$i18n.locale === 'en'" class="text-base">{{ getNews[activeBlock].short_desc_en }}</p>
+                <p v-if="$i18n.locale === 'ru'" class="text-base overflow-y-auto">{{
+                    getClients[activeBlock].short_desc
+                  }}</p>
+                <p v-if="$i18n.locale === 'kz'" class="text-base">{{ getClients[activeBlock].short_desc_kz }}</p>
+                <p v-if="$i18n.locale === 'en'" class="text-base">{{ getClients[activeBlock].short_desc_en }}</p>
               </div>
             </div>
           </router-link>
         </div>
-        <div class="w-full lg:w-[419px]">
-          <router-link :to="{ name: 'InsightsPage', params: { id: block.id } }" v-for="(block, index) of getNews" :key="index"
-                       :class="{'!mb-0': getNews.length === index + 1}"
+        <div class="w-full lg:w-1/3">
+          <router-link v-for="(block, index) of getClients" :key="index"
+                       :class="{'!mb-0': getClients.length === index + 1}"
+                       :to="{ name: 'InsightsPage', params: { id: block.id } }"
                        class="relative block lg:flex z-30 items-center mb-7 bg-white rounded-lg cursor-pointer"
                        @mouseleave="activeBlock = 0"
                        @mouseover="activeBlock = index">
-            <div class="relative h-[168px] w-full lg:w-[243px]">
+            <div class="relative h-[148px] w-full lg:w-[243px]">
               <div class="absolute left-0 top-0 w-full h-full"
                    style="background: linear-gradient(270deg, #fff -70%, rgba(26, 58, 46, 0.00) 100%);"></div>
               <img :src="block.img" alt=""
-                   class="rounded-l-lg w-full lg:w-[243px] min-w-full lg:min-w-[243px] h-full object-cover">
+                   class="rounded-l-lg w-full lg:w-1/3 min-w-full h-full object-cover">
             </div>
-            <p v-if="$i18n.locale === 'ru'" class="text-base font-bold px-6">{{ block.title }}</p>
-            <p v-if="$i18n.locale === 'kz'" class="text-base font-bold px-6">{{ block.title_kz }}</p>
-            <p v-if="$i18n.locale === 'en'" class="text-base font-bold px-6">{{ block.title_en }}</p>
+            <p v-if="$i18n.locale === 'ru'" class="w-2/3 text-sm font-bold px-6">{{ block.title }}</p>
+            <p v-if="$i18n.locale === 'kz'" class="w-2/3 text-sm font-bold px-6">{{ block.title_kz }}</p>
+            <p v-if="$i18n.locale === 'en'" class="w-2/3 text-sm font-bold px-6">{{ block.title_en }}</p>
           </router-link>
         </div>
       </div>
@@ -51,10 +54,10 @@
 import {mapGetters} from "vuex";
 
 export default {
-  name: "Insights",
+  name: "ClientsBlock",
   components: {},
   computed: {
-    ...mapGetters(['getNews'])
+    ...mapGetters(['getClients'])
   },
   data() {
     return {

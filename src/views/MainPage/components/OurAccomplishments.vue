@@ -60,11 +60,11 @@
                   {{ getAccomplishments[index].title_kz }}</h3>
                 <h3 v-if="$i18n.locale === 'en'" class="text-lg lg:text-2xl font-bold mb-5">
                   {{ getAccomplishments[index].title_en }}</h3>
-                <p v-if="$i18n.locale === 'ru'" class="text-sm lg:text-base">
+                <p v-if="$i18n.locale === 'ru'" class="text-sm lg:text-xl">
                   {{ getAccomplishments[index].short_desc }}</p>
-                <p v-if="$i18n.locale === 'kz'" class="text-sm lg:text-base">
+                <p v-if="$i18n.locale === 'kz'" class="text-sm lg:text-xl">
                   {{ getAccomplishments[index].short_desc_kz }}</p>
-                <p v-if="$i18n.locale === 'en'" class="text-sm lg:text-base">
+                <p v-if="$i18n.locale === 'en'" class="text-sm lg:text-xl">
                   {{ getAccomplishments[index].short_desc_en }}</p>
               </div>
             </div>

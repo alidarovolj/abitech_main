@@ -17,18 +17,18 @@
           <p v-if="$i18n.locale === 'en'" class="text-base font-medium">{{ block.description_en }}</p>
         </div>
       </div>
-      <div class="flex items-center justify-between mb-8">
-        <h1 class="text-xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ $t('accomplishments.doc_title') }}</h1>
-        <div class="hidden lg:flex border-b-2 border-mainColor w-full"></div>
-      </div>
-      <div>
-        <div v-for="(item, index) of block.certificates" :key="index" class="flex flex-col lg:flex-row items-center mb-5">
-          <button @click="downloadCertificate(item.file)" class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-white bg-mainColor rounded-lg mr-0 lg:mr-5 mb-3 lg:mb-0">
-            {{ $t('general.download') }} - PDF
-          </button>
-          <p class="text-base font-medium text-mainColor">{{ item.name }}</p>
-        </div>
-      </div>
+<!--      <div class="flex items-center justify-between mb-8">-->
+<!--        <h1 class="text-xl font-semibold text-mainColor whitespace-normal lg:whitespace-nowrap mr-1">{{ $t('accomplishments.doc_title') }}</h1>-->
+<!--        <div class="hidden lg:flex border-b-2 border-mainColor w-full"></div>-->
+<!--      </div>-->
+<!--      <div>-->
+<!--        <div v-for="(item, index) of block.certificates" :key="index" class="flex flex-col lg:flex-row items-center mb-5">-->
+<!--          <button @click="downloadCertificate(item.file)" class="cursor-pointer w-full lg:w-max px-6 py-2.5 text-white bg-mainColor rounded-lg mr-0 lg:mr-5 mb-3 lg:mb-0">-->
+<!--            {{ $t('general.download') }} - PDF-->
+<!--          </button>-->
+<!--          <p class="text-base font-medium text-mainColor">{{ item.name }}</p>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </div>
 </template>

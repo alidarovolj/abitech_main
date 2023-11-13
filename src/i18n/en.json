@@ -1,8 +1,9 @@
 {
   "general": {
     "download": "Download",
-    "feedback": "Feedback",
-    "addInfo": "Additional Information"
+    "feedback": "WhatsApp",
+    "addInfo": "Additional Information",
+    "prod_pres": "Product presentation"
   },
   "header": {
     "main": "Main",
@@ -35,16 +36,16 @@
     },
     "russia": {
       "title": "Russia",
-      "saint_petersburg": "Saint Petersburg"
+      "saint_petersburg": "Moscow"
     },
     "uae": {
       "title": "United Arab Emirates",
-      "abu_dhabi": "Abu Dhabi"
+      "abu_dhabi": "Dubai"
     }
   },
   "products": "Products",
   "partners": "Our Key Partners and Clients",
-  "insights": "Ideas",
+  "clients": "Clients",
   "contactUs": {
     "title": "Contact Us",
     "address": "050052, Almaty, Taugul Microdistrict, Mustai Karim Street, Building 13A, Office 240"

@@ -13,7 +13,7 @@
             {{ $t('contactUs.title') }}
           </p>
           <div class="bg-mainColor rounded-b-lg px-7 py-8 text-secondaryColor">
-            <p class="text-xl mb-5">TOO "ADVANCED BUSINESS TECHNOLOGIES"</p>
+            <p class="text-xl mb-5">ADVANCED BUSINESS TECHNOLOGIES</p>
             <a href="mailto:info@abitech.kz" class="flex items-center gap-2.5 mb-5">
               <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/mail.png">
               <p class="text-base">info@abitech.kz</p>
@@ -26,14 +26,18 @@
               <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/brand-instagram.svg">
               <p class="text-base">Instagram</p>
             </a>
+            <a href="https://www.facebook.com/abitechkz/" class="flex items-center gap-2.5 mb-5">
+              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/brand-facebook.svg">
+              <p class="text-base">Facebook</p>
+            </a>
             <a href="https://kz.linkedin.com/company/abitechkz" class="flex items-center gap-2.5 mb-5">
               <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/brand-linkedin.svg">
               <p class="text-base">Linkedin</p>
             </a>
-            <a href="https://www.google.com/maps/place/ABiTech/@43.209837,76.8562701,17z/data=!3m1!4b1!4m6!3m5!1s0x38836830b210f111:0x11c14c21ab78baed!8m2!3d43.2098331!4d76.858845!16s%2Fg%2F11h42x8zfr?entry=ttu" class="flex items-center gap-2.5 mb-5">
-              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/map-pin.svg">
-              <p class="text-base">{{ $t('contactUs.address') }}</p>
-            </a>
+<!--            <a href="https://www.google.com/maps/place/ABiTech/@43.209837,76.8562701,17z/data=!3m1!4b1!4m6!3m5!1s0x38836830b210f111:0x11c14c21ab78baed!8m2!3d43.2098331!4d76.858845!16s%2Fg%2F11h42x8zfr?entry=ttu" class="flex items-center gap-2.5 mb-5">-->
+<!--              <img alt="" class="w-[25px] h-[25px]" src="@/assets/img/contacts/map-pin.svg">-->
+<!--              <p class="text-base">{{ $t('contactUs.address') }}</p>-->
+<!--            </a>-->
           </div>
         </div>
       </div>
