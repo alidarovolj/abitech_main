@@ -36,6 +36,7 @@ import part11 from '@/assets/img/partners/11.png'
 import part12 from '@/assets/img/partners/12.png'
 import part13 from '@/assets/img/partners/13.png'
 import part14 from '@/assets/img/partners/14.svg'
+import part15 from '@/assets/img/partners/1-1.png'
 
 export default createStore({
     modules: {}, actions: {
@@ -190,7 +191,7 @@ export default createStore({
             content: '<p class="mb-5">Технология RFID произвела революцию в горнодобывающей промышленности. Используя RFID-метки, компании могут эффективно отслеживать и управлять широким спектром активов, включая оборудование, инструменты и транспортные средства, гарантируя, что их местоположение и статус будут известны в режиме реального времени. Эта технология также упрощает управление запасами, особенно запасными частями и расходными материалами. Персонал может быть оснащен бейджами RFID, позволяющими точно отслеживать местоположение на горнодобывающих объектах, что повышает меры безопасности и возможности реагирования на чрезвычайные ситуации. RFID играет жизненно важную роль в цепочке поставок и логистике, регулируя движение материалов от добычи до переработки. Он также играет важную роль в планировании технического обслуживания и проверок, гарантируя соответствие оборудования стандартам безопасности. Внедрение RFID требует стратегического планирования и постоянного управления, но его преимущества с точки зрения безопасности, эффективности и соблюдения требований неоценимы для горнодобывающей промышленности.</p>',
             content_kz: '<p class="mb-5">RFID технологиясы тау-кен өнеркәсібіндегі операцияларда төңкеріс жасады. RFID тегтерін қолдану арқылы компаниялар активтердің кең ауқымын, соның ішінде жабдықтарды, құралдарды және көліктерді тиімді бақылап, басқара алады, олардың орны мен күйі нақты уақытта белгілі болуын қамтамасыз етеді. Бұл технология сонымен қатар инвентарлық қорларды, әсіресе қосалқы бөлшектер мен шығын материалдарын басқаруды жеңілдетеді. Персонал RFID бейджиктерімен жабдықталуы мүмкін, бұл тау-кен өндірісі объектілерінде орналасқан жерді дәл бақылауға мүмкіндік береді, бұл қауіпсіздік шаралары мен төтенше жағдайларды жою мүмкіндіктерін арттырады. RFID жеткізу тізбегі мен логистикада маңызды рөл атқарады, материалдардың өндіруден өңдеуге дейінгі қозғалысын реттейді. Ол сондай-ақ техникалық қызмет көрсету мен тексерулерді жоспарлауда маңызды рөл атқарады, жабдықтың қауіпсіздік стандарттарына сәйкестігіне кепілдік береді. RFID енгізу стратегиялық жоспарлауды және тұрақты басқаруды талап етеді, бірақ оның қауіпсіздік, тиімділік және сәйкестік бойынша артықшылықтары тау-кен өнеркәсібі үшін баға жетпес құнды болып табылады.</p>',
             content_en: '<p class="mb-5">RFID technology has revolutionized operations in the mining industry. By employing RFID tags, companies can effectively track and manage a wide array of assets, including equipment, tools, and vehicles, ensuring their location and status are known in real-time. This technology also streamlines inventory management, particularly for spare parts and consumables. Personnel can be equipped with RFID badges, enabling precise location tracking within mining facilities, which enhances safety measures and emergency response capabilities. RFID plays a vital role in supply chain and logistics, regulating the movement of materials from extraction to processing. It is also instrumental in scheduling maintenance and inspections, guaranteeing equipment compliance with safety standards. Implementing RFID requires strategic planning and ongoing management, but its benefits in terms of safety, efficiency, and compliance are invaluable to the mining industry.</p>',
-            works: [part5]
+            works: [part15]
         }, {
             id: 3,
             title: "Транспорт и логистика",
@@ -235,9 +236,9 @@ export default createStore({
             }]
         }, {
             id: 3, name: "Ташкент", name_kz: "Ташкент", name_en: "Tashkent", addresses: [{
-                address: "050052, г. Алматы, микрорайон Таугуль, улица Мустай Карим, д.13а, офис 240",
-                address_kz: "050052, Алматы, Таугүл шағын ауданы, Мұстай Кәрім көшесі, 13а, 240 каб.",
-                address_en: "050052, Almaty, Taugul microdistrict, Mustai Karim street, 13a, office 240",
+                address: "Город Ташкент Шайхантаурский район Массив Лабзак, дом 1 кВ 28",
+                address_kz: "Ташкент қаласы Шайхантаур ауданы Лабзақ массиві 1 үй 28 пәтер",
+                address_en: "Tashkent city Shaykhantaur district Labzak massif, building 1 apartment 28",
                 phone: "+7 (771) 762-22-85",
                 map: "<iframe src=\"https://yandex.ru/map-widget/v1/?um=constructor%3Ab608545a9131312c3b29a42631b1d2c452ff7cfe18235f389181997e98526fea&amp;source=constructor\" width=\"100%\" height=\"574\" frameborder=\"0\"></iframe>"
             }]
