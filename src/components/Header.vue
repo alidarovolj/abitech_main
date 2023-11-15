@@ -9,50 +9,50 @@
     <div class="w-max fixed z-50 top-1/2 -translate-y-1/2 left-5 text-element">
       <a
           class="text-secondaryColor el block text-base w-max cursor-pointer mb-[30px]"
-          href="https://abi-tech.org/#hero">
+          href="http://abi-tech.org/#hero">
         {{ $t('header.main') }}
       </a>
       <a
           class="text-secondaryColor el block text-base w-max cursor-pointer mb-[30px]"
-          href="https://abi-tech.org/#indSectors">
+          href="http://abi-tech.org/#indSectors">
         {{ $t('header.indSectors') }}
       </a>
       <a
           class="text-secondaryColor el block text-base w-max cursor-pointer mb-[30px]"
-          href="https://abi-tech.org/#locations">
+          href="http://abi-tech.org/#locations">
         {{ $t('header.locations') }}
       </a>
       <a
           class="text-secondaryColor el block text-base w-max cursor-pointer mb-[30px]"
-          href="https://abi-tech.org/#accomplishments">
+          href="http://abi-tech.org/#accomplishments">
         {{ $t('header.accomplishments') }}
       </a>
       <a
           class="text-secondaryColor el block text-base w-max cursor-pointer"
-          href="https://abi-tech.org/#products">
+          href="http://abi-tech.org/#products">
         {{ $t('header.products') }}
       </a>
     </div>
     <div class="w-max fixed z-50 top-1/2 -translate-y-1/2 right-5">
       <a
           class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
-          href="https://abi-tech.org/#hero">
+          href="http://abi-tech.org/#hero">
       </a>
       <a
           class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
-          href="https://abi-tech.org/#indSectors">
+          href="http://abi-tech.org/#indSectors">
       </a>
       <a
           class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
-          href="https://abi-tech.org/#locations">
+          href="http://abi-tech.org/#locations">
       </a>
       <a
           class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
-          href="https://abi-tech.org/#accomplishments">
+          href="http://abi-tech.org/#accomplishments">
       </a>
       <a
           class="text-secondaryColor el block w-3 h-3 mb-[30px] bg-white rounded-full cursor-pointer"
-          href="https://abi-tech.org/#products">
+          href="http://abi-tech.org/#products">
       </a>
     </div>
   </div>
