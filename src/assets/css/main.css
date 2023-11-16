@@ -7,6 +7,10 @@
     transition: all 0.3s;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .spinner {
     border-top-color: #4299e1;
     border-left-color: #4299e1;

@@ -99,7 +99,7 @@
             @mouseover="activeLocation = 0"
             @mouseleave="activeLocation = null"
             :class="[{ 'opacity-100' : first === true && getLocations[0] }, { 'w-9 h-9' : activeLocation === 0 }]"
-            class="w-8 h-8 absolute top-[32%] right-[17%] lg:top-[32%] lg:right-[17%] transition-all opacity-0 z-30"
+            class="w-8 h-8 absolute top-[78%] right-[17%] lg:top-[32%] lg:right-[17%] transition-all opacity-0 z-30"
             src="@/assets/img/locations/point.png" alt="">
       </router-link>
       <router-link
@@ -108,7 +108,7 @@
             @mouseover="activeLocation = 1"
             @mouseleave="activeLocation = null"
             :class="[{ 'opacity-100' : second === true && getLocations[1] }, { 'w-9 h-9' : activeLocation === 1 }]"
-            class="w-8 h-8 absolute top-[65%] right-[20%] lg:top-[25%] lg:right-[20%] transition-all opacity-0 z-30"
+            class="w-8 h-8 absolute top-[75%] right-[20%] lg:top-[25%] lg:right-[20%] transition-all opacity-0 z-30"
             src="@/assets/img/locations/point.png" alt="">
       </router-link>
       <router-link
@@ -117,7 +117,7 @@
             @mouseover="activeLocation = 2"
             @mouseleave="activeLocation = null"
             :class="[{ 'opacity-100' : third === true && getLocations[2] }, { 'w-9 h-9' : activeLocation === 2 }]"
-            class="w-8 h-8 absolute top-[77%] right-[20%] lg:top-[37%] lg:right-[20%] transition-all opacity-0 z-30"
+            class="w-8 h-8 absolute top-[82%] right-[20%] lg:top-[37%] lg:right-[20%] transition-all opacity-0 z-30"
             src="@/assets/img/locations/point.png" alt="">
       </router-link>
       <router-link
@@ -126,7 +126,7 @@
             @mouseover="activeLocation = 3"
             @mouseleave="activeLocation = null"
             :class="[{ 'opacity-100' : fourth === true && getLocations[3] }, { 'w-9 h-9' : activeLocation === 3 }]"
-            class="w-8 h-8 absolute top-[68%] right-[35%] lg:top-[28%] lg:right-[35%] transition-all opacity-0 z-30"
+            class="w-8 h-8 absolute top-[78%] right-[35%] lg:top-[28%] lg:right-[35%] transition-all opacity-0 z-30"
             src="@/assets/img/locations/point.png" alt="">
       </router-link>
       <router-link
